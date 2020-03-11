@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="SimpleUI/MesCharacterization/1.1_GetFactoryMaint" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="1.1_GetFactoryMaint">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetFactoryMaint" id="20171024141103078" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Factory" bindingParameterId="Factory" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/1.2_GetProductMaint" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="1.2_GetProductMaint">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetProductMaint" id="20171024141113659" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Product" bindingParameterId="Product" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ProductRevision" bindingParameterId="ProductRevision" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.1_GetEquipmentMaint" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.1_GetEquipmentMaint">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetEquipmentMaint" id="20171024141124996" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.2_EquipmentWIPQuery" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.2_EquipmentWIPQuery">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczEquipmentWIPQuery" id="20171024141131670" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.3_GetEquipmentStatus" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.3_GetEquipmentStatus">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetEquipmentStatus" id="20171024141137000" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.4_SetEquipmentStatus" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.4_SetEquipmentStatus">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczSetEquipmentStatus" id="20171024141145651" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusCode" bindingParameterId="StatusCode" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusReason" bindingParameterId="StatusReason" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Comments" bindingParameterId="Comments" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.5_GetEquipmentMaterialSetup" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.5_GetEquipmentMaterialSetup">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetEquipmentMaterialSetup" id="20171024141208464" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/3.1_CreateRecipeMain" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="3.1_CreateRecipeMain">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczCreateRecipeMaint" id="20171024141214241" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Recipe" bindingParameterId="Recipe" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RecipeRev" bindingParameterId="RecipeRev" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/3.2_GetRecipeMaint" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="3.2_GetRecipeMaint">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetRecipeMaint" id="20171024141233573" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Recipe" bindingParameterId="Recipe" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RecipeRev" bindingParameterId="RecipeRev" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/3.3_GetRecipeMaintFilter" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="3.3_GetRecipeMaintFilter">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetRecipeMaintFilter" id="20171024141240504" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Recipe" bindingParameterId="Recipe" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/4.1_ViewContainerStatus" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="4.1_ViewContainerStatus">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczViewContainerStatus" id="20171024141250903" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/4.2_GetLotCarriers" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="4.2_GetLotCarriers">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetLotCarriers" id="20171024141302500" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/4.3_GetLotAttributes" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="4.3_GetLotAttributes">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetLotAttributes" id="20171024141307999" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Attribute" bindingParameterId="Attribute" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/4.4_SetLotAttributes" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="4.4_SetLotAttributes">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczSetLotAttributes" id="20171024141617763" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="AttributeName" bindingParameterId="AttributeName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="AttributeValue" bindingParameterId="AttributeValue" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/5.1_GetLotWIPMain" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="5.1_GetLotWIPMain">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetLotWIPMain" id="20171024141624141" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/5.2_GetLotRejectsInProcess" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="5.2_GetLotRejectsInProcess">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetLotRejectsInProcess" id="20171024141631733" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/5.4_SetWipData" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="5.4_SetWipData">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczSetWIPData" id="20171024141639796" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ServiceName" bindingParameterId="ServiceName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WipDataName" bindingParameterId="WipDataName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WipDataValue" bindingParameterId="WipDataValue" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/5.3_SetLotRejectsInProcess" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="5.3_SetLotRejectsInProcess">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczSetLotRejectsInProcess" id="20171024141646898" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RejectCode" bindingParameterId="RejectCode" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Comment" bindingParameterId="Comment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RejectQty" bindingParameterId="RejectQty" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/5.5_SetConsumeMaterials" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="5.5_SetConsumeMaterials">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczSetConsumeMaterials" id="20171024141655230" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MaterialLot" bindingParameterId="MaterialLot" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MaterialPartName" bindingParameterId="MaterialPartName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="QtyToConsume" bindingParameterId="QtyToConsume" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/5.6_LotBonus" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="5.6_LotBonus">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczLotBonus" id="20171024141701347" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="BonusReason" bindingParameterId="BonusReason" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="BonusQty" bindingParameterId="BonusQty" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/5.7_TrackOut" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="5.7_TrackOut">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczTrackOut" id="20171024141707266" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TrackOutQty" bindingParameterId="TrackOutQty" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RemainInEquipment" bindingParameterId="RemainInEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RemainInEquipmentIfPossible" bindingParameterId="RemainInEquipmentIfPossible" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.6_SetEquipmentMaterialSetup" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.6_SetEquipmentMaterialSetup">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczSetEquipmentMaterialSetup" id="20171024150555210" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MaterialLotName" bindingParameterId="MaterialLotName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MaterialPartName" bindingParameterId="MaterialPartName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MaterialPartNameRev" bindingParameterId="MaterialPartNameRev" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.7_GetEquipmentSetup" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.7_GetEquipmentSetup">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetEquipmentSetup" id="20171024153213541" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.8_SetEquipmentSetup" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.8_SetEquipmentSetup">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczSetEquipmentSetup" id="20171024153324460" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ToolPlan" bindingParameterId="ToolPlan" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Recipe" bindingParameterId="Recipe" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RecipeRev" bindingParameterId="RecipeRev" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ToolItemName" bindingParameterId="ToolItemName" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/6.1_GetMaintenanceStatuses" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="6.1_GetMaintenanceStatuses">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetMaintenanceStatuses" id="20171108150905688" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/6.2_CompletePMMaintenance" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="6.2_CompletePMMaintenance">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczCompleteMaintenance" id="20171108150855766" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MaintenanceRequirement" bindingParameterId="MaintenanceRequirement" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ForceMaintenance" bindingParameterId="ForceMaintenance" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/1.3_RecipeMatrixMaint" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="1.3_RecipeMatrixMaint">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetRecipeMatrixMaint" id="20171114094145323" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SpecName" bindingParameterId="SpecName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/1.5_GetWIPDataSetupMaint" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="1.5_GetWIPDataSetupMaint">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetWipDataSetupMaint" id="20171114162001840" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WipDataSetupName" bindingParameterId="WipDataSetupName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/1.4_GetWIPDataSetupMatrixMaint" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="1.4_GetWIPDataSetupMatrixMaint">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczGetWIPDataSetupMatrixMaint" id="20171114162254055" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SpecName" bindingParameterId="SpecName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/2.9_SetEquipmentProcessCapability" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="2.9_SetEquipmentProcessCapability">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczSetEquipmentCapability" id="20171116175523546" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CapabilityName" bindingParameterId="CapabilityName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ActivationStatus" bindingParameterId="ActivationStatus" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Availability" bindingParameterId="Availability" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/MesCharacterization/5.1.2_TrackIn" triggerProviderId="SimpleUI" triggerCategoryId="MesCharacterization" triggerId="5.1.2_TrackIn">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MczTrackIn" id="20171120134632235" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="LotId" bindingParameterId="LotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WaferId" bindingParameterId="WaferId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentId" bindingParameterId="EquipmentId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetLotWIPMain" version="1" id="MczGetLotWIPMain"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetEquipmentMaint" version="1" id="MczGetEquipmentMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetFactoryMaint" version="1" id="MczGetFactoryMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczTrackOut" version="1" id="MczTrackOut"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetRecipeMaint" version="1" id="MczGetRecipeMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczCreateRecipeMaint" version="1" id="MczCreateRecipeMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetRecipeMaintFilter" version="1" id="MczGetRecipeMaintFilter"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczSetWIPData" version="1" id="MczSetWIPData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczSetConsumeMaterials" version="1" id="MczSetConsumeMaterials"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetLotCarriers" version="1" id="MczGetLotCarriers"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczEquipmentWIPQuery" version="1" id="MczEquipmentWIPQuery"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetLotRejectsInProcess" version="1" id="MczGetLotRejectsInProcess"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczSetLotRejectsInProcess" version="1" id="MczSetLotRejectsInProcess"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczLotBonus" version="1" id="MczLotBonus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetLotAttributes" version="1" id="MczGetLotAttributes"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczSetLotAttributes" version="1" id="MczSetLotAttributes"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczViewContainerStatus" version="1" id="MczViewContainerStatus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczSetEquipmentStatus" version="1" id="MczSetEquipmentStatus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetProductMaint" version="1" id="MczGetProductMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetEquipmentStatus" version="1" id="MczGetEquipmentStatus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetEquipmentSetup" version="1" id="MczGetEquipmentSetup"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczSetEquipmentSetup" version="1" id="MczSetEquipmentSetup"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetEquipmentMaterialSetup" version="1" id="MczGetEquipmentMaterialSetup"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczSetEquipmentMaterialSetup" version="1" id="MczSetEquipmentMaterialSetup"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetMaintenanceStatuses" version="1" id="MczGetMaintenanceStatuses"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczCompleteMaintenance" version="1" id="MczCompleteMaintenance"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetRecipeMatrixMaint" version="1" id="MczGetRecipeMatrixMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetWIPDataSetupMatrixMaint" version="1" id="MczGetWIPDataSetupMatrixMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczGetWipDataSetupMaint" version="1" id="MczGetWipDataSetupMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczSetEquipmentCapability" version="1" id="MczSetEquipmentCapability"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MczTrackIn" version="1" id="MczTrackIn"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

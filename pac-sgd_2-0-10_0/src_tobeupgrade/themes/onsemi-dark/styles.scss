@@ -1,0 +1,6 @@
+@import "variables";
+@import "../onsemi/onsemi";
+@import "onsemivariables";
+.onsemi-dark {   
+   @include onsemi;
+}

@@ -1,0 +1,3283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processAutomationController xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://www.znt-richter.com/pac_1_0"    xsi:schemaLocation="http://www.znt-richter.com/pac_1_0 http://www.znt-richter.com/pac/pac_1_0.xsd" >
+  <multiLangId id="${PacService}"/>
+  <controlAlgorithmManager>
+    <multiLangId id="ControlAlgorithmManager"/>
+  </controlAlgorithmManager>
+  <machineManager>
+    <multiLangId id="MachineManager"/>
+    <machineTree machineTreeName="${Equipment1.Name}">
+      <machineTreeNode machineTreeNodeName="${Equipment1.Name}">
+        <machineTreeNode machineTreeNodeName="${Equipment1.Name}">
+          <machine machineName="SecsMachine">
+            <multiLangId id="${Equipment1.Name}"/>
+            <parameterSetList>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="EC"/>
+                <definitionList>
+                  <parameterDefinition type="Boolean" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Equipment_Initiated_Connected">
+                      <translation language="SECS_DATATYPE">"Boolean"</translation>
+                      <translation language="SECSVID">"101"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@Equipment_Initiated_Connected">
+                        <multiLangId id="Equipment_Initiated_Connected"/>
+                        <valueBoolean>false</valueBoolean>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EstablishCommunicationsTimeout">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"102"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@EstablishCommunicationsTimeout">
+                        <multiLangId id="EstablishCommunicationsTimeout"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.LONG" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MaxSpoolTransmit">
+                      <translation language="SECS_DATATYPE">"U4"</translation>
+                      <translation language="SECSVID">"103"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@MaxSpoolTransmit">
+                        <multiLangId id="MaxSpoolTransmit"/>
+                        <valueLong>0</valueLong>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Boolean" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OverWriteSpool">
+                      <translation language="SECS_DATATYPE">"Boolean"</translation>
+                      <translation language="SECSVID">"104"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@OverWriteSpool">
+                        <multiLangId id="OverWriteSpool"/>
+                        <valueBoolean>false</valueBoolean>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Boolean" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EnableSpooling">
+                      <translation language="SECS_DATATYPE">"Boolean"</translation>
+                      <translation language="SECSVID">"105"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@EnableSpooling">
+                        <multiLangId id="EnableSpooling"/>
+                        <valueBoolean>false</valueBoolean>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Boolean" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TimeFormat">
+                      <translation language="SECS_DATATYPE">"Boolean"</translation>
+                      <translation language="SECSVID">"106"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@TimeFormat">
+                        <multiLangId id="TimeFormat"/>
+                        <valueBoolean>false</valueBoolean>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="T3Timeout">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"109"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@T3Timeout">
+                        <multiLangId id="T3Timeout"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="T5Timeout">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"110"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@T5Timeout">
+                        <multiLangId id="T5Timeout"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="T6Timeout">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"111"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@T6Timeout">
+                        <multiLangId id="T6Timeout"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="T7Timeout">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"112"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@T7Timeout">
+                        <multiLangId id="T7Timeout"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="T8Timeout">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"113"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@T8Timeout">
+                        <multiLangId id="T8Timeout"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="InitControlState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"117"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@InitControlState">
+                        <multiLangId id="InitControlState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OffLineSubState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"118"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@OffLineSubState">
+                        <multiLangId id="OffLineSubState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OnLineFailState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"120"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@OnLineFailState">
+                        <multiLangId id="OnLineFailState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Maker">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"121"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@Maker">
+                        <multiLangId id="Maker"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                </definitionList>
+              </parameterSet>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="SV"/>
+                <definitionList>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Clock">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"1"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Clock">
+                        <multiLangId id="Clock"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AlarmSet">
+                      <translation language="SECSVID">"3"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AlarmSet">
+                        <multiLangId id="AlarmSet"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ControlState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"4"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ControlState">
+                        <multiLangId id="ControlState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EventsEnabled">
+                      <translation language="SECSVID">"5"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@EventsEnabled">
+                        <multiLangId id="EventsEnabled"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ProcessState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"6"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ProcessState">
+                        <multiLangId id="ProcessState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PreviousProcessState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"7"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PreviousProcessState">
+                        <multiLangId id="PreviousProcessState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AlarmsEnabled">
+                      <translation language="SECSVID">"8"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AlarmsEnabled">
+                        <multiLangId id="AlarmsEnabled"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolCountActual">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"11"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolCountActual">
+                        <multiLangId id="SpoolCountActual"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolCountTotal">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"12"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolCountTotal">
+                        <multiLangId id="SpoolCountTotal"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolFullTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"13"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolFullTime">
+                        <multiLangId id="SpoolFullTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MDLN">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"14"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@MDLN">
+                        <multiLangId id="MDLN"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SOFTREV">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"15"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SOFTREV">
+                        <multiLangId id="SOFTREV"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolStartTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"16"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolStartTime">
+                        <multiLangId id="SpoolStartTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolStatus">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"17"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolStatus">
+                        <multiLangId id="SpoolStatus"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolFull">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"18"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolFull">
+                        <multiLangId id="SpoolFull"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PreviousControlState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"34"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PreviousControlState">
+                        <multiLangId id="PreviousControlState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CommState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"35"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CommState">
+                        <multiLangId id="CommState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PreviousCommState">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"36"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PreviousCommState">
+                        <multiLangId id="PreviousCommState"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.DOUBLE" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AlignerSensor">
+                      <translation language="SECS_DATATYPE">"F8"</translation>
+                      <translation language="SECSVID">"1000"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AlignerSensor">
+                        <multiLangId id="AlignerSensor"/>
+                        <valueDouble>0</valueDouble>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.DOUBLE" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AirPress">
+                      <translation language="SECS_DATATYPE">"F8"</translation>
+                      <translation language="SECSVID">"1001"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AirPress">
+                        <multiLangId id="AirPress"/>
+                        <valueDouble>0</valueDouble>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.DOUBLE" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ForkVacuum">
+                      <translation language="SECS_DATATYPE">"F8"</translation>
+                      <translation language="SECSVID">"1002"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ForkVacuum">
+                        <multiLangId id="ForkVacuum"/>
+                        <valueDouble>0</valueDouble>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.DOUBLE" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ChuckVacuum">
+                      <translation language="SECS_DATATYPE">"F8"</translation>
+                      <translation language="SECSVID">"1003"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ChuckVacuum">
+                        <multiLangId id="ChuckVacuum"/>
+                        <valueDouble>0</valueDouble>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.DOUBLE" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ExhaustPresure">
+                      <translation language="SECS_DATATYPE">"F8"</translation>
+                      <translation language="SECSVID">"1004"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ExhaustPresure">
+                        <multiLangId id="ExhaustPresure"/>
+                        <valueDouble>0</valueDouble>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TestVariable14">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"1013"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@TestVariable14">
+                        <multiLangId id="TestVariable14"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.DOUBLE" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TestVariable15">
+                      <translation language="SECS_DATATYPE">"F8"</translation>
+                      <translation language="SECSVID">"1014"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@TestVariable15">
+                        <multiLangId id="TestVariable15"/>
+                        <valueDouble>0</valueDouble>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.LONG" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TestVariable16">
+                      <translation language="SECS_DATATYPE">"U4"</translation>
+                      <translation language="SECSVID">"1015"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@TestVariable16">
+                        <multiLangId id="TestVariable16"/>
+                        <valueLong>0</valueLong>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TestVariable17">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"1016"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@TestVariable17">
+                        <multiLangId id="TestVariable17"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MainText">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2001"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@MainText">
+                        <multiLangId id="MainText"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Visible_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2002"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Visible_Text">
+                        <multiLangId id="Visible_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Visible_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2003"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Visible_Barcode">
+                        <multiLangId id="Visible_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Visible_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2004"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Visible_DataMatrix">
+                        <multiLangId id="Visible_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AppendedText">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2005"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AppendedText">
+                        <multiLangId id="AppendedText"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SerialNumber">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2006"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SerialNumber">
+                        <multiLangId id="SerialNumber"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CheckSum">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2007"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CheckSum">
+                        <multiLangId id="CheckSum"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ShiftX_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2008"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ShiftX_Text">
+                        <multiLangId id="ShiftX_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ShiftY_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2009"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ShiftY_Text">
+                        <multiLangId id="ShiftY_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Rotation_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2010"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Rotation_Text">
+                        <multiLangId id="Rotation_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillOutlines_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2011"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillOutlines_Text">
+                        <multiLangId id="FillOutlines_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillInterval_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2012"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillInterval_Text">
+                        <multiLangId id="FillInterval_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillAngle_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2013"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillAngle_Text">
+                        <multiLangId id="FillAngle_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillZigzag_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2014"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillZigzag_Text">
+                        <multiLangId id="FillZigzag_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FontType">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2015"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FontType">
+                        <multiLangId id="FontType"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FontFamily">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2016"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FontFamily">
+                        <multiLangId id="FontFamily"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FontMode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2017"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FontMode">
+                        <multiLangId id="FontMode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FontSize">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2018"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FontSize">
+                        <multiLangId id="FontSize"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LetterPitch">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2019"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LetterPitch">
+                        <multiLangId id="LetterPitch"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TextArcRadius">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2020"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@TextArcRadius">
+                        <multiLangId id="TextArcRadius"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TextArcPosition">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2021"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@TextArcPosition">
+                        <multiLangId id="TextArcPosition"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TextArcAngle">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2022"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@TextArcAngle">
+                        <multiLangId id="TextArcAngle"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="UseDrillMode_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2023"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@UseDrillMode_Text">
+                        <multiLangId id="UseDrillMode_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillDiameter_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2024"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillDiameter_Text">
+                        <multiLangId id="DrillDiameter_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillRounds_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2025"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillRounds_Text">
+                        <multiLangId id="DrillRounds_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillStartOut_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2026"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillStartOut_Text">
+                        <multiLangId id="DrillStartOut_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillEndIn_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2027"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillEndIn_Text">
+                        <multiLangId id="DrillEndIn_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillOutRound_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2028"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillOutRound_Text">
+                        <multiLangId id="DrillOutRound_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Amplifier_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2029"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Amplifier_Barcode">
+                        <multiLangId id="Amplifier_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ShiftX_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2030"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ShiftX_Barcode">
+                        <multiLangId id="ShiftX_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ShiftY_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2031"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ShiftY_Barcode">
+                        <multiLangId id="ShiftY_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Rotation_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2032"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Rotation_Barcode">
+                        <multiLangId id="Rotation_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillOutlines_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2033"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillOutlines_Barcode">
+                        <multiLangId id="FillOutlines_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillInterval_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2034"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillInterval_Barcode">
+                        <multiLangId id="FillInterval_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillAngle_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2035"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillAngle_Barcode">
+                        <multiLangId id="FillAngle_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillZigzag_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2036"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillZigzag_Barcode">
+                        <multiLangId id="FillZigzag_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="UseDrillMode_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2037"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@UseDrillMode_Barcode">
+                        <multiLangId id="UseDrillMode_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillDiameter_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2038"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillDiameter_Barcode">
+                        <multiLangId id="DrillDiameter_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillRounds_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2039"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillRounds_Barcode">
+                        <multiLangId id="DrillRounds_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillStartOut_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2040"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillStartOut_Barcode">
+                        <multiLangId id="DrillStartOut_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillEndIn_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2041"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillEndIn_Barcode">
+                        <multiLangId id="DrillEndIn_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillOutRound_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2042"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillOutRound_Barcode">
+                        <multiLangId id="DrillOutRound_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Amplifier_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2043"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Amplifier_DataMatrix">
+                        <multiLangId id="Amplifier_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ShiftX_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2044"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ShiftX_DataMatrix">
+                        <multiLangId id="ShiftX_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ShiftY_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2045"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ShiftY_DataMatrix">
+                        <multiLangId id="ShiftY_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Rotation_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2046"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Rotation_DataMatrix">
+                        <multiLangId id="Rotation_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillOutlines_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2047"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillOutlines_DataMatrix">
+                        <multiLangId id="FillOutlines_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillInterval_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2048"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillInterval_DataMatrix">
+                        <multiLangId id="FillInterval_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillAngle_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2049"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillAngle_DataMatrix">
+                        <multiLangId id="FillAngle_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FillZigzag_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2050"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FillZigzag_DataMatrix">
+                        <multiLangId id="FillZigzag_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="UseDrillMode_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2051"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@UseDrillMode_DataMatrix">
+                        <multiLangId id="UseDrillMode_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillDiameter_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2052"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillDiameter_DataMatrix">
+                        <multiLangId id="DrillDiameter_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillRounds_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2053"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillRounds_DataMatrix">
+                        <multiLangId id="DrillRounds_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillStartOut_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2054"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillStartOut_DataMatrix">
+                        <multiLangId id="DrillStartOut_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillEndIn_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2055"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillEndIn_DataMatrix">
+                        <multiLangId id="DrillEndIn_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DrillOutRound_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2056"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DrillOutRound_DataMatrix">
+                        <multiLangId id="DrillOutRound_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferSize">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2057"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferSize">
+                        <multiLangId id="WaferSize"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EnableMarkingOnFork">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2058"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@EnableMarkingOnFork">
+                        <multiLangId id="EnableMarkingOnFork"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FZMarkingPosition">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2059"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FZMarkingPosition">
+                        <multiLangId id="FZMarkingPosition"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FXMarkingPosition">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2060"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FXMarkingPosition">
+                        <multiLangId id="FXMarkingPosition"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EnableMarkingOnSideB">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2061"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@EnableMarkingOnSideB">
+                        <multiLangId id="EnableMarkingOnSideB"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CustomWaferThreshold">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2062"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CustomWaferThreshold">
+                        <multiLangId id="CustomWaferThreshold"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ThicknessUpper">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2063"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@ThicknessUpper">
+                        <multiLangId id="ThicknessUpper"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SkipWaferAlign">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2064"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SkipWaferAlign">
+                        <multiLangId id="SkipWaferAlign"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AlignerOffsetAngle">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2065"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AlignerOffsetAngle">
+                        <multiLangId id="AlignerOffsetAngle"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SkipOCR">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2066"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SkipOCR">
+                        <multiLangId id="SkipOCR"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DefaultMarkSpeed">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2067"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DefaultMarkSpeed">
+                        <multiLangId id="DefaultMarkSpeed"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Power">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2068"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Power">
+                        <multiLangId id="Power"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FrequencyOut">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2069"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FrequencyOut">
+                        <multiLangId id="FrequencyOut"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CustomDelay">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2070"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CustomDelay">
+                        <multiLangId id="CustomDelay"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OnDelay">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2071"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@OnDelay">
+                        <multiLangId id="OnDelay"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OffDelay">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2072"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@OffDelay">
+                        <multiLangId id="OffDelay"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="JumpDelay">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2073"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@JumpDelay">
+                        <multiLangId id="JumpDelay"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MarkDelay">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2074"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@MarkDelay">
+                        <multiLangId id="MarkDelay"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PolygonDelay">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2075"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PolygonDelay">
+                        <multiLangId id="PolygonDelay"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CustomLaser_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2076"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CustomLaser_Text">
+                        <multiLangId id="CustomLaser_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DefaultMarkSpeed_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2077"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DefaultMarkSpeed_Text">
+                        <multiLangId id="DefaultMarkSpeed_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Power_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2078"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Power_Text">
+                        <multiLangId id="Power_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FrequencyOut_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2079"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FrequencyOut_Text">
+                        <multiLangId id="FrequencyOut_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CustomDelay_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2080"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CustomDelay_Text">
+                        <multiLangId id="CustomDelay_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OnDelay_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2081"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@OnDelay_Text">
+                        <multiLangId id="OnDelay_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OffDelay_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2082"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@OffDelay_Text">
+                        <multiLangId id="OffDelay_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="JumpDelay_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2083"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@JumpDelay_Text">
+                        <multiLangId id="JumpDelay_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MarkDelay_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2084"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@MarkDelay_Text">
+                        <multiLangId id="MarkDelay_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PolygonDelay_Text">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2085"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PolygonDelay_Text">
+                        <multiLangId id="PolygonDelay_Text"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CustomLaser_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2086"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CustomLaser_Barcode">
+                        <multiLangId id="CustomLaser_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DefaultMarkSpeed_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2087"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DefaultMarkSpeed_Barcode">
+                        <multiLangId id="DefaultMarkSpeed_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Power_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2088"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Power_Barcode">
+                        <multiLangId id="Power_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FrequencyOut_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2089"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FrequencyOut_Barcode">
+                        <multiLangId id="FrequencyOut_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CustomDelay_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2090"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CustomDelay_Barcode">
+                        <multiLangId id="CustomDelay_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OnDelay_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2091"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@OnDelay_Barcode">
+                        <multiLangId id="OnDelay_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OffDelay_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2092"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@OffDelay_Barcode">
+                        <multiLangId id="OffDelay_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="JumpDelay_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2093"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@JumpDelay_Barcode">
+                        <multiLangId id="JumpDelay_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MarkDelay_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2094"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@MarkDelay_Barcode">
+                        <multiLangId id="MarkDelay_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PolygonDelay_Barcode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2095"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PolygonDelay_Barcode">
+                        <multiLangId id="PolygonDelay_Barcode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CustomLaser_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2096"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CustomLaser_DataMatrix">
+                        <multiLangId id="CustomLaser_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="DefaultMarkSpeed_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2097"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@DefaultMarkSpeed_DataMatrix">
+                        <multiLangId id="DefaultMarkSpeed_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Power_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2098"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Power_DataMatrix">
+                        <multiLangId id="Power_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="FrequencyOut_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2099"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@FrequencyOut_DataMatrix">
+                        <multiLangId id="FrequencyOut_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CustomDelay_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2100"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CustomDelay_DataMatrix">
+                        <multiLangId id="CustomDelay_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OnDelay_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2101"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@OnDelay_DataMatrix">
+                        <multiLangId id="OnDelay_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OffDelay_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2102"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@OffDelay_DataMatrix">
+                        <multiLangId id="OffDelay_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="JumpDelay_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2103"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@JumpDelay_DataMatrix">
+                        <multiLangId id="JumpDelay_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MarkDelay_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2104"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@MarkDelay_DataMatrix">
+                        <multiLangId id="MarkDelay_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PolygonDelay_DataMatrix">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"2105"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PolygonDelay_DataMatrix">
+                        <multiLangId id="PolygonDelay_DataMatrix"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PJQueueMaxSpace">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"4003"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PJQueueMaxSpace">
+                        <multiLangId id="PJQueueMaxSpace"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PRJobIDList">
+                      <translation language="SECSVID">"4005"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PRJobIDList">
+                        <multiLangId id="PRJobIDList"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PRJobList">
+                      <translation language="SECSVID">"4006"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PRJobList">
+                        <multiLangId id="PRJobList"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PRJobSpace">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"4008"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PRJobSpace">
+                        <multiLangId id="PRJobSpace"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="BufferCapacityList">
+                      <translation language="SECSVID">"5003"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@BufferCapacityList">
+                        <multiLangId id="BufferCapacityList"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierLocationMatrix">
+                      <translation language="SECSVID">"5008"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierLocationMatrix">
+                        <multiLangId id="CarrierLocationMatrix"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LoadPortReservationStateList">
+                      <translation language="SECSVID">"5011"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LoadPortReservationStateList">
+                        <multiLangId id="LoadPortReservationStateList"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortAssociationStateList">
+                      <translation language="SECSVID">"5017"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortAssociationStateList">
+                        <multiLangId id="PortAssociationStateList"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortStateInfoList">
+                      <translation language="SECSVID">"5019"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortStateInfoList">
+                        <multiLangId id="PortStateInfoList"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortTransferStateList">
+                      <translation language="SECSVID">"5021"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortTransferStateList">
+                        <multiLangId id="PortTransferStateList"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AccessMode1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5201"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AccessMode1">
+                        <multiLangId id="AccessMode1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierID1">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5202"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierID1">
+                        <multiLangId id="CarrierID1"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LoadPortReservationState1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5204"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LoadPortReservationState1">
+                        <multiLangId id="LoadPortReservationState1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LocationID1">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5205"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LocationID1">
+                        <multiLangId id="LocationID1"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortAssociationState1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5206"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortAssociationState1">
+                        <multiLangId id="PortAssociationState1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortID1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5207"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortID1">
+                        <multiLangId id="PortID1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortStateInfo1">
+                      <translation language="SECSVID">"5208"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortStateInfo1">
+                        <multiLangId id="PortStateInfo1"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortTransferState1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5209"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortTransferState1">
+                        <multiLangId id="PortTransferState1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AccessMode2">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5211"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AccessMode2">
+                        <multiLangId id="AccessMode2"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierID2">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5212"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierID2">
+                        <multiLangId id="CarrierID2"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LoadPortReservationState2">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5214"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LoadPortReservationState2">
+                        <multiLangId id="LoadPortReservationState2"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LocationID2">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5215"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LocationID2">
+                        <multiLangId id="LocationID2"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortAssociationState2">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5216"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortAssociationState2">
+                        <multiLangId id="PortAssociationState2"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortID2">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5217"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortID2">
+                        <multiLangId id="PortID2"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortStateInfo2">
+                      <translation language="SECSVID">"5218"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortStateInfo2">
+                        <multiLangId id="PortStateInfo2"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortTransferState2">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5219"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortTransferState2">
+                        <multiLangId id="PortTransferState2"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AccessMode3">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5221"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AccessMode3">
+                        <multiLangId id="AccessMode3"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierID3">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5222"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierID3">
+                        <multiLangId id="CarrierID3"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LoadPortReservationState3">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5224"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LoadPortReservationState3">
+                        <multiLangId id="LoadPortReservationState3"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LocationID3">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5225"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LocationID3">
+                        <multiLangId id="LocationID3"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortAssociationState3">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5226"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortAssociationState3">
+                        <multiLangId id="PortAssociationState3"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortID3">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5227"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortID3">
+                        <multiLangId id="PortID3"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortStateInfo3">
+                      <translation language="SECSVID">"5228"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortStateInfo3">
+                        <multiLangId id="PortStateInfo3"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortTransferState3">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5229"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortTransferState3">
+                        <multiLangId id="PortTransferState3"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AccessMode4">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5231"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AccessMode4">
+                        <multiLangId id="AccessMode4"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierID4">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5232"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierID4">
+                        <multiLangId id="CarrierID4"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LoadPortReservationState4">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5234"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LoadPortReservationState4">
+                        <multiLangId id="LoadPortReservationState4"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LocationID4">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5235"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LocationID4">
+                        <multiLangId id="LocationID4"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortAssociationState4">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5236"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortAssociationState4">
+                        <multiLangId id="PortAssociationState4"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortID4">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5237"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortID4">
+                        <multiLangId id="PortID4"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortStateInfo4">
+                      <translation language="SECSVID">"5238"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortStateInfo4">
+                        <multiLangId id="PortStateInfo4"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortTransferState4">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5239"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortTransferState4">
+                        <multiLangId id="PortTransferState4"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AccessMode5">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5241"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@AccessMode5">
+                        <multiLangId id="AccessMode5"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierID5">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5242"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierID5">
+                        <multiLangId id="CarrierID5"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LoadPortReservationState5">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5244"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LoadPortReservationState5">
+                        <multiLangId id="LoadPortReservationState5"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LocationID5">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"5245"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@LocationID5">
+                        <multiLangId id="LocationID5"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortAssociationState5">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5246"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortAssociationState5">
+                        <multiLangId id="PortAssociationState5"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortID5">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5247"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortID5">
+                        <multiLangId id="PortID5"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortStateInfo5">
+                      <translation language="SECSVID">"5248"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortStateInfo5">
+                        <multiLangId id="PortStateInfo5"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortTransferState5">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"5249"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@PortTransferState5">
+                        <multiLangId id="PortTransferState5"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocID1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"6201"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocID1">
+                        <multiLangId id="SubstLocID1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocState1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"6202"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocState1">
+                        <multiLangId id="SubstLocState1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocSubstID1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"6203"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocSubstID1">
+                        <multiLangId id="SubstLocSubstID1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocID2">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"6211"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocID2">
+                        <multiLangId id="SubstLocID2"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocState2">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"6212"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocState2">
+                        <multiLangId id="SubstLocState2"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocSubstID2">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"6213"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocSubstID2">
+                        <multiLangId id="SubstLocSubstID2"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocID3">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"6221"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocID3">
+                        <multiLangId id="SubstLocID3"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocState3">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"6222"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocState3">
+                        <multiLangId id="SubstLocState3"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SubstLocSubstID3">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"6223"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SubstLocSubstID3">
+                        <multiLangId id="SubstLocSubstID3"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="BatchLocID1">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"6401"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@BatchLocID1">
+                        <multiLangId id="BatchLocID1"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="BatchLocState1">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"6402"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@BatchLocState1">
+                        <multiLangId id="BatchLocState1"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="BatchSubstIDMap1">
+                      <translation language="SECSVID">"6403"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@BatchSubstIDMap1">
+                        <multiLangId id="BatchSubstIDMap1"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="BatchLocID2">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"6411"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@BatchLocID2">
+                        <multiLangId id="BatchLocID2"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="BatchLocState2">
+                      <translation language="SECSVID">"6412"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@BatchLocState2">
+                        <multiLangId id="BatchLocState2"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="BatchSubstIDMap2">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"6413"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@BatchSubstIDMap2">
+                        <multiLangId id="BatchSubstIDMap2"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="QueueAvailableSpace">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"7013"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@QueueAvailableSpace">
+                        <multiLangId id="QueueAvailableSpace"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="QueuedCJobs">
+                      <translation language="SECSVID">"7014"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@QueuedCJobs">
+                        <multiLangId id="QueuedCJobs"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                </definitionList>
+              </parameterSet>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="DV"/>
+                <definitionList>
+                  <parameterDefinition type="ArrayOfBinary" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ALCD">
+                      <translation language="SECS_DATATYPE">"B"</translation>
+                      <translation language="SECSVID">"2"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@ALCD">
+                        <multiLangId id="ALCD"/>
+                        <arrayOfBinary></arrayOfBinary>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="AlarmID">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"24"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@AlarmID">
+                        <multiLangId id="AlarmID"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ChangedECID">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"25"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@ChangedECID">
+                        <multiLangId id="ChangedECID"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EventLimit">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"26"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@EventLimit">
+                        <multiLangId id="EventLimit"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LimitVariable">
+                      <translation language="SECS_DATATYPE">"U2"</translation>
+                      <translation language="SECSVID">"27"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@LimitVariable">
+                        <multiLangId id="LimitVariable"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OperatorCommand">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"28"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@OperatorCommand">
+                        <multiLangId id="OperatorCommand"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PPChangeName">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"29"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@PPChangeName">
+                        <multiLangId id="PPChangeName"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PPChangeStatus">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"30"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@PPChangeStatus">
+                        <multiLangId id="PPChangeStatus"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PPError">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"31"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@PPError">
+                        <multiLangId id="PPError"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="ArrayOfBinary" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TransitionType">
+                      <translation language="SECS_DATATYPE">"B"</translation>
+                      <translation language="SECSVID">"32"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@TransitionType">
+                        <multiLangId id="TransitionType"/>
+                        <arrayOfBinary></arrayOfBinary>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.SHORT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="PortID">
+                      <translation language="SECS_DATATYPE">"U1"</translation>
+                      <translation language="SECSVID">"33"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@PortID">
+                        <multiLangId id="PortID"/>
+                        <valueShort>0</valueShort>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ErrorCode">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"401"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@ErrorCode">
+                        <multiLangId id="ErrorCode"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="User">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"402"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@User">
+                        <multiLangId id="User"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="StartTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"403"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@StartTime">
+                        <multiLangId id="StartTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EndTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"404"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@EndTime">
+                        <multiLangId id="EndTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Duration">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"405"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@Duration">
+                        <multiLangId id="Duration"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="RecipeName">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"410"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@RecipeName">
+                        <multiLangId id="RecipeName"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MainText">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"420"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@MainText">
+                        <multiLangId id="MainText"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MarkingText">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"430"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@MarkingText">
+                        <multiLangId id="MarkingText"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Memo">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"500"</translation>
+                      <translation language="SECSTYPE">"DataVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="DV@Memo">
+                        <multiLangId id="Memo"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                </definitionList>
+              </parameterSet>
+            </parameterSetList>
+            <deviceCommunication recipeTranslator="" requestSpoolData="false" vidSpoolCountActual="108" vidSpoolState="1020">
+              <multiLangId id="SECS Connection"/>
+              <EQMachineReportList>
+                <EQMachineReport reportId="6" store="false" calculate="false">
+                  <multiLangId id="Alarm"/>
+                  <reportValueList>
+                    <reportValue>SV@ProcessState</reportValue>
+                    <reportValue>DV@ALCD</reportValue>
+                    <reportValue>DV@EventLimit</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="4" store="false" calculate="false">
+                  <multiLangId id="ControlState"/>
+                  <reportValueList>
+                    <reportValue>SV@PreviousProcessState</reportValue>
+                    <reportValue>SV@AlarmSet</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="5" store="false" calculate="false">
+                  <multiLangId id="EquipmentConstantChanged"/>
+                  <reportValueList>
+                    <reportValue>DV@ChangedECID</reportValue>
+                    <reportValue>DV@AlarmID</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="7" store="false" calculate="false">
+                  <multiLangId id="EventLimit"/>
+                  <reportValueList>
+                    <reportValue>DV@LimitVariable</reportValue>
+                    <reportValue>DV@TransitionType</reportValue>
+                    <reportValue>SV@AlarmSet</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="10" store="false" calculate="false">
+                  <multiLangId id="MaterialReceived"/>
+                  <reportValueList>
+                    <reportValue>DV@PortID</reportValue>
+                    <reportValue>SV@AlarmSet</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="14" store="false" calculate="false">
+                  <multiLangId id="MessageRecognition"/>
+                  <reportValueList>
+                    <reportValue>SV@PreviousProcessState</reportValue>
+                    <reportValue>SV@AlarmSet</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="2" store="false" calculate="false">
+                  <multiLangId id="OperatorCommand"/>
+                  <reportValueList>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="8" store="false" calculate="false">
+                  <multiLangId id="ProcessProgramChanged"/>
+                  <reportValueList>
+                    <reportValue>DV@PPChangeName</reportValue>
+                    <reportValue>DV@PPChangeStatus</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="11" store="false" calculate="false">
+                  <multiLangId id="SpoolActivated"/>
+                  <reportValueList>
+                    <reportValue>SV@MDLN</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="12" store="false" calculate="false">
+                  <multiLangId id="SpoolDeactivated"/>
+                  <reportValueList>
+                    <reportValue>SV@SpoolCountTotal</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+                <EQMachineReport reportId="13" store="false" calculate="false">
+                  <multiLangId id="SpoolTransmitFailure"/>
+                  <reportValueList>
+                    <reportValue>SV@SpoolCountActual</reportValue>
+                  </reportValueList>
+                </EQMachineReport>
+              </EQMachineReportList>
+              <EQMachineEventList>
+                <EQMachineEvent eventId="20000" enabled="true">
+                  <multiLangId id="AlarmClear"/>
+                  <linkedReportList>Alarm</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="10000" enabled="true">
+                  <multiLangId id="AlarmSet"/>
+                  <linkedReportList>Alarm</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="210" enabled="true">
+                  <multiLangId id="CassetteProcessEnd"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="200" enabled="true">
+                  <multiLangId id="CassetteProcessStart"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="8" enabled="true">
+                  <multiLangId id="EquipmentConstantChanged"/>
+                  <linkedReportList>EquipmentConstantChanged</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="30000" enabled="true">
+                  <multiLangId id="EventLimit"/>
+                  <linkedReportList>EventLimit</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="2" enabled="true">
+                  <multiLangId id="Local"/>
+                  <linkedReportList>ControlState</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="11" enabled="true">
+                  <multiLangId id="MaterialReceived"/>
+                  <linkedReportList>MaterialReceived</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="12" enabled="true">
+                  <multiLangId id="MaterialRemoved"/>
+                  <linkedReportList>MaterialReceived</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="16" enabled="true">
+                  <multiLangId id="MessageRecognition"/>
+                  <linkedReportList>MessageRecognition</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="1" enabled="true">
+                  <multiLangId id="Offline"/>
+                  <linkedReportList>ControlState</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="4" enabled="true">
+                  <multiLangId id="OperatorCommand"/>
+                  <linkedReportList>OperatorCommand</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="9" enabled="true">
+                  <multiLangId id="ProcessProgramChanged"/>
+                  <linkedReportList>ProcessProgramChanged</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="10" enabled="true">
+                  <multiLangId id="ProcessRecipeSeleted"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="3" enabled="true">
+                  <multiLangId id="Remote"/>
+                  <linkedReportList>ControlState</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="13" enabled="true">
+                  <multiLangId id="SpoolActivated"/>
+                  <linkedReportList>SpoolActivated</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="14" enabled="true">
+                  <multiLangId id="SpoolDeactivated"/>
+                  <linkedReportList>SpoolDeactivated</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="15" enabled="true">
+                  <multiLangId id="SpoolTransmitFailure"/>
+                  <linkedReportList>SpoolTransmitFailure</linkedReportList>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="230" enabled="true">
+                  <multiLangId id="WaferProcessEnd"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="220" enabled="true">
+                  <multiLangId id="WaferProcessStart"/>
+                </EQMachineEvent>
+              </EQMachineEventList>
+              <EQMachineAlarmList>
+                <EQMachineAlarm alarmId="9006" enabled="false">
+                  <multiLangId id="AlarmAlignerError"/>
+                </EQMachineAlarm>
+                <EQMachineAlarm alarmId="9005" enabled="false">
+                  <multiLangId id="AlarmCassetteError"/>
+                </EQMachineAlarm>
+                <EQMachineAlarm alarmId="9007" enabled="false">
+                  <multiLangId id="AlarmMarkingError"/>
+                </EQMachineAlarm>
+                <EQMachineAlarm alarmId="9009" enabled="false">
+                  <multiLangId id="AlarmOhtersError"/>
+                </EQMachineAlarm>
+                <EQMachineAlarm alarmId="9008" enabled="false">
+                  <multiLangId id="AlarmRecipeError"/>
+                </EQMachineAlarm>
+              </EQMachineAlarmList>
+            </deviceCommunication>
+            <machineState>
+              <eventTriggeredCAList>
+              </eventTriggeredCAList>
+              <alarmTriggeredCAList>
+              </alarmTriggeredCAList>
+              <tdrTriggeredCAList>
+              </tdrTriggeredCAList>
+            </machineState>
+          </machine>
+        </machineTreeNode>
+      </machineTreeNode>
+    </machineTree>
+  </machineManager>
+  <recipeManager machineToRecipeContainerMap="true">
+    <multiLangId id="RecipeManager"/>
+    <recipeContainer machineName="${Equipment1.Name}">
+    </recipeContainer>
+  </recipeManager>
+  <processJobManager processRunInformationContainer="ProcessRunInformationContainer">
+    <multiLangId id="ProcessJobManager"/>
+    <specialProcessList>
+    </specialProcessList>
+  </processJobManager>
+  <materialManager>
+    <multiLangId id="MaterialManager"/>
+    <specificationList>
+      <specification specId="Carrier">
+        <parameterSet controlAlgorithm="">
+          <multiLangId id="CarrierSpec"/>
+          <definitionList>
+          </definitionList>
+        </parameterSet>
+      </specification>
+      <specification specId="Batch">
+        <parameterSet controlAlgorithm="">
+          <multiLangId id="BatchSpec"/>
+          <definitionList>
+          </definitionList>
+        </parameterSet>
+      </specification>
+      <specification specId="Wafer">
+        <parameterSet controlAlgorithm="">
+          <multiLangId id="WaferSpec"/>
+          <definitionList>
+          </definitionList>
+        </parameterSet>
+      </specification>
+      <specification specId="Lot">
+        <parameterSet controlAlgorithm="">
+          <multiLangId id="LotSpec"/>
+          <definitionList>
+          </definitionList>
+        </parameterSet>
+      </specification>
+    </specificationList>
+  </materialManager>
+</processAutomationController>

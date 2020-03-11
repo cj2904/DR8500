@@ -1,0 +1,47 @@
+
+@mixin headerButtonDark {
+	background: transparent;
+	border: 1px solid $z_dark-grey;
+	box-shadow: none;
+	color: $z_white;
+}
+
+@mixin ComponentContainerView {
+    .z-headerPanel {
+    
+        width: 100%;
+        
+        background-image: -moz-linear-gradient(left, white 10%, black);
+        background-image: -o-linear-gradient(left, white 10%, black);
+        background-image: -webkit-linear-gradient(left, white 10%, black);
+        background-image: -ms-linear-gradient(left, white 10%, black);
+
+        .z-headerLogo {            
+            background: url("../img/znt_logo_solo_RGB_96_dpi_207_pixel.png") no-repeat scroll;
+           	width: 355px;
+            height: 35px;  
+            margin: 5px;
+        }
+        .z-headerInfo {
+            margin: 20px;
+            color: $z_white;
+        }
+
+        .z-logoutButton {
+    		@include headerButtonDark;
+    		
+    		&:hover {
+        		color: #b8b8b8;
+        	}
+        }
+
+        .z-languageBox-dark {
+        	.v-filterselect-input {
+		    	@include headerButtonDark;
+        	}
+        	.v-filterselect-button {
+        		border-left: 2px solid $z_dark-grey;
+        	}
+        }
+    }
+}

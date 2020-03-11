@@ -1,0 +1,93 @@
+######Model Property Key#################
+Pac.ApplicationContext=$(AppDir)/config/xml/AppContext.xml,\
+$(AppDir)/config/model/${EqModel}/AppContext.xml
+Equipment1.Name=$(EqModel)
+
+#Model specific deo#
+deo.path=$(AppDir)/config/model/$(EqModel)/$(EqModel)-deo
+Pac.MappingSetContainer.Path=$(AppDir)/config/model/$(EqModel)/Mapping.xml
+de.znt.pac.PACService.xmlLocation=$(AppDir)/config/model/$(EqModel)/pac.xml
+
+#########################################################################
+### SECS communication settings
+#########################################################################
+$(Equipment1.Name).SecsConnectionMode=active
+$(Equipment1.Name).T3Timeout=45
+$(Equipment1.Name).T5Timeout=10
+$(Equipment1.Name).T6Timeout=5
+$(Equipment1.Name).T7Timeout=20
+$(Equipment1.Name).T8Timeout=5
+$(Equipment1.Name).LinktestInterval=60
+
+Secs.ProcessState.$(Equipment1.Name).0=No cassette in this position
+Secs.ProcessState.$(Equipment1.Name).1=Waiting to Load
+Secs.ProcessState.$(Equipment1.Name).2=Loading
+Secs.ProcessState.$(Equipment1.Name).3=In Process
+Secs.ProcessState.$(Equipment1.Name).4=All Complete
+Secs.ProcessState.$(Equipment1.Name).States.Ready2Start=0,1
+Secs.ProcessState.$(Equipment1.Name).States.Processing=2,3,4
+Secs.ProcessState.$(Equipment1.Name).StatusVariable.Name=ProcessState
+
+Secs.ControlState.$(Equipment1.Name).1=Equipment OFF
+Secs.ControlState.$(Equipment1.Name).2=Attempting ON
+Secs.ControlState.$(Equipment1.Name).3=Host OFF
+Secs.ControlState.$(Equipment1.Name).4=ON-LINE LOCAL
+Secs.ControlState.$(Equipment1.Name).5=ON-LINE REMOTE
+Secs.ControlState.$(Equipment1.Name).Local=4
+Secs.ControlState.$(Equipment1.Name).Offline=1
+Secs.ControlState.$(Equipment1.Name).Remote=5
+Secs.ControlState.$(Equipment1.Name).States.Offline=1,2,3
+Secs.ControlState.$(Equipment1.Name).States.Online=4,5
+Secs.ControlState.$(Equipment1.Name).StatusVariable.Name=ControlState
+
+# camstar -> pac synchronous service calls (JMS queues)
+CamstarService.JmsCamstarOutboundQueues=PrepareLot:zIF.Output.${PacService}-1.PrepareLot,\
+TrackInLot:zIF.Output.${PacService}-1.TrackInLot,\
+TrackOutLot:zIF.Output.${PacService}-1.TrackOutLot,\
+CancelTrackInLot:zIF.Output.${PacService}-1.CancelTrackInLot,\
+PrepareLot:zIF.Output.${PacService}-2.PrepareLot,\
+TrackInLot:zIF.Output.${PacService}-2.TrackInLot,\
+TrackOutLot:zIF.Output.${PacService}-2.TrackOutLot,\
+CancelTrackInLot:zIF.Output.${PacService}-2.CancelTrackInLot,\
+PrepareLot:zIF.Output.${PacService}-3.PrepareLot,\
+TrackInLot:zIF.Output.${PacService}-3.TrackInLot,\
+TrackOutLot:zIF.Output.${PacService}-3.TrackOutLot,\
+CancelTrackInLot:zIF.Output.${PacService}-3.CancelTrackInLot,\
+PrepareLot:zIF.Output.${PacService}-4.PrepareLot,\
+TrackInLot:zIF.Output.${PacService}-4.TrackInLot,\
+TrackOutLot:zIF.Output.${PacService}-4.TrackOutLot,\
+CancelTrackInLot:zIF.Output.${PacService}-4.CancelTrackInLot
+
+# camstar -> pac asynchronous service calls (JMS topics)
+CamstarService.JmsCamstarOutboundTopics=CompleteLot:zIF.Output.${PacService}-1.CompleteLot,\
+TrackInComplete:zIF.Output.${PacService}-1.TrackInComplete,\
+TrackInWipMain:zIF.Output.${PacService}-1.TrackInWipMain,\
+CompleteLot:zIF.Output.${PacService}-2.CompleteLot,\
+TrackInComplete:zIF.Output.${PacService}-2.TrackInComplete,\
+TrackInWipMain:zIF.Output.${PacService}-2.TrackInWipMain,\
+CompleteLot:zIF.Output.${PacService}-3.CompleteLot,\
+TrackInWipMain:zIF.Output.${PacService}-3.TrackInWipMain,\
+TrackInComplete:zIF.Output.${PacService}-3.TrackInComplete,\
+CompleteLot:zIF.Output.${PacService}-4.CompleteLot,\
+TrackInWipMain:zIF.Output.${PacService}-4.TrackInWipMain,\
+TrackInComplete:zIF.Output.${PacService}-4.TrackInComplete
+
+Secs.MachineLoadedRecipe.${Equipment1.Name}.StatusVariable.Name=
+Secs.RemoteCommand.PpidSelect.Name=PPSELECT
+
+Port1EqpName=${PacService}-1
+Port2EqpName=${PacService}-2
+Port3EqpName=${PacService}-3
+Port4EqpName=${PacService}-4
+
+Port1ProcessStateSV=DB_GEM_ES_PORT_1_STATE_NEW_IV
+Port2ProcessStateSV=DB_GEM_ES_PORT_2_STATE_NEW_IV
+Port3ProcessStateSV=DB_GEM_ES_PORT_3_STATE_NEW_IV
+Port4ProcessStateSV=DB_GEM_ES_PORT_4_STATE_NEW_IV
+
+SleepTime.Counter=
+
+Secs.Event.CEID.Key.ALM_GEM_CASSETTE_1_TABLE_SENSOR_FALSE=1
+Secs.Event.CEID.Key.ALM_GEM_CASSETTE_2_TABLE_SENSOR_FALSE=2
+Secs.Event.CEID.Key.ALM_GEM_CASSETTE_3_TABLE_SENSOR_FALSE=3
+Secs.Event.CEID.Key.ALM_GEM_CASSETTE_4_TABLE_SENSOR_FALSE=4

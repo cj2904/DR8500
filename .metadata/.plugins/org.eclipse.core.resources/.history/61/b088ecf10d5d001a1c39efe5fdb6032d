@@ -1,0 +1,36 @@
+###################################################################
+### includes                                                    ###
+###################################################################
+$$include0=classpath:sg/znt/pac/resources/config/sgd-static.properties
+$$include1=P:/properties/common.properties
+$$include2=$(AppDir)/INSTANCE.properties
+$$include3=classpath:sg/znt/pac/resources/config/$(SysEnv).properties
+$$include4=$(AppDir)/config/model/$(EqModel)/model.properties
+$$include5=$(AppDir)/config/properties/mock.properties
+
+################################################################
+### APP Settings
+################################################################
+App.Version=@VERSION@
+Pac.DefaultContext=classpath:/sg/znt/pac/resources/xml/W06PacCoreContext.xml
+
+CamstarService.JmsCamstarOutboundQueuePrefix=zIF.Output
+
+#CamstarService.JmsCamstarOutboundQueues=EqpSetup:zIF.Output.EquipmentSetup.6CVT01,EqStateChanged:zIF.Output.EquipmentStateChange.6CVT01
+#CamstarService.JmsCamstarOutboundTopics=EqStateChanged:zIF.Output.EquipmentStateChange.6CVT01
+
+################################################################
+### Equipment Settings
+################################################################
+#EquipmentType=diebonder
+${Equipment1.Name}.SystemId=${PacService}
+${Equipment1.Name}.ParentSystemId=${PacService}
+${Equipment1.Name}.SecsConnectionMode=active
+
+Navigator.Tree.MaterialManager.show=true
+GUI.operator.Title=operator
+GUI.Customer.TriggerProviderPackage=com.custom
+YieldLimitFailureHoldReason_AOI=OOC
+
+EquipmentStatus.WaitProduction=\u7b49\u5f85\u751f\u7522
+

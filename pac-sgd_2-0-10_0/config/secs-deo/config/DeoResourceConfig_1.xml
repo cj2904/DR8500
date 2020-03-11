@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="SimpleUI/Secs Characterization/XXX_S2F41: HostCommand" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="XXX_S2F41: HostCommand">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczAbortMachine" id="20170518214829695" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EczHoldMachine" id="20170518214940164" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EczPauseMachine" id="20170518214944579" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EczReleaseMachine" id="20170518215022727" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EczResumeMachine" id="20170518215026474" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/018_S7F1/S7F3: DownloadRecipe" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="018_S7F1/S7F3: DownloadRecipe">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczReqDownloadRecipePermission" id="20170519002706066" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Path" bindingParameterId="Path" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="PPID" bindingParameterId="PPID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EczDownloadRecipe" id="20170518215013344" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="PPID" bindingParameterId="PPID" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Path" bindingParameterId="Path" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="IsBinary" bindingParameterId="IsBinary" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/022_S2F41: PPSelect" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="022_S2F41: PPSelect">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczSelectRecipe" id="20170518215037124" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="PPID" bindingParameterId="PPID" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="PPSelectCommand" bindingParameterId="PPSelectCommand" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/XXX_SXFX: SendSecsMessage" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="XXX_SXFX: SendSecsMessage">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczSendSecsMessage" id="20170518215102575" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="PrimarySml" bindingParameterId="SMLMessage" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/024_S2F41: StartMachine" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="024_S2F41: StartMachine">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczStartMachine" id="20170518215149665" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/026_S2F41: StopMachine" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="026_S2F41: StopMachine">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczStopMachine" id="20170518215154672" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/006_S1F11: RequestStatusVariableList" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="006_S1F11: RequestStatusVariableList">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczUploadStatusVariables" id="20170518231012556" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="OutputFile" bindingParameterId="OutputFile" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/008_S2F29: RequestEquipmentConstantList" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="008_S2F29: RequestEquipmentConstantList">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczUploadEquipmentConstants" id="20170518231034142" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="OutputFile" bindingParameterId="OutputFile" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/009_S1F3: QueryProcessState_VerifyAllPossiblyState" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="009_S1F3: QueryProcessState_VerifyAllPossiblyState">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczGetStatusVariable" id="20170518235711080" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusVariables" bindingParameterId="VID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="statusData" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/010_S1F3: QueryControlState_VerifyAllPossiblyState" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="010_S1F3: QueryControlState_VerifyAllPossiblyState">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczGetStatusVariable" id="20170518235738436" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusVariables" bindingParameterId="VID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="statusData" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/003_S2F37: EnableAllEvents" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="003_S2F37: EnableAllEvents">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczEnableAllEvent" id="20170518231929443" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/013_S10F3: SendTerminalMessage" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="013_S10F3: SendTerminalMessage">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczSendTerminalMessage" id="20170518231159842" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Message" bindingParameterId="Message" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/014_S2F17/S2F31: Get/SetEquipmentTime" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="014_S2F17/S2F31: Get/SetEquipmentTime">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczSetEquipmentTime" id="20170518231211727" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/005_S5F3: EnabledAllAlarm" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="005_S5F3: EnabledAllAlarm">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczEnableAllAlarm" id="20170518231223259" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/XXX_S7F5: UploadRecipe" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="XXX_S7F5: UploadRecipe">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczUploadRecipe" id="20170518231250789" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="PPID" bindingParameterId="PPID" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Path" bindingParameterId="Path" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/023_S1F3: QueryPPID" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="023_S1F3: QueryPPID">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczGetStatusVariable" id="20170518231332534" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusVariables" bindingParameterId="VID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="statusData" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/017_S7F17: DeleteRecipe" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="017_S7F17: DeleteRecipe">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczDeleteRecipe" id="20170518231401131" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="SecsService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Recipe" bindingParameterId="PPID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/025_S1F3: QueryProcessState_VerifyStateInRun" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="025_S1F3: QueryProcessState_VerifyStateInRun">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczGetStatusVariable" id="20170519003952557" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusVariables" bindingParameterId="VID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="statusData" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/027_S1F3: QueryProcessState_VerifyStateInStop" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="027_S1F3: QueryProcessState_VerifyStateInStop">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczGetStatusVariable" id="20170519004145707" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusVariables" bindingParameterId="VID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="statusData" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/XXX_S1F3: RequestVID" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="XXX_S1F3: RequestVID">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczGetStatusVariable" id="20170518231534434" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusVariables" bindingParameterId="VID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="statusData" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/016_S7F19+S7F5: UploadAllRecipe" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="016_S7F19+S7F5: UploadAllRecipe">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczUploadAllRecipesToLocal" id="20170518233407704" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Path" bindingParameterId="Path" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/015_S7F19: ListAllRecipe" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="015_S7F19: ListAllRecipe">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczListAllRecipe" id="20170518233838241" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/028_S2F37: DisableAllEvents" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="028_S2F37: DisableAllEvents">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczDisableAllEvent" id="20170518234303539" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/029_S5F3: DisableAllAlarm" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="029_S5F3: DisableAllAlarm">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczDisableAllAlarm" id="20170518234640696" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/XXX_S7F17: DeleteAllRecipes*****" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="XXX_S7F17: DeleteAllRecipes*****">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczDeleteAllRecipe" id="20170518234658028" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/020_S7F25: UploadFormattedRecipe" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="020_S7F25: UploadFormattedRecipe">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczUploadFormattedRecipe" id="20170522215052437" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Path" bindingParameterId="Path" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RecipeId" bindingParameterId="PPID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/019_S7F1/S7F23: DownloadFormattedRecipe" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="019_S7F1/S7F23: DownloadFormattedRecipe">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczReqDownloadRecipePermission" id="20170522222711850" asynchron="false" stopOnError="false" execute="false" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Path" bindingParameterId="Path" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="PPID" bindingParameterId="PPID" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EczDownloadFormattedRecipe" id="20170522221102668" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RecipeId" bindingParameterId="PPID" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Path" bindingParameterId="Path" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/002_S1F17: RequestOnline" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="002_S1F17: RequestOnline">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczSetOnline" id="20170522222039158" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/021_S7F19+S7F25: UploadAllFormattedRecipe" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="021_S7F19+S7F25: UploadAllFormattedRecipe">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczUploadAllFormattedRecipesToLocal" id="20170522222800606" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Path" bindingParameterId="Path" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/001_S1F13: RequestModelAndVersion" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="001_S1F13: RequestModelAndVersion">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczSendAreYouThereRequest" id="20170703154255690" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/012_S2F3X: SyncEventAndReport" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="012_S2F3X: SyncEventAndReport">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczDisplayMessageToSync" id="20170703155750955" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/007_S1F11: ImportStatusVariableList" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="007_S1F11: ImportStatusVariableList">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczImportStatusVariables" id="20180308222805815" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="OutputFile" bindingParameterId="OutputFile" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/008.1_S2F29: ImportEquipmentConstantList" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="008.1_S2F29: ImportEquipmentConstantList">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczImportEquipmentConstants" id="20180308221305419" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="OutputFile" bindingParameterId="OutputFile" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Secs Characterization/004_S2F37: ImportAllEvents" triggerProviderId="SimpleUI" triggerCategoryId="Secs Characterization" triggerId="004_S2F37: ImportAllEvents">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EczImportAllEventFromVid" id="20180308223801464" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsService" bindingParameterId="Service" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="StatusVariables" bindingParameterId="VID" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="OutputFile" bindingParameterId="OutputFile" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczAbortMachine" version="1" id="EczAbortMachine"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczDeleteAllRecipe" version="1" id="EczDeleteAllRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczDeleteRecipe" version="1" id="EczDeleteRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczDisableAllAlarm" version="1" id="EczDisableAllAlarm"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczDisableAllEvent" version="1" id="EczDisableAllEvent"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczDownloadFormattedRecipe" version="1" id="EczDownloadFormattedRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczDownloadRecipe" version="1" id="EczDownloadRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczEnableAllAlarm" version="1" id="EczEnableAllAlarm"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczEnableAllEvent" version="1" id="EczEnableAllEvent"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczSetOnline" version="1" id="EczSetOnline"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczGetControlState" version="1" id="EczGetControlState"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczGetCurrentMachineRecipe" version="1" id="EczGetCurrentMachineRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczGetProcessState" version="1" id="EczGetProcessState"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczGetStatusVariable" version="1" id="EczGetStatusVariable"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczHoldMachine" version="1" id="EczHoldMachine"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczListAllRecipe" version="1" id="EczListAllRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczPauseMachine" version="1" id="EczPauseMachine"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczReleaseMachine" version="1" id="EczReleaseMachine"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczResumeMachine" version="1" id="EczResumeMachine"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczSelectRecipe" version="1" id="EczSelectRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczSendHostCommand" version="1" id="EczSendHostCommand"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczSendSecsMessage" version="1" id="EczSendSecsMessage"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczSendTerminalMessage" version="1" id="EczSendTerminalMessage"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczSetEquipmentTime" version="1" id="EczSetEquipmentTime"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczStartMachine" version="1" id="EczStartMachine"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczStopMachine" version="1" id="EczStopMachine"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczUploadAlarms" version="1" id="EczUploadAlarms"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczUploadAllFormattedRecipesToLocal" version="1" id="EczUploadAllFormattedRecipesToLocal"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczUploadAllRecipesToLocal" version="1" id="EczUploadAllRecipesToLocal"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczUploadEquipmentConstants" version="1" id="EczUploadEquipmentConstants"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczUploadFormattedRecipe" version="1" id="EczUploadFormattedRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczUploadRecipe" version="1" id="EczUploadRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczUploadStatusVariables" version="1" id="EczUploadStatusVariables"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczReqDownloadRecipePermission" version="1" id="EczReqDownloadRecipePermission"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczSyncConfiguration" version="1" id="EczSyncConfiguration"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczSendAreYouThereRequest" version="1" id="EczSendAreYouThereRequest"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczDisplayMessageToSync" version="1" id="EczDisplayMessageToSync"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczImportEquipmentConstants" version="1" id="EczImportEquipmentConstants"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczImportStatusVariables" version="1" id="EczImportStatusVariables"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EczImportAllEventFromVid" version="1" id="EczImportAllEventFromVid"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

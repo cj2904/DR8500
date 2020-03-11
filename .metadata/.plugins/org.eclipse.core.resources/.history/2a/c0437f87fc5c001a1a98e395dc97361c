@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<__InSite __version="1.1">
+	<__service __serviceType="EquipmentSetStatus">
+		<__inputData>
+			<OutboundRequestInfo>
+				<CDOTypeId>4718597</CDOTypeId>
+				<ExportImportKey __empty="yes" />
+				<FactoryName><![CDATA[W02]]></FactoryName>
+				<TxnGUID __empty="yes" />
+				<TransportType><![CDATA[AMQ]]></TransportType>
+				<TransactionDate>2020-03-02T16:59:25+08:00</TransactionDate>
+				<ServiceName><![CDATA[EquipmentSetStatus]]></ServiceName>
+				<ResourceName><![CDATA[Default]]></ResourceName>
+				<RequestParams>
+					<__listItem>
+						<CDOTypeId>4718598</CDOTypeId>
+						<ExportImportKey __empty="yes" />
+						<ListValue />
+						<Name><![CDATA[NewStatus]]></Name>
+						<Value><![CDATA[設備維修]]></Value>
+						<DataType><![CDATA[STRING]]></DataType>
+						<ListObject />
+						<ListParam />
+					</__listItem>
+					<__listItem>
+						<CDOTypeId>4718598</CDOTypeId>
+						<ExportImportKey __empty="yes" />
+						<ListValue />
+						<Name><![CDATA[NewReason]]></Name>
+						<Value><![CDATA[Equipment  Status]]></Value>
+						<DataType><![CDATA[STRING]]></DataType>
+						<ListObject />
+						<ListParam />
+					</__listItem>
+				</RequestParams>
+				<EmployeeName><![CDATA[CamstarAdmin]]></EmployeeName>
+				<Destination><![CDATA[EquipmentStateChange.Default]]></Destination>
+				<ContainerName __empty="yes" />
+				<Comments __empty="yes" />
+				<RequestType>1</RequestType>
+			</OutboundRequestInfo>
+		</__inputData>
+	</__service>
+</__InSite>

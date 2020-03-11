@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:MappingConfiguration xmlns:ns2="http://www.znt-richter.com/pacMapping/">
+    <Schema Id="5a14e929-6c8e-424a-99e2-8d1a6358992d" Name="MES">
+        <SchemaComponent Id="a3751cdf-9cc2-47c1-a468-ca118880eafd" Name="WipData"/>
+        <SchemaComponent Id="894dce96-5db6-48b6-ad1c-b1afbb619597" Name="EventWipData">
+            <SchemaItem Id="8efc151b-ebb4-4596-a1d5-d0a577cfd23d" Name="RunId" Type="String" Unit="DV@RunID"/>
+        </SchemaComponent>
+    </Schema>
+</ns2:MappingConfiguration>

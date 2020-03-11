@@ -1,0 +1,156 @@
+##################################################################
+#               R E L E A S E  -  N O T E S
+#  ---------------------------------------------------------------
+#  Project:     pac;
+#  ---------------------------------------------------------------
+#  Module:      pac-all;
+##################################################################
++ New     : <new feature/user story>
++ Improve : <improvement of existing feature/user story>
++ Bugfix  : <fix of (reported) bug>
+##################################################################
+
+Version: 1-6-0_0                                  Date: 2019-05-21
+------------------------------------------------------------------
++ New		: Add Win API configuration UI
+
+Version: 1-5-1_0                                  Date: 2018-06-14
+------------------------------------------------------------------
++ Bugfix	: fix on findChamberIdBySystemId on the for loop condition
+
+Version: 1-5-0_0                                  Date: 2018-06-14
+------------------------------------------------------------------
++ New		: Make Win API Action Configurable at Mapping Manager
++ New		: Added static method findChamberIdBySystemId
+
+Version: 1-4-21_0                                  Date: 2018-06-14
+------------------------------------------------------------------
++ Improve	: Use CamstarTcpSocket based on configured service 
+
+Version: 1-4-20_0                                  Date: 2018-06-06
+------------------------------------------------------------------
++ Bugfix	: Fix remove win api gateway disconnect call during terminate 
+
+Version: 1-4-19_0                                  Date: 2018-05-24
+------------------------------------------------------------------
++ New		: Add deo to update control state and process state
++ Improve	: Add INDEX_MATERIAL_MATERIAL_TYPE to MachineDomainObject
+
+Version: 1-4-17_0                                  Date: 2018-05-22
+------------------------------------------------------------------
++ Improve	: Assign bean ID for SecsMachine to prevent multiple registration for SecsService
+
+Version: 1-4-17_0                                  Date: 2018-05-22
+------------------------------------------------------------------
++ Improve	: S1F3 data type flexible
++ Improve	: Make generic type to query data
+
+Version: 1-4-16_0                                  Date: 2018-05-08
+------------------------------------------------------------------
++ Improve	: Allow RmsService to set recipe list from external source
+
+Version: 1-4-15_0                                  Date: 2018-05-07
+------------------------------------------------------------------
++ Bugfix	: Fix archive file service, destination file name missing issue
+
+Version: 1-4-14_0                                  Date: 2018-04-22
+------------------------------------------------------------------
++ Improve	: Added Eqp Secs Synchronize Configuration
++ Improve	: Include LotId in Wafer Wip Data
+
+Version: 1-4-12_0                                  Date: 2018-04-19
+------------------------------------------------------------------
++ Improve	: Include Recipe Range Thruput Min Max Buffer
++ Improve	: Fix Recipe Domain Object TrackIn Qty
+
+Version: 1-4-10_0                                  Date: 2018-04-15
+------------------------------------------------------------------
++ Improve	: Include TrackIn Qty together with Thruput for Recipe Range Selection
++ Improve	: Include Past Due Calculation Fields
++ Improve	: WinApi Ping Handling 
+
+Version: 1-4-8_0                                  Date: 2018-03-20
+------------------------------------------------------------------
++ Bugfix	: Fix virtual equipment unable to identify the real scenario but use the default scenario
+
+Version: 1-4-7_0                                  Date: 2018-03-20
+------------------------------------------------------------------
++ Improve	: Fix concurrent lot modified exception iteration
+
+Version: 1-4-6_0                                  Date: 2018-03-17
+------------------------------------------------------------------
++ Improve	: Revert SetWIPData touchpoint
+
+Version: 1-4-5_0                                  Date: 2018-03-16
+------------------------------------------------------------------
++ Improve	: Added copy file within time function
+
+Version: 1-4-4_0                                  Date: 2018-03-16
+------------------------------------------------------------------
++ Improve	: Fix concurrent lot modified exception
+
+Version: 1-4-3_0                                  Date: 2018-03-12
+------------------------------------------------------------------
++ Improve	: MinQty to return the recipe name
+
+Version: 1-4-1_0                                  Date: 2018-03-03
+------------------------------------------------------------------
++ Improve	: Use track in qty to determine range recipe
+
+Version: 1-4-0_0                                  Date: 2018-02-28
+------------------------------------------------------------------
++ Bugfix	: Fix invalid attribute key "tolerance2"
+
+Version: 1-2-0_1                                  Date: 2017-11-07
+------------------------------------------------------------------
++ Improve	: Add property to allow/disallow recipe name change during upload
++ New		: Upgrade pac-all_14-7-0_0
+
+Version: 1-2-0_0                                  Date: 2017-11-05
+------------------------------------------------------------------
++ Change	: Change package name
+
+Version: 1-1-0_0                                  Date: 2017-10-24
+------------------------------------------------------------------
++ Change	: Add generic domain object manager
+
+Version: 1-0-1_0                                  Date: 2017-10-11
+------------------------------------------------------------------
++ Change	: Die Bonder Fixed + Common + Tester Fixes
+
+Version: 1-0-0_0                                  Date: 2017-10-09
+------------------------------------------------------------------
++ New		: Pilot run release
+
+Version: 0-0-10_0                                 Date: 2017-10-09
+------------------------------------------------------------------
++ New		: Include modbus-deo and secs-deo in build.properties
+
+Version: 0-0-8_0                                  Date: 2017-10-05
+------------------------------------------------------------------
++ Improve	: Add search recipe function in Recipe Selection view
++ New		: Add modify Lot attribute Camstar touchpoint
+
+Version: 0-0-6_0                                  Date: 2017-09-26
+------------------------------------------------------------------
++ Improve	: ArchiveFileReadOption, option to return filename only
+
+Version: 0-0-5_0                                  Date: 2017-09-26
+------------------------------------------------------------------
++ Improve	: Exclude property file from zar deployment package
+
+Version: 0-0-4_0                                  Date: 2017-09-25
+------------------------------------------------------------------
++ Bugfix	: Fix archive file read operation returning wrong user account
+
+Version: 0-0-3_0                                  Date: 2017-09-19
+------------------------------------------------------------------
++ New		: Testing
+
+Version: 0-0-2_0                                  Date: 2017-09-19
+------------------------------------------------------------------
++ Improve	: Archive file service destination support @TokenReplacement@
+
+Version: 0-0-1_0                                  Date: 2017-09-19
+------------------------------------------------------------------
++ New		: Initial.

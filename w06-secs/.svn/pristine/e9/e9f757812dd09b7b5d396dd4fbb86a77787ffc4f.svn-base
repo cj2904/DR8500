@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Following targets from the semi template can be used:
+ - release: build a release
+ - clean_update-required-components: clean temporary directory structure and update required components
+-->
+<project name="Tsc-diebonder" default="update">
+
+	<property name="buildserver.get_product_script" value="https://intranet.znt.de/zntBuildServer/buildService/getAntScript?product=" />
+	
+	<!-- Include the build.properties from the users home directory -->
+	<property file="${user.home}/build.properties" />
+	<!-- Include the build.properties from the current working directory -->
+	<property file="build.properties" />
+
+	<property name="component.product" value="${ant.project.name}_${component.version}" />
+	<!-- The following property must be set from outside to use a specific product -->
+	<property name="product.script" value="${basedir}/${component.product}.xml" />
+
+	<property name="semi.template" value="${build_templates.root}/buildMgr/_build_templates/build_semi-template.xml" />
+
+	<!-- Fetch latest HEAD product, build templates from the buildserver and update required components
+        Use this target to run an update for HEAD (latest HEAD product is fetched from the build server.
+    -->
+	<target name="update">
+
+		<!-- fetch product xml file -->
+		<get dest="${product.script}" src="https://intranet.znt.de/zntBuildServer/buildService/getAntScript?product=${ant.project.name}_${component.version}" />
+
+		<antcall target="update_local-HEAD-product" />
+	</target>
+
+	<!-- Build templates from the buildserver and update required components 
+         Use this target to run an update for a branch (labeled HEAD product from CVS).
+    -->
+	<target name="update_local-HEAD-product">
+
+		<!-- update build templates -->
+		<ant dir="${basedir}" antfile="${product.script}">
+			<target name="ClearZBuildTemplates" />
+			<target name="UpdateZBuildTemplates" />
+		</ant>
+
+		<!-- update project required components-->
+		<ant dir="${basedir}" antfile="${semi.template}">
+			<target name="update-required-components" />
+		</ant>
+
+	</target>
+
+	<!-- Cleanup temporary directory-->
+	<target name="clean">
+		<delete dir="${zproject.temp.dir}" />
+	</target>
+
+	<!-- Build a release: hook point for the master build script,
+        - don't cleanup the environment
+        - ensure that the template files are available at this time
+    -->
+	<target name="release" description="Makes a release build for the requested product">
+		<!-- update build templates -->
+		<ant dir="${basedir}" antfile="${product.script}">
+			<target name="ClearZBuildTemplates" />
+			<target name="UpdateZBuildTemplates" />
+		</ant>
+		<ant dir="${basedir}" antfile="${semi.template}">
+			<target name="release" />
+		</ant>
+	</target>
+
+</project>

@@ -1,0 +1,50 @@
+Pac.ApplicationContext=$(AppDir)/config/xml/AppContext.xml,\
+$(AppDir)/config/model/$(EqModel)/AppContext.xml
+
+TestMode.Enabled=true
+##Process State IdealMold###
+ReplySvVariable.IdealMold.6=5,U4
+ReplySvVariable.IdealMold.8=3,U4
+
+##PPExecName IdealMold###
+ReplySvVariable.IdealMold.19=TSC USMA,A
+
+##WipData IdealMold##
+ReplySvVariable.IdealMold.132=100,U2
+ReplySvVariable.IdealMold.134=100,U2
+
+##Process State KNW_WB###
+ReplySvVariable.KNS_WB.107=5,U4
+ReplySvVariable.KNS_WB.123=3,U4
+
+##PPExecName KNS_WB###
+ReplySvVariable.KNS_WB.19=Trench SKY\Trench SKY 119 mil soft2,A
+
+##RecipeParam KNS_WB##
+ReplySvVariable.KNS_WB.1044=11,U2
+ReplySvVariable.KNS_WB.1073=9,U2
+
+##WipData KNS_WB##
+
+##NgWork, TotalWork Ultrasonic_Rebo7##
+ReplySvVariable.Ultrasonic_Rebo7.2112=0,U4
+ReplySvVariable.Ultrasonic_Rebo7.2211=0,U4
+ReplySvVariable.Ultrasonic_Rebo7.2212=0,U4
+
+##PPExecName Ultrasonic_Rebo7##
+ReplySvVariable.Ultrasonic_Rebo7.20014=TSM4NB60CI,A
+ReplySvVariable.Ultrasonic_Rebo7.20014=TSM4NB60C2,A
+
+##RecipeParam Ultrasonic_Rebo7##
+
+##WipData Ultrasonic_Rebo7##
+
+##RecipeParam SD832D##
+###SV@BondUPH####
+ReplySvVariable.SD832D.91=5,U2
+
+##PPExecName SD832D###
+ReplySvVariable.SD832D.17=U1-ITO-15mil Wire,A
+ReplySvVariable.SD832D.17=U2-5 mil new,A
+
+##WipData SD832D##

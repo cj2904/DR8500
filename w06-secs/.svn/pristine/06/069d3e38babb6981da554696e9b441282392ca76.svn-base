@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="GUI/Tester/001: EnableAllEvents" triggerProviderId="GUI" triggerCategoryId="Tester" triggerId="001: EnableAllEvents">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="_TestRecipeParameterCreation" id="20190905160103791" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="W06RecipeParameterManager" bindingParameterId="W06RecipeParameterManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_TestSendRemoteCommand" version="1" id="_TestSendRemoteCommand"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_TestRecipeParameterCreation" version="1" id="_TestRecipeParameterCreation"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

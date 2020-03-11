@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<import resource="classpath:sg/znt/pac/resources/xml/registration/SecsEqpDeoRegistration.xml" />
+	
+	<bean class="sg.znt.pac.TscLinkEquipmentRegistrator" />
+
+	<bean class="de.znt.pac.machine.SecsMachineRegistration">
+		<constructor-arg name="machineName" value="${Equipment1.Name}" />
+		<property name="connectionMode" value="${${Equipment1.Name}.SecsConnectionMode}" />
+		<property name="remoteIPAddr" value="${${Equipment1.Name}.SecsIP}" />
+		<property name="remotePort" value="${${Equipment1.Name}.SecsPort}" />
+		<property name="deviceId" value="${${Equipment1.Name}.SecsDevice}" />
+		<property name="t3Timeout" value="${${Equipment1.Name}.T3Timeout}" />
+		<property name="t5Timeout" value="${${Equipment1.Name}.T5Timeout}" />
+		<property name="t6Timeout" value="${${Equipment1.Name}.T6Timeout}" />
+		<property name="t7Timeout" value="${${Equipment1.Name}.T7Timeout}" />
+		<property name="t8Timeout" value="${${Equipment1.Name}.T8Timeout}" />
+		<property name="linktestInterval" value="${${Equipment1.Name}.LinktestInterval}" />
+		
+		<property name="e142Standard" value="false" />
+		<property name="genericSubjects">
+			<list>
+				<bean class="de.znt.services.secs.subject.SecsMessageSubject">
+					<constructor-arg name="stream" value="7" />
+					<constructor-arg name="function" value="1" />
+				</bean>
+				<bean class="de.znt.services.secs.subject.SecsMessageSubject">
+					<constructor-arg name="stream" value="10" />
+					<constructor-arg name="function" value="3" />
+				</bean>
+				<bean class="de.znt.services.secs.subject.SecsMessageSubject">
+					<constructor-arg name="stream" value="14" />
+					<constructor-arg name="function" value="1" />
+				</bean>
+				<bean class="de.znt.services.secs.subject.SecsMessageSubject">
+					<constructor-arg name="stream" value="7" />
+					<constructor-arg name="function" value="3" />
+				</bean>
+				<bean class="de.znt.services.secs.subject.SecsMessageSubject">
+					<constructor-arg name="stream" value="7" />
+					<constructor-arg name="function" value="5" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean class="sg.znt.pac.scenario.TscScenarioRegistration">
+		<property name="allScenario">
+			<map>
+				<entry key="sg.znt.pac.scenario.TscDefaultEqModelScenario">
+					<list>
+						<value>${${Equipment1.Name}.SystemId}</value>
+					</list>
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+
+</beans>

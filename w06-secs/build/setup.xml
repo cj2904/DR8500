@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="w06-secs" default="CreateProject" basedir=".">
+
+	<property file="setup.properties" />
+
+	<property name="templateLocation" value=".." />
+	<property name="targetLocation" value="../../${Project.Name}" />
+
+	<!-- ========================================================== -->
+	<!-- create directory structure and do the instance specific    -->
+	<!-- replacements                                               -->
+	<!-- ========================================================== -->
+	<target name="CreateProject">
+
+		<delete dir="tmp"/>
+		
+		<echo message="Check if project directory already exists: ${targetLocation} ..." />
+		<available file="${targetLocation}" type="dir" property="does-directory-exists" />
+		<condition property="directory-exists">
+			<and>
+				<isset property="does-directory-exists" />
+			</and>
+		</condition>
+		<fail if="directory-exists" message="Directory '${targetLocation}' already exists! Please delete the target directory first and run the script again." />
+		<echo message="Create project directory: ${targetLocation}" />
+		<mkdir dir="${targetLocation}" />
+
+		<echo message="Copy files without libs to target ..." />
+		<copy todir="${targetLocation}">
+			<fileset dir="${templateLocation}">
+				<exclude name="log/**" />
+				<exclude name="lib/**" />
+				<exclude name="dat/**" />
+				<exclude name="log/**" />
+				<exclude name="eclipse.classpath" />
+				<exclude name="eclipse.project" />
+				<exclude name="build/setup*" />
+				<exclude name="_build/tmp" />
+				<exclude name="_build/setup*" />
+				<exclude name="_build/mkpdk*" />
+				<exclude name="_build/pac-cs*" />
+				<exclude name="**/CVS" />
+			</fileset>
+		</copy>
+		<echo message="Copy libraries ... (must be done separatly, because of ant copy encoding problem)" />
+		<mkdir dir="${targetLocation}/lib" />
+		<copy todir="${targetLocation}/lib" >
+			<fileset dir="${templateLocation}/lib">
+			</fileset>
+		</copy>
+
+		<move file="${targetLocation}/bin/w06-secs.launch" tofile="${targetLocation}/bin/${Project.Name}.launch" />
+		<move file="${targetLocation}/bin/w06-secs_AdminUI.launch" tofile="${targetLocation}/bin/${Project.Name}_AdminUI.launch" />
+		<move file="${targetLocation}/bin/w06-secs_AdminUI.bat" tofile="${targetLocation}/bin/${Project.Name}_AdminUI.bat" />
+		<move file="${targetLocation}/bin/w06-secs.bat" tofile="${targetLocation}/bin/${Project.Name}.bat" />
+		<move file="${targetLocation}/bin/w06-secs_AdminUI.sh" tofile="${targetLocation}/bin/${Project.Name}_AdminUI.sh" />
+
+		<replace dir="${targetLocation}">
+			<include name=".project" />
+			<replacefilter token="${ant.project.name}" value="${Project.Name}" />
+		</replace>
+		<replace dir="${targetLocation}" includes="**/*.*">
+			<replacefilter token="${ant.project.name}" value="${Project.Name}" />
+			<replacefilter token="csTemplate" value="${EquipmentType.Name}" />
+		</replace>
+	</target>
+	
+</project>

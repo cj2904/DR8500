@@ -1,0 +1,43 @@
+#########################################################################################################
+## Attention: don't deploy this property file to the zam archive. 
+## zam generates an INSTANCE.properties file based on the properties which are defined in the zam deployment descriptor(s) 
+## from the application and all referenced sub modules (see META-INF/ZAM-DEPLOY.xml).
+#########################################################################################################
+
+App.Version=1-0-0_0
+
+PacService=EQPXX
+
+################################################################
+### Virtual Equipment Settings
+################################################################
+${Equipment1.Name}.VirtualSystemId=V${PacService}
+
+SocketServer.Port=42000
+GUI.WebServer.Port=42001
+#SysEnv=Local
+#SysEnv=Prod
+#SysEnv=Test
+SysEnv=Mock
+
+Authorization.Enable=false
+Pac.ApplicationContext=./config/xml/AppContext.xml
+
+# default: FILE logger only. Remove this line for production mode.
+log4j.rootLogger=DEBUG, CONSOLE, FILE
+
+################################################################
+### Equipment Settings
+################################################################
+${Equipment1.Name}.SecsIP=localhost
+$(Equipment1.Name).SecsPort=5000
+$(Equipment1.Name).SecsDevice=0
+
+log4j.additivity.de.znt.zsecs                                          true
+log4j.de.znt.zsecs=TRACE
+log4j.logger.de.znt.zsecs=TRACE,zsecs
+
+log4j.logger.de.znt.zsecs.hsms.HsmsConnection                          TRACE
+log4j.logger.de.znt.zsecs.SecsSessionImpl                              TRACE
+log4j.logger.de.znt.zsecs.SocketConnection                             TRACE
+log4j.logger.de.znt.zsecs.timer.TimeoutHandler                         TRACE 

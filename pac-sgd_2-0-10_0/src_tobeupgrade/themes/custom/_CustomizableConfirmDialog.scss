@@ -1,0 +1,33 @@
+@mixin dialogColor {
+    background: rgb(39,39,41);
+}    
+
+@mixin CustomizableConfirmDialog {
+    .z-customizableConfirmDialog {
+          
+        .v-window-outerheader {
+     	    @include dialogColor;
+        	color: rgb(255, 255, 255);
+    	 }  
+    	 
+		.v-window-closebox {
+			padding-right: 4px;
+  			color: rgb(255, 255, 255);
+  			background:#272729
+		}
+    	 
+    	 .v-window-header {
+     		  @include dialogColor;
+        	  color: rgb(255, 255, 255);        
+         }
+          
+         .z-customizableConfirmDialogContent {
+        	padding : 15px;
+        	text-align: left;
+         } 
+         
+         .z-CustomizableConfirmDialogButtonsPanel {
+         	 margin-top: 20px;
+         }                
+    }
+}

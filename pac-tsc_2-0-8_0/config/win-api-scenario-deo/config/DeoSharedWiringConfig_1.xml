@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="WinApiScenario/Event/MesGetLotInfo" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="MesGetLotInfo">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinMesGetLotInfo" id="20171130133445642" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventId" bindingParameterId="EventId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventName" bindingParameterId="EventName" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Reply" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/MesSubmitWipData" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="MesSubmitWipData">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapStoreEqpWipDataValue" id="20171130134536250" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Equipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="MesSubmitWipData_Win" id="20171130134549997" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataDomainObjectManager" bindingParameterId="WipDataDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="Equipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="reply" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/MesTrackIn" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="MesTrackIn">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinMesTrackIn" id="20171130134625796" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Equipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="PMManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Message" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/MesTrackOut" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="MesTrackOut">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinMesTrackOut" id="20171130134643875" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Equipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="PMManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Message" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/SyncData" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="SyncData">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinSyncData" id="20171130134809515" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Equipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventId" bindingParameterId="EventId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventName" bindingParameterId="EventName" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Reply" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/HandleEvent" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="HandleEvent">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinHandleUnknownEvent" id="20171130152746915" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventId" bindingParameterId="EventId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventName" bindingParameterId="EventName" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Reply" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/UploadConfig" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="UploadConfig">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpUploadGatewayConfigRequest" id="20171130152920286" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Parameter" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpSendTerminalMessageOnError" id="20171130153001330" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Exception" bindingParameterId="Exception" bindingParameterSource="RUNTIME"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/SoftStart" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="SoftStart">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpValidateSoftStart" id="20171201084817117" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Equipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EqpStartEquipment" id="20171201083830675" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Parameters" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/MeasurementClassRequest" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="MeasurementClassRequest">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinMeasurementClassRequest" id="20171214141611959" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventId" bindingParameterId="EventId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventName" bindingParameterId="EventName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WaferClassificationManager" bindingParameterId="WaferClassificationDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Reply" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/MeasurementStarted" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="MeasurementStarted">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinMeasurementStarted" id="20171214141607433" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventId" bindingParameterId="EventId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventName" bindingParameterId="EventName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WaferClassificationManager" bindingParameterId="WaferClassificationDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="Main:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ZWinApiSchema" bindingParameterId="ZWinApiSchema" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="MappingManager" bindingParameterId="MappingManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Reply" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/MeasurementCompleted" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="MeasurementCompleted">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinMeasurementCompleted" id="20171214141617964" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventId" bindingParameterId="EventId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventName" bindingParameterId="EventName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WaferClassificationManager" bindingParameterId="WaferClassificationDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Reply" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="WinApiScenario/Event/ConvertXlsToCvs" triggerProviderId="WinApiScenario" triggerCategoryId="Event" triggerId="ConvertXlsToCvs">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinConvertXlsToCvs" id="20171221161348461" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="ParamMap" bindingParameterId="Parameter" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Equipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventId" bindingParameterId="EventId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EventName" bindingParameterId="EventName" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="Reply" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinMesGetLotInfo" version="1" id="WinMesGetLotInfo"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapStoreEqpWipDataValue" version="1" id="EapStoreEqpWipDataValue"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesSubmitWipData_Win" version="1" id="MesSubmitWipData_Win"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinMesTrackIn" version="1" id="WinMesTrackIn"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinMesTrackOut" version="1" id="WinMesTrackOut"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinSyncData" version="1" id="WinSyncData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinHandleUnknownEvent" version="1" id="WinHandleUnknownEvent"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_SimGetLotInfoRequest" version="1" id="_SimGetLotInfoRequest"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_SimSoftStart" version="1" id="_SimSoftStart"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_SimTrackInRequest" version="1" id="_SimTrackInRequest"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_SimSyncData" version="1" id="_SimSyncData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_SimSubmitWipData" version="1" id="_SimSubmitWipData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_SimTrackOutRequest" version="1" id="_SimTrackOutRequest"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpValidateSoftStart" version="1" id="EqpValidateSoftStart"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinMeasurementStarted" version="1" id="WinMeasurementStarted"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinMeasurementCompleted" version="1" id="WinMeasurementCompleted"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinMeasurementClassRequest" version="1" id="WinMeasurementClassRequest"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinConvertXlsToCvs" version="1" id="WinConvertXlsToCvs"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_SimConvertXlsToCvs" version="1" id="_SimConvertXlsToCvs"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

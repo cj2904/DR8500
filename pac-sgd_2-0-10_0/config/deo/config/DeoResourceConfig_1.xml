@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="GUI/Tester/001.Dummy Test" triggerProviderId="GUI" triggerCategoryId="Tester" triggerId="001.Dummy Test">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapClearMaterialManager" id="20171021015219440" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapClearMaterialManager" version="1" id="EapClearMaterialManager"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapThrowError" version="1" id="EapThrowError"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="CamstarSimulateSynchronous" version="1" id="CamstarSimulateSynchronous"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="CamstarSimulateAsynchronous" version="1" id="CamstarSimulateAsynchronous"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapArchiveFileService" version="1" id="EapArchiveFileService"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapArchiveFileServiceByJob" version="1" id="EapArchiveFileServiceByJob"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSleep" version="1" id="EapSleep"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyLotExist" version="1" id="EapVerifyLotExist"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="CamstarWipDataImport" version="1" id="CamstarWipDataImport"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrCheckProcessState" version="1" id="SnrCheckProcessState"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

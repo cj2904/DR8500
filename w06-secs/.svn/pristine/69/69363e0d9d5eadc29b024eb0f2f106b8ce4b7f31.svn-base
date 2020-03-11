@@ -1,0 +1,32 @@
+# Select the version to build
+component.version=HEAD
+
+# set build folders  
+zproject.dir=${basedir}/..
+zproject.temp.dir=${user.home}/zbuild_tmp/${ant.project.name}
+build.root=${zproject.temp.dir}/build_root
+build_templates.root=${zproject.temp.dir}/build_templates
+
+# JUnit settings
+junit.memoryMaximumSize=128M
+junit.testcase.include_pattern=**/*Test.class
+
+# comma separated list of sub projects to add to the Release Notes 
+project.releasenotes.subprojects=Tsc-diebonder
+# name of the release notes file (extensions .html and .txt are added automatically) 
+project.releasenotes.file=doc/ReleaseNotes
+
+# Create zam archive file
+project.type.zamdeployment=true
+
+# provide the Eclipse .project and .classpath files in the zar file
+project.zam.createEclipseProject=false
+# configure jar files which should not be added to the zam archive
+# jars are already included in the customer module, don't add them twice
+# add ,test/ if test libraries should not be added to the archive
+project.zam.exclude.jar.pattern=*.*
+# configure jar files to add into the zam archive
+project.zam.include.jar.pattern=
+# configure folders to add into the zam archive
+project.zam.include.archive.pattern=bin/,config/,META-INF/
+project.zam.include.apidoc.dependent=false

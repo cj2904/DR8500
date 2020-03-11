@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/jonas/jonas-deo/deos/LjCvdCheckCommandText/LjCvdCheckCommandText_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/jonas/jonas-deo/deos/LjCvdStart/LjCvdStart_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/jonas/jonas-deo/deos/LjCvdCheckState/LjCvdCheckState_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/cvd-pc4500/cvd-pc4500-deo/deos/LjCvdCheckState/LjCvdCheckState_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/cvd-pc4500/cvd-pc4500-deo/deos/LiJePCVDPPSelect/LiJePCVDPPSelect_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/jonas/jonas-deo/deos/LjCvdCheckCommandCode/LjCvdCheckCommandCode_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/Jonas1/Jonas1-deo/deos/LjCvdCheckCommandCode/LjCvdCheckCommandCode_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/Jonas1/model.properties&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/pac-tsc_2-0-8_0/config/mes-deo/deos/MesSetTrackInWipMainInfo/MesSetTrackInWipMainInfo_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/pac-w06_0-1-1_0/config/w06-deo/deos/EapValidateLotIsProcess_Common/EapValidateLotIsProcess_Common_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/jonas/AppContext.xml&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/pac-all_16-1-5_0/lib/commons-cli-1.4.jar&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/cvd-pc4500/cvd-pc4500-deo/deos/Test/Test_1.groovy&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/config/model/cvd-pc4500/AppContext.xml&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/w06-secs/log/pac.log&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="391"/>
+			<item key="DIALOG_Y_ORIGIN" value="39"/>
+			<item key="DIALOG_FONT_NAME" value="1|Microsoft JhengHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft JhengHei UI"/>
+		</section>
+	</section>
+</section>

@@ -1,0 +1,574 @@
+            <ValueCompound Name="">
+                <ValueDescription>
+                    <ShortDescription>root</ShortDescription>
+                    <LongDescription>root</LongDescription>
+                    <Channel>-1</Channel>
+                </ValueDescription>
+                <ValueCompound Name="logging">
+                    <ValueDescription>
+                        <ShortDescription>Tree for logging informations</ShortDescription>
+                        <LongDescription>This tree contains only one element. This element is a list 
+of logging values. It is not possible to add any values to this tree.</LongDescription>
+                        <Channel>-1</Channel>
+                        <ViewId>0</ViewId>
+                    </ValueDescription>
+                </ValueCompound>
+                <ValueCompound Name="program">
+                    <ValueDescription>
+                        <ShortDescription>Tree for all the values of the program to control</ShortDescription>
+                        <LongDescription>This tree should contain all values to control a program or a package.</LongDescription>
+                        <Channel>-1</Channel>
+                        <ViewId>4</ViewId>
+                    </ValueDescription>
+                    <ValueCompound Name="pac">
+                        <ValueDescription>
+                            <ShortDescription>Show information about database pac</ShortDescription>
+                            <LongDescription>Show information about database pac</LongDescription>
+                            <Channel>4</Channel>
+                            <ViewId>4</ViewId>
+                        </ValueDescription>
+                        <ValueCompound Name="ZPersDb">
+                            <ValueDescription>
+                                <ShortDescription>Show information of the database</ShortDescription>
+                                <LongDescription>Show information of the database.</LongDescription>
+                                <Channel>4</Channel>
+                                <ViewId>4</ViewId>
+                            </ValueDescription>
+                            <ValueCompound Name="ZPersTransaction">
+                                <ValueDescription>
+                                    <ShortDescription>Show information about transactions</ShortDescription>
+                                    <LongDescription>Show information about transactions</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueDouble Name="MovingAverageAlpha" value="0.1" editable="true" min="0.0" max="1.0">
+                                    <ValueDescription>
+                                        <ShortDescription>Factor alpha for calculation of mean values as exponential moving average</ShortDescription>
+                                        <LongDescription>Factor alpha for calculation of mean values as exponential moving average</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueDouble>
+                            </ValueCompound>
+                        </ValueCompound>
+                        <ValueCompound Name="ZPersPage">
+                            <ValueDescription>
+                                <ShortDescription>Show information of the databasefile</ShortDescription>
+                                <LongDescription>Show information of the databasefile.</LongDescription>
+                                <Channel>4</Channel>
+                                <ViewId>4</ViewId>
+                            </ValueDescription>
+                            <ValueCompound Name="File Writer">
+                                <ValueDescription>
+                                    <ShortDescription>Show information of reading and writing from and to the database file</ShortDescription>
+                                    <LongDescription>Show information of reading and writing from and to the database file.</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                            </ValueCompound>
+                            <ValueCompound Name="BlockId Control">
+                                <ValueDescription>
+                                    <ShortDescription>Management of database BlockId's</ShortDescription>
+                                    <LongDescription>This page contains the settings and values for the
+management of the BlockId's in the database
+</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                            </ValueCompound>
+                            <ValueCompound Name="Recovery File List">
+                                <ValueDescription>
+                                    <ShortDescription>List of recovery files</ShortDescription>
+                                    <LongDescription>This component controls all recovery files</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Recovery File Count" value="10" editable="true" min="1" max="1000">
+                                    <ValueDescription>
+                                        <ShortDescription>Maximum number of recovery files used</ShortDescription>
+                                        <LongDescription>This reports and set the count of recovery files used.
+A raise of this value makes no problem.
+If you lower this value then the minimal value possible
+to set is the maximum file currently in use.
+Good settings here are :
+
+1   : if no 2 phase commit is used
+10  : for only local 2 phase commits without large waittimes
+100 : for systems with global 2 phase commits and longer waittimes
+
+A value greater then 100 can make sense in special cases, but will result
+in a extensive use of diskmemory and filedescriptors.</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                                <ValueCompound Name="Recovery file 0">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 1">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 2">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 3">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 4">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 5">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 6">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 7">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 8">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                                <ValueCompound Name="Recovery file 9">
+                                    <ValueDescription>
+                                        <ShortDescription>Report state of one recovery file</ShortDescription>
+                                        <LongDescription>Reports all settings and states of one recovery file</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>4</ViewId>
+                                    </ValueDescription>
+                                </ValueCompound>
+                            </ValueCompound>
+                        </ValueCompound>
+                        <ValueCompound Name="ZPersBackup">
+                            <ValueDescription>
+                                <ShortDescription>Show information of the online backup</ShortDescription>
+                                <LongDescription>Show information of the online backup.</LongDescription>
+                                <Channel>4</Channel>
+                                <ViewId>4</ViewId>
+                            </ValueDescription>
+                        </ValueCompound>
+                        <ValueCompound Name="Streamed Object Cache">
+                            <ValueDescription>
+                                <ShortDescription>Control of streamed object cache</ShortDescription>
+                                <LongDescription>This component controls the caching of the streamed objects</LongDescription>
+                                <Channel>4</Channel>
+                                <ViewId>4</ViewId>
+                            </ValueDescription>
+                            <ValueCompound Name="Class List Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="Class Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="Root List Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="Root Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="Import List Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="Import Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="Export List Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="Export Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="DB Info Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="1" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="User Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="10" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                            <ValueCompound Name="User old Cache">
+                                <ValueDescription>
+                                    <ShortDescription>Objectcache</ShortDescription>
+                                    <LongDescription>Objectcache</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueInt Name="Capacity" value="11" editable="true" min="1" max="2147483647">
+                                    <ValueDescription>
+                                        <ShortDescription>Capacity of cache</ShortDescription>
+                                        <LongDescription>Capacity of cache</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                        </ValueCompound>
+                        <ValueCompound Name="Object List">
+                            <ValueDescription>
+                                <ShortDescription>Access to the objects</ShortDescription>
+                                <LongDescription>This component is used to store all persistent objects
+Objects are hold by weak references and will be garbage collected
+if there is no reference in the program.
+
+To minimize the read an write traffic this component contains a
+cache buffer.</LongDescription>
+                                <Channel>4</Channel>
+                                <ViewId>4</ViewId>
+                            </ValueDescription>
+                            <ValueInt Name="Max Cache Count" value="64000" editable="true" min="16" max="2147483647">
+                                <ValueDescription>
+                                    <ShortDescription>Maximum cached objects</ShortDescription>
+                                    <LongDescription>This value defines the maximum count of objects which should
+be cached. If this limit is reached all new objects are inserted
+without caching.
+
+WARNING : The setting this value influence the performance
+and the memory usage.
+The optimal setting for this value depends form the kind of work
+the program which used the database must do. To check the correct setting
+you can use the RELOAD value.</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>1</ViewId>
+                                </ValueDescription>
+                            </ValueInt>
+                            <ValueInt Name="Max Cache Time" value="30000" editable="true" min="16000" max="2147483647">
+                                <ValueDescription>
+                                    <ShortDescription>Maximum time in ms objects are cached</ShortDescription>
+                                    <LongDescription>This value defines the maximum time objects should
+be cached without any access. 
+
+WARNING : The setting this value influence the performance
+and the memory usage.
+The optimal setting for this value depends form the kind of work
+the program which used the database must do. To check the correct setting
+you can use the RELOAD value.</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>1</ViewId>
+                                </ValueDescription>
+                            </ValueInt>
+                        </ValueCompound>
+                        <ValueCompound Name="Main Control Thread">
+                            <ValueDescription>
+                                <ShortDescription>Management of async threads</ShortDescription>
+                                <LongDescription>This page contains the settings and values for the
+management of all async db threads
+</LongDescription>
+                                <Channel>4</Channel>
+                                <ViewId>4</ViewId>
+                            </ValueDescription>
+                            <ValueLong Name="System GC Interval" value="600000" editable="true" min="0" max="9223372036854775807">
+                                <ValueDescription>
+                                    <ShortDescription>Time between two calls to System GC (ms)</ShortDescription>
+                                    <LongDescription>Time between two calls to System GC (ms)
+0 --> No call to the system GC by zpers</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>1</ViewId>
+                                </ValueDescription>
+                            </ValueLong>
+                            <ValueCompound Name="GC Control Thread">
+                                <ValueDescription>
+                                    <ShortDescription>Instance to manage DB garbage collection</ShortDescription>
+                                    <LongDescription>Instance to manage DB garbage collection</LongDescription>
+                                    <Channel>4</Channel>
+                                    <ViewId>4</ViewId>
+                                </ValueDescription>
+                                <ValueLong Name="Min Duration" value="100" editable="true" min="50" max="1000">
+                                    <ValueDescription>
+                                        <ShortDescription>Minimum time for this thread</ShortDescription>
+                                        <LongDescription>Minimum time for this thread to run without a break.</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueLong>
+                                <ValueLong Name="Max Duration" value="200" editable="true" min="50" max="2000">
+                                    <ValueDescription>
+                                        <ShortDescription>Maximum time for this thread</ShortDescription>
+                                        <LongDescription>Maximum time for this thread to run without a break.</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueLong>
+                                <ValueLong Name="Min Recovery Duration" value="200" editable="true" min="200" max="1000">
+                                    <ValueDescription>
+                                        <ShortDescription>Minimum time for this thread if Recovery is active</ShortDescription>
+                                        <LongDescription>Minimum time for this thread if Recovery is active to run without a break.</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueLong>
+                                <ValueLong Name="Max Recovery Duration" value="500" editable="true" min="200" max="2000">
+                                    <ValueDescription>
+                                        <ShortDescription>Maximum time for this thread if Recovery is active</ShortDescription>
+                                        <LongDescription>Maximum time for this thread if Recovery is active to run without a break.</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueLong>
+                                <ValueLong Name="Loop Interval" value="3600000" editable="true" min="0" max="86400000">
+                                    <ValueDescription>
+                                        <ShortDescription>Time in milliseconds to wait after a complete GC run to start the next loop.</ShortDescription>
+                                        <LongDescription>Time in milliseconds to wait after a complete GC run to start the next loop.</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueLong>
+                                <ValueInt Name="Max entries for mark used" value="100" editable="true" min="0" max="1000">
+                                    <ValueDescription>
+                                        <ShortDescription>Maximum number of entries searched in one iteration in mark used</ShortDescription>
+                                        <LongDescription>Maximum number of entries searched in one iteration in mark used</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                                <ValueInt Name="Max entries for mem load" value="100" editable="true" min="0" max="1000">
+                                    <ValueDescription>
+                                        <ShortDescription>Maximum number of entries searched in one iteration in mem load</ShortDescription>
+                                        <LongDescription>Maximum number of entries searched in one iteration in mem load</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                                <ValueInt Name="Max size of sort map" value="100000" editable="true" min="10000" max="1000000">
+                                    <ValueDescription>
+                                        <ShortDescription>Maximum number of blocks that can be ordered before marking them as free. One entry needs about 64 bytes.</ShortDescription>
+                                        <LongDescription>Maximum number of blocks that can be ordered before marking them as free. One entry needs about 64 bytes.</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                                <ValueInt Name="Max flush size" value="10000" editable="true" min="100" max="1000000">
+                                    <ValueDescription>
+                                        <ShortDescription>Maximum number of blocks that will be marked as free before flushing changes to the file system.</ShortDescription>
+                                        <LongDescription>Maximum number of blocks that will be marked as free before flushing changes to the file system.</LongDescription>
+                                        <Channel>4</Channel>
+                                        <ViewId>1</ViewId>
+                                    </ValueDescription>
+                                </ValueInt>
+                            </ValueCompound>
+                        </ValueCompound>
+                    </ValueCompound>
+                </ValueCompound>
+                <ValueCompound Name="alarm">
+                    <ValueDescription>
+                        <ShortDescription>Tree for all alarms</ShortDescription>
+                        <LongDescription>This tree should contain all alarm values. If one value in this tree is
+changed then the updated value is imedediately send to all connected views.</LongDescription>
+                        <Channel>-1</Channel>
+                        <ViewId>5</ViewId>
+                    </ValueDescription>
+                </ValueCompound>
+                <ValueCompound Name="viewsetting">
+                    <ValueDescription>
+                        <ShortDescription>Tree with viewsetting informations</ShortDescription>
+                        <LongDescription>Contains values used by the view.</LongDescription>
+                        <Channel>-1</Channel>
+                        <ViewId>0</ViewId>
+                    </ValueDescription>
+                </ValueCompound>
+                <ValueCompound Name="debug">
+                    <ValueDescription>
+                        <ShortDescription>Tree with values for debugging</ShortDescription>
+                        <LongDescription>Contains all debugging values</LongDescription>
+                        <Channel>-1</Channel>
+                        <ViewId>0</ViewId>
+                    </ValueDescription>
+                </ValueCompound>
+                <ValueCompound Name="commands">
+                    <ValueDescription>
+                        <ShortDescription>Tree for all commands</ShortDescription>
+                        <LongDescription>Contains all commands</LongDescription>
+                        <Channel>-1</Channel>
+                        <ViewId>0</ViewId>
+                    </ValueDescription>
+                    <ValueCompound Name="ZPersDb">
+                        <ValueDescription>
+                            <ShortDescription>ZPers Db</ShortDescription>
+                            <LongDescription>This commands can be used to manage the persistent database.</LongDescription>
+                            <Channel>4</Channel>
+                            <ViewId>4</ViewId>
+                        </ValueDescription>
+                        <ValueCommand Name="Save XML config" value="" command="Save XML" needPassword=" false">
+                            <ValueDescription>
+                                <ShortDescription>Save XML configuration</ShortDescription>
+                                <LongDescription>Save existing configuration of the client in the server configuration file 
+</LongDescription>
+                                <Channel>4</Channel>
+                                <ViewId>8</ViewId>
+                            </ValueDescription>
+                        </ValueCommand>
+                    </ValueCompound>
+                </ValueCompound>
+            </ValueCompound>

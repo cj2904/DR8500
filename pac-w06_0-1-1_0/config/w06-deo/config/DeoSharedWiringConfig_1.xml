@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings/>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpSelectRecipe_Common" version="1" id="EqpSelectRecipe_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpStartMachine_Common" version="1" id="EqpStartMachine_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapValidateRecipeParameter_Common" version="1" id="EapValidateRecipeParameter_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpValidateRecipeAvailability_Common" version="1" id="EqpValidateRecipeAvailability_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapAddW06RecipeDomainObject_Common" version="1" id="EapAddW06RecipeDomainObject_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapRecipeParameterExceptionHandling_Common" version="1" id="EapRecipeParameterExceptionHandling_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpSelectRecipeOnDemand_Common" version="1" id="EqpSelectRecipeOnDemand_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapLogAlarmResourceComment_Common" version="1" id="EapLogAlarmResourceComment_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapLogEventResourceComment_Common" version="1" id="EapLogEventResourceComment_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapLogWIPDataResourceComment_Common" version="1" id="EapLogWIPDataResourceComment_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapLogControlStateResourceComment_Common" version="1" id="EapLogControlStateResourceComment_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrCheckControlState" version="1" id="SnrCheckControlState"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpValidateProcessState_Common" version="1" id="EqpValidateProcessState_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpValidateControlState_Common" version="1" id="EqpValidateControlState_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpCollectWipData_Common" version="1" id="EqpCollectWipData_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapCloneBatchLotsWipData_Common" version="1" id="EapCloneBatchLotsWipData_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesSubmitWipData_Common" version="1" id="MesSubmitWipData_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinApiClearWIPDataValue_Common" version="1" id="WinApiClearWIPDataValue_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinApiSubmitWIPData_Common" version="1" id="WinApiSubmitWIPData_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesGetLotWIPFlag_Common" version="1" id="MesGetLotWIPFlag_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesCollectWipData_Common" version="1" id="MesCollectWipData_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapRemoveW06RecipeDomainObject_Common" version="1" id="EapRemoveW06RecipeDomainObject_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinApiEapRemoveAllDomainObjects" version="1" id="WinApiEapRemoveAllDomainObjects"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinApiEapRemoveWipDataDO_Common" version="1" id="WinApiEapRemoveWipDataDO_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinApiEapStoreWipDataItemInDomainObject_Common" version="1" id="WinApiEapStoreWipDataItemInDomainObject_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyLotInWip_Common" version="1" id="EapVerifyLotInWip_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesCompleteActualToolPm_Common" version="1" id="MesCompleteActualToolPm_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapPreCheckExistLot_Common" version="1" id="EapPreCheckExistLot_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapUpdateSingleEqpLotProcess_Common" version="1" id="EapUpdateSingleEqpLotProcess_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapUpdateMultiEqpLotProcess_Common" version="1" id="EapUpdateMultiEqpLotProcess_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSendTerminalMessage_Common" version="1" id="EapSendTerminalMessage_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapValidateLotIsProcess_Common" version="1" id="EapValidateLotIsProcess_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapValidateTrackInPortWIP_Common" version="1" id="EapValidateTrackInPortWIP_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSendCustomSecsMessage_Common" version="1" id="EapSendCustomSecsMessage_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpLogEventProcessStateIntoCSV_Common" version="1" id="EqpLogEventProcessStateIntoCSV_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="BenchEapAddW06SubRecipeObject_Common" version="1" id="BenchEapAddW06SubRecipeObject_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="BenchEapRecipeParameterValidation_Common" version="1" id="BenchEapRecipeParameterValidation_Common"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpLogAlarmProcessStateIntoCSV_Common" version="1" id="EqpLogAlarmProcessStateIntoCSV_Common"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

@@ -1,0 +1,5 @@
+<DeploymentDescriptor xmlns="http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0" xsi:schemaLocation="http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0 http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" component="pac-tsc" description="Application for pac-tsc, reference pac-sgd_2-0-10_0." type="module" releaseNotes="config/ReleaseNote.txt" version="2-0-8_0" copyCompatibleToVersions=".*">
+  <ModuleList>
+    <Module name="pac-sgd" version="2-0-10_0"/>
+  </ModuleList>
+</DeploymentDescriptor>

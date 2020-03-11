@@ -1,0 +1,68 @@
+@mixin PortListElementView {
+    .z-PortListElementView {
+        border-bottom: $border_line;
+        width: 100% !important;
+        @include normal-transition();
+        
+        .z-portNo {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background: $z_light-grey;
+            border-radius: 3px;
+            margin: 5px;
+            margin-top: 15px;  
+        }
+        .z-errorState {
+            color: $z_red;
+        }
+        .z-portNo.z-portCompleted {
+            background: $z_blue;
+            color: $z_white;
+        }
+        .z-portNo.z-carrierPlaced {
+            background: $z_dark-grey;
+            color: $z_white;
+        }
+        .z-portNo.z-portLocked {
+            background: $z_green;
+            color: $z_white;
+        }
+        .z-lotID {
+            font-size: 18px;
+        }
+        .z-recipeID {
+            padding: 3px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .z-state {
+            text-align: right;
+            font-size: 16px;
+        }
+        .z-waferCount {
+            font-size: 16px;
+        }
+        .z-startInformation {
+            text-align: center;
+            font-size: 12px;
+        }
+        .z-creationDate {
+            text-align: right;
+            font-size: 12px;
+        }
+        .z-stop {
+        }
+        .z-delete {
+        }
+    }
+    .z-PortListElementView.z-selected {
+        background-color: $selected_color;
+    }
+    .z-PortListElementView:hover {
+        background-color: $hover_color;
+    }
+    .z-PortListElementView.z-selected:hover {
+        background-color: $selected_color;
+    }
+}

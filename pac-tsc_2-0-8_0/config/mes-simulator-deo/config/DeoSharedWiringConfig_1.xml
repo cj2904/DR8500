@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="SimpleUI/CamstarSimulator/1.0.1_Simulate_TrackIn" triggerProviderId="SimpleUI" triggerCategoryId="CamstarSimulator" triggerId="1.0.1_Simulate_TrackIn">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="CamstarSimulateSynchronous" id="20171031165113269" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="FilePath" bindingParameterId="FilePath" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SubjectName" bindingParameterId="SubjectName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/CamstarSimulator/2.0.0_Simulate_RequestProcessData" triggerProviderId="SimpleUI" triggerCategoryId="CamstarSimulator" triggerId="2.0.0_Simulate_RequestProcessData">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="CamstarSimulateSynchronous" id="20171031165255674" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="FilePath" bindingParameterId="FilePath" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SubjectName" bindingParameterId="SubjectName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/CamstarSimulator/3.0.0_Simulate_RequestWIPData" triggerProviderId="SimpleUI" triggerCategoryId="CamstarSimulator" triggerId="3.0.0_Simulate_RequestWIPData">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="CamstarSimulateSynchronous" id="20171031165259047" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="FilePath" bindingParameterId="FilePath" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SubjectName" bindingParameterId="SubjectName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/CamstarSimulator/4.0.0_Simulate_TrackOutLot" triggerProviderId="SimpleUI" triggerCategoryId="CamstarSimulator" triggerId="4.0.0_Simulate_TrackOutLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="CamstarSimulateSynchronous" id="20171031165302635" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="FilePath" bindingParameterId="FilePath" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SubjectName" bindingParameterId="SubjectName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/CamstarSimulator/1.0.0_Simulate_PrepareLot" triggerProviderId="SimpleUI" triggerCategoryId="CamstarSimulator" triggerId="1.0.0_Simulate_PrepareLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="CamstarSimulateSynchronous" id="20180105114232312" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="FilePath" bindingParameterId="FilePath" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SubjectName" bindingParameterId="SubjectName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/CamstarSimulator/1.0.2_Simulate_TrackInComplete" triggerProviderId="SimpleUI" triggerCategoryId="CamstarSimulator" triggerId="1.0.2_Simulate_TrackInComplete">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="CamstarSimulateAsynchronous" id="20180105114353233" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Filepath" bindingParameterId="FilePath" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SubjectName" bindingParameterId="SubjectName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/CamstarSimulator/4.0.1_Simulate_CancelTrackInLot" triggerProviderId="SimpleUI" triggerCategoryId="CamstarSimulator" triggerId="4.0.1_Simulate_CancelTrackInLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="CamstarSimulateSynchronous" id="20180105114434381" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="FilePath" bindingParameterId="FilePath" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SubjectName" bindingParameterId="SubjectName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/CamstarSimulator/4.0.2_Simulate_CompleteLot" triggerProviderId="SimpleUI" triggerCategoryId="CamstarSimulator" triggerId="4.0.2_Simulate_CompleteLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="CamstarSimulateAsynchronous" id="20180105114415681" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Filepath" bindingParameterId="FilePath" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SubjectName" bindingParameterId="SubjectName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions/>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

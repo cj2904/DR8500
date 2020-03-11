@@ -1,0 +1,5 @@
+<DeploymentDescriptor xmlns="http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0" xsi:schemaLocation="http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0 http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" component="pac-sgd" description="Application for pac-sgd" type="module" releaseNotes="doc/ReleaseNotes.html" version="2-0-10_0" copyCompatibleToVersions=".*">
+  <ModuleList>
+    <Module name="pac-all" version="16.1.5.0"/>
+  </ModuleList>
+</DeploymentDescriptor>

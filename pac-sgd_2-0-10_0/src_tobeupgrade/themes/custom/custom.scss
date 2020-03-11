@@ -1,0 +1,81 @@
+@import "variables";
+@import "../valo/valo";
+@import "PacAuthenticationHandler";
+@import "ComponentContainerView";
+@import "MessageListView";
+@import "SlotView";
+@import "SlotsView";
+@import "EquipmentStateView";
+@import "LotListElementView";
+@import "PortListElementView";
+@import "AreYouSureRequestDialog";
+@import "AlarmListView";
+@import "CustomizableConfirmDialog";
+
+@mixin custom {
+    @include valo;
+    @include PacAuthenticationHandler;
+    @include ComponentContainerView;
+	@include MessageListView;
+	@include SlotView;
+    @include SlotsView;
+    @include EquipmentStateView;
+    @include LotListElementView;
+    @include PortListElementView;
+    @include AreYouSureRequestDialog;
+    @include AlarmListView;
+    @include CustomizableConfirmDialog;
+    
+    .error {
+    	color: $z_red;
+    }
+    
+	.warning {
+        color: $z_blue;
+	}
+	
+		.z-title-background {
+	
+	/*#006600, #33CC00 */
+	    background: -webkit-linear-gradient(0deg, #909090 ,  #FFFFFF); /* For Safari 5.1 to 6.0  & Chrome */
+	    background: -o-linear-gradient(0deg, #909090, #FFFFFF); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(0deg, #909090, #FFFFFF); /* For Firefox 3.6 to 15 */
+	    background: -ms-linear-gradient(0deg, #909090, #FFFFFF); /* For IE 9 and above*/
+	    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#909090', endColorstr='#FFFFFF'); /* For IE 6 ï¿½ IE8*/
+	    background: linear-gradient(0deg, #909090, #FFFFFF); /* Standard syntax (must be last) */
+	    border-bottom: 1px solid #484848;
+   /*  	padding-left: calc(0px) !important;
+		padding-right: calc(0px -10px) !important;
+		overflow: auto; */
+	}
+	
+	.z-titleStyle {
+	    display: block;
+	    font-weight: bold;
+	    margin-left: 0.5em;
+	    color: white;
+	    font-size: large;
+	}
+	
+	.v-upload .v-button {
+		display: none
+	}
+	
+	.z-text-field-prompt-error {
+		color: red !important;
+	}
+	
+	.v-table-cell-content-z-bg-lightgreen {
+		background: lightgreen;
+	}
+	
+	.v-table-cell-content-z-bg-red {
+		background: red;
+		color: white;
+	}
+	
+	.custom.v-app, .custom.v-app-loading {
+    	font-size: 12px;
+    	font-weight: 700;	
+	}
+}

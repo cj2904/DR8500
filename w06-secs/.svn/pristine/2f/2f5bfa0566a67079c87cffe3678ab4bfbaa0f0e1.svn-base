@@ -1,0 +1,62 @@
+######Model Property Key#################
+Pac.ApplicationContext=$(AppDir)/config/xml/AppContext.xml,\
+$(AppDir)/config/model/$(EqModel)/AppContext.xml
+Equipment1.Name=$(EqModel)
+
+#Model specific deo#
+deo.path=$(AppDir)/config/model/$(EqModel)/$(EqModel)-deo
+Pac.MappingSetContainer.Path=$(AppDir)/config/model/$(EqModel)/Mapping.xml
+de.znt.pac.PACService.xmlLocation=$(AppDir)/config/model/$(EqModel)/pac.xml
+
+Secs.ProcessState.$(Equipment1.Name).1=Idle
+Secs.ProcessState.$(Equipment1.Name).2=Run
+Secs.ProcessState.$(Equipment1.Name).3=Down
+Secs.ProcessState.$(Equipment1.Name).4=Maintenance
+Secs.ProcessState.$(Equipment1.Name).States.Ready2Start=1
+Secs.ProcessState.$(Equipment1.Name).States.Processing=2
+Secs.ProcessState.$(Equipment1.Name).StatusVariable.Name=ProcessState
+
+Secs.ControlState.$(Equipment1.Name).1=OFF-LINE/EQUIPMENT OFFLINE
+Secs.ControlState.$(Equipment1.Name).2=OFF-LINE/ATTEMPT ON-LINE
+Secs.ControlState.$(Equipment1.Name).3=OFF-LINE/HOST OFF-LINE
+Secs.ControlState.$(Equipment1.Name).4=ON-LINE/LOCAL
+Secs.ControlState.$(Equipment1.Name).5=ON-LINE/REMOTE
+Secs.ControlState.$(Equipment1.Name).Local=4
+Secs.ControlState.$(Equipment1.Name).Offline=1
+Secs.ControlState.$(Equipment1.Name).Remote=5
+Secs.ControlState.$(Equipment1.Name).States.Offline=1,2,3
+Secs.ControlState.$(Equipment1.Name).States.Online=4,5
+Secs.ControlState.$(Equipment1.Name).StatusVariable.Name=ControlState
+
+Secs.MachineLoadedRecipe.${Equipment1.Name}.StatusVariable.Name=
+Secs.RemoteCommand.PpidSelect.Name=Process_Start
+Secs.RemoteCommand.DefaultRecipe.Name=Default
+
+#########################################################################
+### SECS communication settings  
+#########################################################################
+$(Equipment1.Name).SecsConnectionMode=active
+$(Equipment1.Name).T3Timeout=45
+$(Equipment1.Name).T5Timeout=10
+$(Equipment1.Name).T6Timeout=5
+$(Equipment1.Name).T7Timeout=20
+$(Equipment1.Name).T8Timeout=5
+$(Equipment1.Name).LinktestInterval=60
+
+CamstarService.JmsCamstarOutboundQueues=PrepareLot:zIF.Output.${PacService}.PrepareLot,\
+TrackInLot:zIF.Output.${PacService}.TrackInLot,\
+TrackOutLot:zIF.Output.${PacService}.TrackOutLot,\
+CancelTrackInLot:zIF.Output.${PacService}.CancelTrackInLot,\
+PrepareLot:zIF.Output.${${Equipment1.Name}.VirtualSystemId}.PrepareLot,\
+TrackInLot:zIF.Output.${${Equipment1.Name}.VirtualSystemId}.TrackInLot,\
+TrackOutLot:zIF.Output.${${Equipment1.Name}.VirtualSystemId}.TrackOutLot,\
+CancelTrackInLot:zIF.Output.${${Equipment1.Name}.VirtualSystemId}.CancelTrackInLot
+
+CamstarService.JmsCamstarOutboundTopics=CompleteLot:zIF.Output.${PacService}.CompleteLot, \
+TrackInWipMain:zIF.Output.${PacService}.TrackInWipMain,\
+TrackInComplete:zIF.Output.${PacService}.TrackInComplete,\
+CompleteLot:zIF.Output.${${Equipment1.Name}.VirtualSystemId}.CompleteLot, \
+TrackInWipMain:zIF.Output.${${Equipment1.Name}.VirtualSystemId}.TrackInWipMain,\
+TrackInComplete:zIF.Output.${${Equipment1.Name}.VirtualSystemId}.TrackInComplete
+
+#WaitToStartInSec=10

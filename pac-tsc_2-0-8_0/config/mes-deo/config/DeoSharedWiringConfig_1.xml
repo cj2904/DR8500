@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings/>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapRemoveTrackOutLot" version="1" id="EapRemoveTrackOutLot"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapAddLot" version="1" id="EapAddLot"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapTrackInErrorHandler" version="1" id="EapTrackInErrorHandler"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapValidateLotState" version="1" id="EapValidateLotState"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapValidateMesOutBoundLotId" version="1" id="EapValidateMesOutBoundLotId"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MappingSetCreateAdHocWIPData" version="1" id="MappingSetCreateAdHocWIPData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MappingSetCreateRecipeParameter" version="1" id="MappingSetCreateRecipeParameter"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesCancelTrackIn" version="1" id="MesCancelTrackIn"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesCreateRecipeInCamstar" version="1" id="MesCreateRecipeInCamstar"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesErrorOutboundResponse" version="1" id="MesErrorOutboundResponse"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesErrorOutboundResponse_Eqp" version="1" id="MesErrorOutboundResponse_Eqp"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesErrorTrackOutOutboundResponse" version="1" id="MesErrorTrackOutOutboundResponse"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesRequestProcessDataOutboundResponse" version="1" id="MesRequestProcessDataOutboundResponse"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesGetAvailableRecipeList" version="1" id="MesGetAvailableRecipeList"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesTrackInOutboundResponse" version="1" id="MesTrackInOutboundResponse"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesTrackOutOutboundResponse" version="1" id="MesTrackOutOutboundResponse"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesGetFactoryMaintRequest" version="1" id="MesGetFactoryMaintRequest"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesGetRecipeParameter" version="1" id="MesGetRecipeParameter"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesRequestWIPDataOutboundResponse" version="1" id="MesRequestWIPDataOutboundResponse"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesSubmitWipData" version="1" id="MesSubmitWipData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesSetWebUIAddressToEquipment" version="1" id="MesSetWebUIAddressToEquipment"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesGetEquipmentMaint" version="1" id="MesGetEquipmentMaint"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrTrackInLot" version="1" id="SnrTrackInLot"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrTrackOutLot" version="1" id="SnrTrackOutLot"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapCleanUpAdhocTrackInWipData" version="1" id="EapCleanUpAdhocTrackInWipData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapCreateAdhocTrackInWipData" version="1" id="EapCreateAdhocTrackInWipData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrEqpDownloadRecipe" version="1" id="SnrEqpDownloadRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrRequestVariableByList" version="1" id="SnrRequestVariableByList"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrRequestVariableByListWithMapping" version="1" id="SnrRequestVariableByListWithMapping"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesEquipmentMaterialSetupOutboundResponse" version="1" id="MesEquipmentMaterialSetupOutboundResponse"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesSubmitConsumeMaterial" version="1" id="MesSubmitConsumeMaterial"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesViewContainerStatus" version="1" id="MesViewContainerStatus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesWaferProcessSpecCopy" version="1" id="MesWaferProcessSpecCopy"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_UtilMesCancelTrackInLot" version="1" id="_UtilMesCancelTrackInLot"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_UtilMesTrackIn" version="1" id="_UtilMesTrackIn"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapCleanUpZeroMesLot" version="1" id="EapCleanUpZeroMesLot"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesSetTrackInWipMainInfo" version="1" id="MesSetTrackInWipMainInfo"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyBatchTrackInLot" version="1" id="EapVerifyBatchTrackInLot"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapMesSpecByPassRecipeValidation" version="1" id="EapMesSpecByPassRecipeValidation"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

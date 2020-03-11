@@ -1,0 +1,7 @@
+Pac.ApplicationContext=$(AppDir)/config/xml/AppContext.xml,\
+$(AppDir)/config/model/$(EqModel)/AppContext.xml
+
+TestMode.Enabled=true
+##Process State IdealMold###
+ReplySvVariable.jonas.300023=0,U4
+ReplySvVariable.jonas.300024=OK,A

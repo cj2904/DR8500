@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="lib/ipac-sgd_2-0-10_0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-collections4-4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/curvesapi-1.04.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-3.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-examples-3.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-excelant-3.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-ooxml-3.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-scratchpad-3.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/pac-all_16-1-5_0"/>
+	<classpathentry kind="output" path="_classes"/>
+</classpath>

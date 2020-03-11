@@ -1,0 +1,31 @@
+@mixin MessageListView {
+    .z-MessageListView {    	
+        .z-pauseButton {
+            margin: 5px;       
+            margin-right: 10px;   
+            width: 180px;
+            height: 50px;
+        }
+    }
+
+        tr.v-table-row-FATAL,
+        tr.v-table-row-ERROR {
+        	color: $z_red;
+        }
+
+        tr.v-table-row-WARN {
+        	color: $z_blue;
+        }
+
+		.v-table-cell-content-level-FATAL,
+        .v-table-cell-content-level-ERROR {
+        	color: $z_red;
+        }
+        
+        .v-table-cell-content-level-WARN {
+        	color: $z_blue;
+        }
+        
+        .v-table-cell-content-level-INFO {
+        }
+}

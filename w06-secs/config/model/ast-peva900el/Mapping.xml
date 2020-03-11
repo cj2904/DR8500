@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:MappingConfiguration xmlns:ns2="http://www.znt-richter.com/pacMapping/">
+    <Schema Id="5b1fa4fa-582c-4006-8612-ca9ef4b78f0d" Name="MES">
+        <SchemaComponent Id="4a8ed24d-082c-4f2a-9c15-1075d02e90cf" Name="WipData">
+            <SchemaItem Id="aae1b1f1-ada9-4662-8b6c-7cfc553353ec" Name="Run" Type="String" Unit="SV@HeaterTempSet"/>
+        </SchemaComponent>
+    </Schema>
+</ns2:MappingConfiguration>

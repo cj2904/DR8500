@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="SimpleUI/WinApiCharacterization/1.0--------Synchronization and Communication--------" triggerProviderId="SimpleUI" triggerCategoryId="WinApiCharacterization" triggerId="1.0--------Synchronization and Communication--------">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="_testWinApiAction" id="20180625132530156" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="Equipment:Service" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/WinApiCharacterization/1.1_RequestEstablishConnection" triggerProviderId="SimpleUI" triggerCategoryId="WinApiCharacterization" triggerId="1.1_RequestEstablishConnection">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="_testToken" id="20180627104211327" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="WinApiService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiSchema" bindingParameterId="ZWinApiSchema" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/WinApiCharacterization/1.2_RequestOnlilne" triggerProviderId="SimpleUI" triggerCategoryId="WinApiCharacterization" triggerId="1.2_RequestOnlilne">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="_testSimpleOperation" id="20180629163923242" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="WinApiService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiSchema" bindingParameterId="ZWinApiSchema" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/ZWinApiOperationConfig/ExecuteAction" triggerProviderId="GUI" triggerCategoryId="ZWinApiOperationConfig" triggerId="ExecuteAction">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinExecuteAction" id="20180702135031916" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="GUIMessageHandler" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="ZWinApiService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiAction" bindingParameterId="ZWinApiAction" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/ZWinApiOperationConfig/GetFocus" triggerProviderId="GUI" triggerCategoryId="ZWinApiOperationConfig" triggerId="GetFocus">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinGetFocusAction" id="20180702153604078" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="GUIMessageHandler" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="ZWinApiService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ControlId" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters>
+<bindingParameter id="ControlId" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"></value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/ZWinApiOperationConfig/ExecuteOperation" triggerProviderId="GUI" triggerCategoryId="ZWinApiOperationConfig" triggerId="ExecuteOperation">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinExecuteOperation" id="20180704100730416" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="GUIMessageHandler" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="ZWinApiService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiOperation" bindingParameterId="ZWinApiOperation" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="OpcUaService/Subscription/MyDemoCounter" triggerProviderId="OpcUaService" triggerCategoryId="Subscription" triggerId="MyDemoCounter">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="_testToken" id="20180710154914649" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="Equipment:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ZWinApiSchema" bindingParameterId="ZWinApiSchema" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/Tester/Operation" triggerProviderId="GUI" triggerCategoryId="Tester" triggerId="Operation">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinExecuteOperationName" id="20180723112911769" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="Equipment:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="OperationName" bindingParameterId="OperationName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ProductNumber" bindingParameterId="ProductNumber" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TestLotID" bindingParameterId="TestLotID" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WaferLotID" bindingParameterId="WaferLotID" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="AssemblyLotID" bindingParameterId="AssemblyLotID" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Operator" bindingParameterId="Operator" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Shift" bindingParameterId="Shift" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/ZWinApiOperationConfig/Highlight" triggerProviderId="GUI" triggerCategoryId="ZWinApiOperationConfig" triggerId="Highlight">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="WinControlHighlight" id="20180723162126194" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="GUIMessageHandler" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ZWinApiAction" bindingParameterId="ZWinApiAction" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiService" bindingParameterId="ZWinApiService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ZWinApiSchema" bindingParameterId="ZWinApiSchema" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WczRequestEstablishConnection" version="1" id="WczRequestEstablishConnection"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WczGoRemote" version="1" id="WczGoRemote"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WczRequestProcessState" version="1" id="WczRequestProcessState"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_testWinApiOperation" version="1" id="_testWinApiOperation"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_testOperationResult" version="1" id="_testOperationResult"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_testGotoMaintenanceView" version="1" id="_testGotoMaintenanceView"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_testWinApiAction" version="1" id="_testWinApiAction"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_testToken" version="1" id="_testToken"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_testSimpleOperation" version="1" id="_testSimpleOperation"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinExecuteAction" version="1" id="WinExecuteAction"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinGetFocusAction" version="1" id="WinGetFocusAction"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinExecuteOperation" version="1" id="WinExecuteOperation"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinExecuteActionName" version="1" id="WinExecuteActionName"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinExecuteOperationName" version="1" id="WinExecuteOperationName"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="WinControlHighlight" version="1" id="WinControlHighlight"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<context:annotation-config />
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+
+	<bean id="UIMessageLogger" class="de.znt.pac.message.MessageLoggerImpl">
+		<constructor-arg value="UIMessageLogger" />
+	</bean>
+
+
+	<!-- Register User Interface for the Demo equipment status view 
+	-->
+	<bean class="de.znt.pac.ui.VaadinUserInterfaceRegistration">
+		<constructor-arg name="userInterfaceName" value="TestUi" />
+		<constructor-arg name="userInterfaceProvider">
+			<bean class="de.znt.ui.tester.TesterUserInterfaceProvider">
+				<constructor-arg name="messageHandler" ref="UIMessageLogger" />
+				<constructor-arg name="triggerList">
+					<list>
+						<bean class="de.znt.ui.tester.TesterTrigger">
+							<constructor-arg name="name" value="001: EnableAllEvents" />
+							<constructor-arg name="parameterDefinitions">
+								<list>
+								</list>
+							</constructor-arg>
+						</bean>
+						<bean class="de.znt.ui.tester.TesterTrigger">
+							<constructor-arg name="name" value="XXX_SXFX: SendSecsMessage" />
+							<constructor-arg name="parameterDefinitions">
+								<list>
+									<bean class="de.znt.ui.tester.parameter.StringParameter">
+										<constructor-arg name="name" value="SMLMessage" />
+									</bean>
+									<bean class="de.znt.ui.tester.parameter.BooleanParameter">
+										<constructor-arg name="name" value="Trim" />
+									</bean>
+								</list>
+							</constructor-arg>
+						</bean>
+					</list>
+				</constructor-arg>
+			</bean>
+		</constructor-arg>
+	</bean>
+	
+
+</beans>

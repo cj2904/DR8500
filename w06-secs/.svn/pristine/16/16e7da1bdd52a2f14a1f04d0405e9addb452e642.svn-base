@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:MappingConfiguration xmlns:ns2="http://www.znt-richter.com/pacMapping/">
+    <Schema Id="5313897a-1370-4463-b7fe-fae7297be360" Name="MES">
+        <SchemaComponent Id="ea92cf02-cd58-4336-a57e-e972976aaa6a" Name="WipData"/>
+    </Schema>
+</ns2:MappingConfiguration>

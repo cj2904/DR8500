@@ -1,0 +1,143 @@
+package _TestRecipeParameterCreation
+
+import java.text.SimpleDateFormat
+
+import org.apache.commons.logging.Log
+import org.apache.commons.logging.LogFactory
+import groovy.transform.CompileStatic
+import de.znt.pac.deo.annotations.*
+import sg.znt.pac.domainobject.W06ChamberRecipeParameter
+import sg.znt.pac.domainobject.W06RecipeParameterManager
+import sg.znt.pac.domainobject.FilterAllChamberRecipeParameter
+import sg.znt.pac.domainobject.FilterChamberRecipeParameterByStep
+import sg.znt.pac.domainobject.FilterChamberRecipeParameterByTank
+import sg.znt.pac.domainobject.FilterChamberRecipeParameterContainMapping
+
+@CompileStatic
+@Deo(description='''
+Describe your DEO here.<br/>
+<b>You can use HTML tags.</b>
+''')
+class _TestRecipeParameterCreation_1 {
+
+
+    @DeoBinding(id="Logger")
+    private Log logger = LogFactory.getLog(getClass())
+
+
+    @DeoBinding(id="W06RecipeParameterManager")
+    private W06RecipeParameterManager w06RecipeParameterManager
+
+    /**
+     *
+     */
+    @DeoExecute
+    public void execute()
+    {
+        w06RecipeParameterManager.removeAllDomainObject()
+        
+        def recipeParameterSet = w06RecipeParameterManager.createAndAddNewDomainObject("BenchRecipe")
+        recipeParameterSet.setRecipeName("SubRecipe1, SubRecipe2, SubRecipe3"); //Camstar recipe param: SubRecipe
+        
+        W06ChamberRecipeParameter chamberRecipeParameter = recipeParameterSet.createAndAddChamberRecipeParameter("SubRecipe1")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#AdvLLTrayCoolAutoCalc<Tray Cool>%1", "11,11,11")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#LLHeaterSoakPower<Soak Power>%2", "21,21,21")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#SecondPassRecipeName<Second Pass>%3", "32,32,32")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#Layer1Target<Layer 1 Target>%4", "43,43,43")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#Layer1Passes<Layer 1 Passes>%5", "54,54,54")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#Layer1MinVoltage<Layer 1 Min Voltage>%6", "65,65,65")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#Layer2PulseFreq<Layer 2 Pulse>%7", "76,76,76")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#Layer2MaxCurrent%8", "87,87,87")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#Layer2Heat%9", "98,98,98")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@HF#Layer3Passes%10", "99,99,99")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#AdvLLTrayCoolAutoCalc<Tray Cool>%1", "112,112,112")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#LLHeaterSoakPower<Soak Power>%2", "321,321,321")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#SecondPassRecipeName<Second Pass>%3", "432,432,432")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#Layer1Target<Layer 1 Target>%4", "543,543,543")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#Layer1Passes<Layer 1 Passes>%5", "654,654,654")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#Layer1MinVoltage<Layer 1 Min Voltage>%6", "765,765,765")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#Layer2PulseFreq<Layer 2 Pulse>%7", "876,876,876")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#Layer2MaxCurrent%8", "987,987,987")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#Layer2Heat%9", "8876,8876,8876")
+        chamberRecipeParameter.addChamberRecipeParameter("SubRecipe1@SB#Layer3Passes%10", "45622,45622,45622")
+        
+        W06ChamberRecipeParameter chamberRecipeParameter2 = recipeParameterSet.createAndAddChamberRecipeParameter("SubRecipe2")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#AdvLLTrayCoolAutoCalc<Tray Cool>%1", "112,112,112")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#LLHeaterSoakPower<Soak Power>%2", "321,321,321")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#SecondPassRecipeName<Second Pass>%3", "432,432,432")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#Layer1Target<Layer 1 Target>%4", "543,543,543")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#Layer1Passes<Layer 1 Passes>%5", "654,654,654")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#Layer1MinVoltage<Layer 1 Min Voltage>%6", "765,765,765")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#Layer2PulseFreq<Layer 2 Pulse>%7", "876,876,876")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#Layer2MaxCurrent%8", "987,987,987")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#Layer2Heat%9", "8876,8876,8876")
+        chamberRecipeParameter2.addChamberRecipeParameter("SubRecipe2@SB#Layer3Passes%10", "45622,45622,45622")
+        
+        if (recipeParameterSet.isMultipleRecipeName())
+        {
+            def recipeNameList = recipeParameterSet.getRecipeNameList()
+            for (subRecipeName in recipeNameList) 
+            {
+                getChamberRecipe(subRecipeName,chamberRecipeParameter)
+            }
+        }
+    }
+
+    private getChamberRecipe(String subRecipeName, W06ChamberRecipeParameter chamberRecipeParameter) {
+        logger.info(subRecipeName + " - All chamber recipe parameter")
+        def list = chamberRecipeParameter.getAllChamberRecipeParameter(subRecipeName)
+        for (var in list)
+        {
+            logger.info("\t\t\t" + var.getTank() + " : " + var.getParameterName() + " : " + var.getStep() + " : " + var.getMappingName())
+        }
+
+        logger.info("\t\tAll chamber recipe parameter")
+        list = chamberRecipeParameter.getAll(subRecipeName, new FilterAllChamberRecipeParameter())
+        for (var in list)
+        {
+            logger.info("\t\t\t" + var.getTank() + " : " + var.getParameterName() + " : " + var.getStep() + " : " + var.getMappingName())
+        }
+
+        logger.info("\t\tStep 1 chamber recipe parameter")
+        list = chamberRecipeParameter.getAll(subRecipeName, new FilterChamberRecipeParameterByStep("1"))
+        for (var in list)
+        {
+            logger.info("\t\t\t" + var.getTank() + " : " + var.getParameterName() + " : " + var.getStep() + " : " + var.getMappingName())
+        }
+
+        logger.info("\t\tTank HF chamber recipe parameter")
+        list = chamberRecipeParameter.getAll(subRecipeName, new FilterChamberRecipeParameterByTank("HF"))
+        for (var in list)
+        {
+            logger.info("\t\t\t" + var.getTank() + " : " + var.getParameterName() + " : " + var.getStep() + " : " + var.getMappingName())
+        }
+
+        logger.info("\t\tContain mapping chamber recipe parameter")
+        list = chamberRecipeParameter.getAll(subRecipeName, new FilterChamberRecipeParameterContainMapping())
+        for (var in list)
+        {
+            logger.info("\t\t\t" + var.getTank() + " : " + var.getParameterName() + " : " + var.getStep() + " : " + var.getMappingName())
+        }
+
+        logger.info("\t\tMultiple filter, contain mapping and SB chamber")
+        list = chamberRecipeParameter.getAll(subRecipeName, new FilterChamberRecipeParameterContainMapping(), new FilterChamberRecipeParameterByTank("SB"))
+        for (var in list)
+        {
+            logger.info("\t\t\t" + var.getTank() + " : " + var.getParameterName() + " : " + var.getStep() + " : " + var.getMappingName())
+        }
+
+        logger.info("\t\tMultiple filter, contain mapping and step 3")
+        list = chamberRecipeParameter.getAll(subRecipeName, new FilterChamberRecipeParameterContainMapping(), new FilterChamberRecipeParameterByStep("3"))
+        for (var in list)
+        {
+            logger.info("\t\t\t" + var.getTank() + " : " + var.getParameterName() + " : " + var.getStep() + " : " + var.getMappingName())
+        }
+
+        logger.info("\t\tMultiple filter, contain mapping and step 3 and tank HF")
+        list = chamberRecipeParameter.getAll(subRecipeName, new FilterChamberRecipeParameterContainMapping(), new FilterChamberRecipeParameterByStep("3"), new FilterChamberRecipeParameterByTank("HF"))
+        for (var in list)
+        {
+            logger.info("\t\t\t" + var.getTank() + " : " + var.getParameterName() + " : " + var.getStep() + " : " + var.getMappingName())
+        }
+    }
+}

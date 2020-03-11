@@ -1,0 +1,54 @@
+######Model Property Key#################
+Pac.ApplicationContext=$(AppDir)/config/xml/AppContext.xml,\
+$(AppDir)/config/model/$(EqModel)/AppContext.xml
+Equipment1.Name=$(EqModel)
+
+#Model specific deo#
+deo.path=$(AppDir)/config/model/$(EqModel)/$(EqModel)-deo
+Pac.MappingSetContainer.Path=$(AppDir)/config/model/$(EqModel)/Mapping.xml
+de.znt.pac.PACService.xmlLocation=$(AppDir)/config/model/$(EqModel)/pac.xml
+
+Secs.ProcessState.$(Equipment1.Name).1=Idle
+Secs.ProcessState.$(Equipment1.Name).2=ResetInProgress
+Secs.ProcessState.$(Equipment1.Name).3=Processing
+Secs.ProcessState.$(Equipment1.Name).4=Paused
+Secs.ProcessState.$(Equipment1.Name).States.Ready2Start=1
+Secs.ProcessState.$(Equipment1.Name).States.Processing=3
+Secs.ProcessState.$(Equipment1.Name).StatusVariable.Name=ProcessState
+
+Secs.ControlState.$(Equipment1.Name).1=OFF-LINE / EQUIP OFF-LINE
+Secs.ControlState.$(Equipment1.Name).2=OFF-LINE / EQUIP ON-LINE
+Secs.ControlState.$(Equipment1.Name).3=OFF-LINE / HOST OFF-LINE
+Secs.ControlState.$(Equipment1.Name).4=ON-LINE / LOCAL
+Secs.ControlState.$(Equipment1.Name).5=ON-LINE / REMOTE
+Secs.ControlState.$(Equipment1.Name).Local=4
+Secs.ControlState.$(Equipment1.Name).Offline=1
+Secs.ControlState.$(Equipment1.Name).Remote=5
+Secs.ControlState.$(Equipment1.Name).States.Offline=1,2,3
+Secs.ControlState.$(Equipment1.Name).States.Online=4,5
+Secs.ControlState.$(Equipment1.Name).StatusVariable.Name=ControlState
+
+Secs.PortState.$(Equipment1.Name).States.Ready2Start=2,10
+Secs.PortState.$(Equipment1.Name).StatusVariable.VID=1907,1908,1909
+#TimeWaitForPortsReadyInSec=120
+
+PortAvailable.$(Equipment1.Name).ID=A,B,C
+
+#########################################################################
+### SECS communication settings  
+#########################################################################
+$(Equipment1.Name).SecsConnectionMode=active
+$(Equipment1.Name).T3Timeout=45
+$(Equipment1.Name).T5Timeout=10
+$(Equipment1.Name).T6Timeout=5
+$(Equipment1.Name).T7Timeout=20
+$(Equipment1.Name).T8Timeout=5
+$(Equipment1.Name).LinktestInterval=60
+
+#########################################################################
+### Configure SECS time format (valid values: 12Byte, 16Byte)
+#########################################################################
+SECS.TimeFormat=16Byte
+
+Secs.MachineLoadedRecipe.${Equipment1.Name}.StatusVariable.Name=
+Secs.RemoteCommand.PpidSelect.Name=PP-SELECT

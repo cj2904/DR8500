@@ -1,0 +1,58 @@
+@mixin SlotView {
+	.v-slot-z-SlotView {
+	    line-height: 23px;
+	    border-left: $border_line;
+        border-right: $border_line;
+        border-bottom: $border_line;
+	}
+    .z-SlotView {
+        height: 22px;
+        padding: 0px;
+        margin: 0px;
+        
+        .z-slot {
+            text-align: right;
+            width: 20px;
+            font-size: 12px;
+        }
+        .z-state {
+            min-width: 20px;
+            height: 20px;
+            border-radius: 2px;
+        	margin-top: 1px;
+        	margin-right: 5px;
+        	margin-left: 5px;
+        }
+        .z-state.z-init {
+            background: $z_dark-grey;
+        }
+        .z-state.z-processStarted {
+            background: $z_green;
+        }
+        .z-state.z-processFinished {
+            background: $z_blue;
+        }
+        .z-state.z-error {
+            background: $z_red;
+        }
+        .targetLotId {
+        	width: 100px;
+        	text-align: center;
+	    }
+        .z-toolScribeID {
+            text-align: center;
+            width: 100px;
+        }
+        .z-waferScribeID {
+            text-align: center;
+            width: 100px;
+        }
+        .z-enterScribeID {
+         	height: 20px;
+         	width: 40px;
+         	img.v-icon {
+         		vertical-align: initial;
+         	}
+        }
+    }
+}

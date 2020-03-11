@@ -1,0 +1,67 @@
+@mixin LotListElementView {
+    .z-LotListElementView {
+        border-bottom: $border_line;
+        width: 100% !important;
+        @include normal-transition();
+        
+        .z-portNo {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background: $z_light-grey;
+            color: $port_text_color;
+            border-radius: 3px;
+            margin: 5px;
+            margin-top: 15px;            
+            padding: 0px;        
+        }
+        .z-errorState {
+            color: $z_red;
+        }
+        .z-portNo.z-portCompleted {
+            background: $z_blue;
+            color: $z_white;
+        }
+        .z-portNo.z-portLocked {
+            background: $z_green;
+            color: $z_white;
+        }
+        .z-lotID {
+            font-size: 18px;
+        }
+        .z-recipeID {
+            text-align: center;
+            font-size: 12px;
+        }
+        .z-state {
+            text-align: right;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        .z-waferCount {
+            font-size: 16px;
+        }
+        .z-startInformation {
+            text-align: center;
+            font-size: 12px;
+        }
+        .z-creationDate {
+            text-align: right;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        .z-stop {
+        }
+        .z-delete {
+         }
+    }
+    .z-LotListElementView.z-selected {
+        background-color: $selected_color;
+    }
+    .z-LotListElementView:hover {
+        background-color: $hover_color;
+    }
+    .z-LotListElementView.z-selected:hover {
+        background-color: $selected_color;
+    }
+}

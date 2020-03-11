@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="de.znt.zsecs.messages.S1F3"/>
+<fullyQualifiedTypeName name="de.znt.services.secs.dto.S1F3SelectedEquipmentStatusRequest"/>
+<fullyQualifiedTypeName name="de.znt.zsecs.composite.SecsComponent"/>
+<fullyQualifiedTypeName name="de.znt.zsecs.composite.SecsU4Item"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="de.znt.services.secs.dto.S2F41HostCommandSend"/>
+<fullyQualifiedTypeName name="de.znt.zsecs.composite.SecsAsciiItem"/>
+<fullyQualifiedTypeName name="java.lang.Short"/>
+<fullyQualifiedTypeName name="java.lang.Throwable"/>
+<fullyQualifiedTypeName name="de.znt.zsecs.composite.SecsU1Item"/>
+</qualifiedTypeNameHistroy>

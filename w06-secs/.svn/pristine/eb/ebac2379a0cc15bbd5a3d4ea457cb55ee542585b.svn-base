@@ -1,0 +1,129 @@
+######Model Property Key#################
+Pac.ApplicationContext=$(AppDir)/config/xml/AppContext.xml,\
+classpath:/sg/znt/pac/resources/xml/registration/W02SecsDeoRegistration.xml,\
+$(AppDir)/config/model/$(EqModel)/AppContext.xml
+Equipment1.Name=$(EqModel)
+
+# camstar -> pac synchronous service calls (JMS queues)
+CamstarService.JmsCamstarOutboundQueues=PrepareLot:zIF.Output.$(Port1EqpName).PrepareLot,\
+TrackInLot:zIF.Output.$(Port1EqpName).TrackInLot,\
+TrackOutLot:zIF.Output.$(Port1EqpName).TrackOutLot,\
+CancelTrackInLot:zIF.Output.$(Port1EqpName).CancelTrackInLot,\
+PrepareLot:zIF.Output.$(Port2EqpName).PrepareLot,\
+TrackInLot:zIF.Output.$(Port2EqpName).TrackInLot,\
+TrackOutLot:zIF.Output.$(Port2EqpName).TrackOutLot,\
+CancelTrackInLot:zIF.Output.$(Port2EqpName).CancelTrackInLot,\
+PrepareLot:zIF.Output.$(Port3EqpName).PrepareLot,\
+TrackInLot:zIF.Output.$(Port3EqpName).TrackInLot,\
+TrackOutLot:zIF.Output.$(Port3EqpName).TrackOutLot,\
+CancelTrackInLot:zIF.Output.$(Port3EqpName).CancelTrackInLot,\
+PrepareLot:zIF.Output.$(Port4EqpName).PrepareLot,\
+TrackInLot:zIF.Output.$(Port4EqpName).TrackInLot,\
+TrackOutLot:zIF.Output.$(Port4EqpName).TrackOutLot,\
+CancelTrackInLot:zIF.Output.$(Port4EqpName).CancelTrackInLot
+
+# camstar -> pac asynchronous service calls (JMS topics)
+CamstarService.JmsCamstarOutboundTopics=CompleteLot:zIF.Output.$(Port1EqpName).CompleteLot,\
+TrackInComplete:zIF.Output.$(Port1EqpName).TrackInComplete,\
+TrackInWipMain:zIF.Output.$(Port1EqpName).TrackInWipMain,\
+CompleteLot:zIF.Output.$(Port2EqpName).CompleteLot,\
+TrackInComplete:zIF.Output.$(Port2EqpName).TrackInComplete,\
+TrackInWipMain:zIF.Output.$(Port2EqpName).TrackInWipMain,\
+CompleteLot:zIF.Output.$(Port3EqpName).CompleteLot,\
+TrackInWipMain:zIF.Output.$(Port3EqpName).TrackInWipMain,\
+TrackInComplete:zIF.Output.$(Port3EqpName).TrackInComplete,\
+CompleteLot:zIF.Output.$(Port4EqpName).CompleteLot,\
+TrackInWipMain:zIF.Output.$(Port4EqpName).TrackInWipMain,\
+TrackInComplete:zIF.Output.$(Port4EqpName).TrackInComplete
+
+#Model specific deo#
+deo.path=$(AppDir)/config/model/$(EqModel)/$(EqModel)-deo
+Pac.MappingSetContainer.Path=$(AppDir)/config/model/$(EqModel)/Mapping.xml
+de.znt.pac.PACService.xmlLocation=$(AppDir)/config/model/$(EqModel)/pac.xml
+
+#########################################################################
+### SECS communication settings  
+#########################################################################
+$(Equipment1.Name).SecsConnectionMode=active
+$(Equipment1.Name).T3Timeout=45
+$(Equipment1.Name).T5Timeout=10
+$(Equipment1.Name).T6Timeout=5
+$(Equipment1.Name).T7Timeout=20
+$(Equipment1.Name).T8Timeout=5
+$(Equipment1.Name).LinktestInterval=60
+
+##MAIN EQUIPMENT PROCESS STATE##
+Secs.ProcessState.$(Equipment1.Name).1=INIT
+Secs.ProcessState.$(Equipment1.Name).2=IDLE
+Secs.ProcessState.$(Equipment1.Name).3=MAINTENANCE
+Secs.ProcessState.$(Equipment1.Name).4=EXECUTING
+Secs.ProcessState.$(Equipment1.Name).5=ERROR
+Secs.ProcessState.$(Equipment1.Name).States.Ready2Start=1,2,3
+Secs.ProcessState.$(Equipment1.Name).States.Processing=4
+Secs.ProcessState.$(Equipment1.Name).StatusVariable.Name=ProcessState
+
+Secs.ControlState.$(Equipment1.Name).1=OFFLINE Equipment Offline
+Secs.ControlState.$(Equipment1.Name).2=OFFLINE Attempt Online
+Secs.ControlState.$(Equipment1.Name).3=OFFLINE Host Offline
+Secs.ControlState.$(Equipment1.Name).4=ONLINE Local
+Secs.ControlState.$(Equipment1.Name).5=ONLINE Remote
+Secs.ControlState.$(Equipment1.Name).Local=4
+Secs.ControlState.$(Equipment1.Name).Offline=1
+Secs.ControlState.$(Equipment1.Name).Remote=5
+Secs.ControlState.$(Equipment1.Name).States.Offline=1,2,3
+Secs.ControlState.$(Equipment1.Name).States.Online=4,5
+Secs.ControlState.$(Equipment1.Name).StatusVariable.Name=ControlState
+
+###PORT 1 PROCESS STATE###
+Secs.ProcessState.$(Port1EqpName).1=Tube empty (no boat)
+Secs.ProcessState.$(Port1EqpName).2=Tube with boat empty
+Secs.ProcessState.$(Port1EqpName).3=Tube with boat before process
+Secs.ProcessState.$(Port1EqpName).4=Tube in process
+Secs.ProcessState.$(Port1EqpName).5=Tube with boat after process cold
+Secs.ProcessState.$(Port1EqpName).6=Tube with boat after process hot
+Secs.ProcessState.$(Port1EqpName).States.Ready2Start=1,2,3
+Secs.ProcessState.$(Port1EqpName).States.Processing=4,5,6
+Secs.ProcessState.$(Port1EqpName).StatusVariable.Name=StatusTube1
+
+###PORT 1 PROCESS STATE###
+Secs.ProcessState.$(Port2EqpName).1=Tube empty (no boat)
+Secs.ProcessState.$(Port2EqpName).2=Tube with boat empty
+Secs.ProcessState.$(Port2EqpName).3=Tube with boat before process
+Secs.ProcessState.$(Port2EqpName).4=Tube in process
+Secs.ProcessState.$(Port2EqpName).5=Tube with boat after process cold
+Secs.ProcessState.$(Port2EqpName).6=Tube with boat after process hot
+Secs.ProcessState.$(Port2EqpName).States.Ready2Start=1,2,3
+Secs.ProcessState.$(Port2EqpName).States.Processing=4,5,6
+Secs.ProcessState.$(Port2EqpName).StatusVariable.Name=StatusTube2
+
+###PORT 1 PROCESS STATE###
+Secs.ProcessState.$(Port3EqpName).1=Tube empty (no boat)
+Secs.ProcessState.$(Port3EqpName).2=Tube with boat empty
+Secs.ProcessState.$(Port3EqpName).3=Tube with boat before process
+Secs.ProcessState.$(Port3EqpName).4=Tube in process
+Secs.ProcessState.$(Port3EqpName).5=Tube with boat after process cold
+Secs.ProcessState.$(Port3EqpName).6=Tube with boat after process hot
+Secs.ProcessState.$(Port3EqpName).States.Ready2Start=1,2,3
+Secs.ProcessState.$(Port3EqpName).States.Processing=4,5,6
+Secs.ProcessState.$(Port3EqpName).StatusVariable.Name=StatusTube3
+
+###PORT 1 PROCESS STATE###
+Secs.ProcessState.$(Port1EqpNPort4EqpNameempty (no boat)
+Secs.ProcessState.$(Port4EqpName).2=Tube with boat empty
+Secs.ProcessState.$(Port4EqpName).3=Tube with boat before process
+Secs.ProcessState.$(Port4EqpName).4=Tube in process
+Secs.ProcessState.$(Port4EqpName).5=Tube with boat after process cold
+Secs.ProcessState.$(Port4EqpName).6=Tube with boat after process hot
+Secs.ProcessState.$(Port4EqpName).States.Ready2Start=1,2,3
+Secs.ProcessState.$(Port4EqpName).States.Processing=4,5,6
+Secs.ProcessState.$(Port4EqpName).StatusVariable.Name=StatusTube4
+
+Secs.MachineLoadedRecipe.${Equipment1.Name}.StatusVariable.Name=
+Secs.RemoteCommand.PpidSelect.Name=PP-SELECT
+
+Port1EqpName=$(PacService)-1
+Port2EqpName=$(PacService)-2
+Port3EqpName=$(PacService)-3
+Port4EqpName=$(PacService)-4
+
+Secs.Event.PortId.VID=DV@TubeID

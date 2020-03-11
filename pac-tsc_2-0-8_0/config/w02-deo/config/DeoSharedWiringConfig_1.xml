@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="EqModelScenario/Default/Disconnect" triggerProviderId="EqModelScenario" triggerCategoryId="Default" triggerId="Disconnect">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpDisconnect_W02" id="20171107160637359" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarScenario/Synchronous/TrackInLot" triggerProviderId="CamstarScenario" triggerCategoryId="Synchronous" triggerId="TrackInLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapVerifyBatchTrackInLot" id="20180226205304095" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MainEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapMesSpecByPassRecipeValidation" id="20180418010619874" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="MappingManager" bindingParameterId="MappingManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="SnrCheckProcessState" id="20171221220803803" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapCleanUpZeroMesLot" id="20180114114719893" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapRemoveAllDomainObjects" id="20180114114742515" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="EquipmentMaterialDomainObjectManager" bindingParameterId="EquipmentMaterialDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataStatisticDomainObjectManager" bindingParameterId="WipDataStatisticDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentPMDomainObjectManager" bindingParameterId="EquipmentPMDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataDomainObjectManager" bindingParameterId="WipDataDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="PmManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="SequenceParameterManager" bindingParameterId="SequenceParameterManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WaferClassificationDomainObjectManager" bindingParameterId="WaferClassificationDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapAddLot" id="20170813185628932" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MainEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentMaterialDomainObjectManager" bindingParameterId="EquipmentMaterialDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="PMManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataManager" bindingParameterId="WipDataDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentIdentifyService" bindingParameterId="EquipmentIdentifyService" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapSetVirtualRun" id="20180205234121238" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapVerifyPmStatus" id="20180418010946302" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="PmManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapVerifyPmThruput" id="20180418010941562" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="PmManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="SnrTrackInLot" id="20171115144107625" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MainEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapEvaluateCapability" id="20180515145409443" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapVerifyFirstRunControl" id="20171228015125951" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapVerifyVirtualRun" id="20171125131959722" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="MesTrackInOutboundResponse" id="20170817131916795" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapTrackInErrorHandler" id="20170813185727537" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Exception" bindingParameterId="Exception" bindingParameterSource="RUNTIME"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="MesErrorOutboundResponse" id="20170813185749597" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Exception" bindingParameterId="Exception" bindingParameterSource="RUNTIME"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarScenario/Synchronous/TrackOutLot" triggerProviderId="CamstarScenario" triggerCategoryId="Synchronous" triggerId="TrackOutLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="SnrCheckProcessState" id="20171221220845925" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="SnrTrackOutLot" id="20171115144255972" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MainEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="MesTrackOutOutboundResponse" id="20170813190610014" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MesErrorOutboundResponse" id="20170813190539950" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Exception" bindingParameterId="Exception" bindingParameterSource="RUNTIME"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="System/System/Up" triggerProviderId="System" triggerCategoryId="System" triggerId="Up">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MesGetEquipmentMaint" id="20170913150435557" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="MeasurementScenario/PM/VerifyPMDueForToolSpc" triggerProviderId="MeasurementScenario" triggerCategoryId="PM" triggerId="VerifyPMDueForToolSpc">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapVerifyMesPMMaintStatus" id="20171117122530892" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Equipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentPMDomainObjectManager" bindingParameterId="EquipmentPMDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapHandlePMPastDueException" id="20171117124119593" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Exception" bindingParameterId="Exception" bindingParameterSource="RUNTIME"/>
+<inputBindingParameterDefinition id="CamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentPMDomainObjectManager" bindingParameterId="EquipmentPMDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataDomainObjectManager" bindingParameterId="WipDataDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="EqModelScenario/Default/MesTrackInSucceed" triggerProviderId="EqModelScenario" triggerCategoryId="Default" triggerId="MesTrackInSucceed">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpMesTrackInSucceed" id="20171123092028169" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Parameters" bindingParameterId="Parameters" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="EqModelScenario/Default/MesTrackOutSuceed" triggerProviderId="EqModelScenario" triggerCategoryId="Default" triggerId="MesTrackOutSuceed">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpMesTrackOutSuceed" id="20171117130854998" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Parameters" bindingParameterId="Parameters" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="MeasurementScenario/PM/MesSubmitAdHocWipData" triggerProviderId="MeasurementScenario" triggerCategoryId="PM" triggerId="MesSubmitAdHocWipData">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MesSubmitAdHocWipData" id="20171117162307329" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TscEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WipDataSet" bindingParameterId="WipDataSet" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentPMDomainObjectManager" bindingParameterId="EquipmentPMDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="result" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="MeasurementScenario/PM/MesUpdatePMInfo" triggerProviderId="MeasurementScenario" triggerCategoryId="PM" triggerId="MesUpdatePMInfo">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MesUpdatePMMaintStatus" id="20171118152649945" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="Equipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentPMDomainObjectManager" bindingParameterId="EquipmentPMDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="MaintenanceRequirement" bindingParameterId="MaintenanceRequirementId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ToolSpcDummyLotId" bindingParameterId="ToolSpcDummyLotId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ToolSpcSpecName" bindingParameterId="ToolSpcSpecName" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarScenario/Synchronous/PrepareLot" triggerProviderId="CamstarScenario" triggerCategoryId="Synchronous" triggerId="PrepareLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MesPrepareLotSetEquipmentRecipe" id="20171121171020129" asynchron="false" stopOnError="true" execute="false" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="MesTrackInOutboundResponse" id="20171121171045334" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MesErrorOutboundResponse" id="20171121171227824" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Exception" bindingParameterId="Exception" bindingParameterSource="RUNTIME"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarMesService/Synchronous/PrepareLot" triggerProviderId="CamstarMesService" triggerCategoryId="Synchronous" triggerId="PrepareLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapDispatchCamstarScenario" id="20171126002211050" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentIdentifier" bindingParameterId="EquipmentIdentifyService" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TriggerName" bindingParameterId="TriggerName" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters>
+<bindingParameter id="InputXml" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"></value>
+</bindingParameter>
+<bindingParameter id="TriggerName" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">PrepareLot</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarMesService/Synchronous/TrackInLot" triggerProviderId="CamstarMesService" triggerCategoryId="Synchronous" triggerId="TrackInLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapDispatchCamstarScenario" id="20171126002413957" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentIdentifier" bindingParameterId="EquipmentIdentifyService" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TriggerName" bindingParameterId="TriggerName" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters>
+<bindingParameter id="TriggerName" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">TrackInLot</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarMesService/Synchronous/TrackOutLot" triggerProviderId="CamstarMesService" triggerCategoryId="Synchronous" triggerId="TrackOutLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapDispatchCamstarScenario" id="20171126002445613" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="EquipmentIdentifier" bindingParameterId="EquipmentIdentifyService" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TriggerName" bindingParameterId="TriggerName" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters>
+<bindingParameter id="TriggerName" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">TrackOutLot</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarMesService/Asynchronous/CompleteLot" triggerProviderId="CamstarMesService" triggerCategoryId="Asynchronous" triggerId="CompleteLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapDispatchCamstarAsyncScenario" id="20171127210722676" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentIdentifier" bindingParameterId="EquipmentIdentifyService" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TriggerName" bindingParameterId="TriggerName" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters>
+<bindingParameter id="TriggerName" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">CompleteLot</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarScenario/Asynchronous/CompleteLot" triggerProviderId="CamstarScenario" triggerCategoryId="Asynchronous" triggerId="CompleteLot">
+                <comment>Sleep 2 second to prevent sychronous issue with Camstar</comment>
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MesSetRecipeWipData" id="20180413125822966" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="WipdataSetupName" bindingParameterId="WipdataSetupName" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters>
+<bindingParameter id="WipdataSetupName" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">SysLogicalRecipe</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                        <deoReference deoId="EapRealRunQtyTrackInVirtualEqp" id="20180112151702737" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MainEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapCheckThruput" id="20171213121420796" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="PmManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="SnrTrackOutSucceed" id="20180106091057647" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapRemoveTrackOutRecipeDO" id="20181219200959092" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapRemoveTrackOutLot" id="20171126181644513" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="TscEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapRemoveAllDomainObjects" id="20171230231908591" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="EquipmentMaterialDomainObjectManager" bindingParameterId="EquipmentMaterialDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataStatisticDomainObjectManager" bindingParameterId="WipDataStatisticDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentPMDomainObjectManager" bindingParameterId="EquipmentPMDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataDomainObjectManager" bindingParameterId="WipDataDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="PmManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="SequenceParameterManager" bindingParameterId="SequenceParameterManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WaferClassificationDomainObjectManager" bindingParameterId="WaferClassificationDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapRemoveTrackOutLot" id="20180112151718271" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="TscEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapRemoveAllDomainObjects" id="20180112151731477" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="EquipmentMaterialDomainObjectManager" bindingParameterId="EquipmentMaterialDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataStatisticDomainObjectManager" bindingParameterId="WipDataStatisticDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentPMDomainObjectManager" bindingParameterId="EquipmentPMDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WipDataDomainObjectManager" bindingParameterId="WipDataDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="RecipeManager" bindingParameterId="RecipeManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="PmManager" bindingParameterId="PmManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="SequenceParameterManager" bindingParameterId="SequenceParameterManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="WaferClassificationDomainObjectManager" bindingParameterId="WaferClassificationDomainObjectManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapRealRunQtyTrackInRealEqp" id="20180112151744804" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MainEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Exception" bindingParameterId="Exception" bindingParameterSource="RUNTIME"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarMesService/Synchronous/CancelTrackInLot" triggerProviderId="CamstarMesService" triggerCategoryId="Synchronous" triggerId="CancelTrackInLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapDispatchCamstarScenario" id="20171130195300716" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentIdentifier" bindingParameterId="EquipmentIdentifyService" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TriggerName" bindingParameterId="TriggerName" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters>
+<bindingParameter id="InputXml" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">CancelTrackInLot</value>
+</bindingParameter>
+<bindingParameter id="TriggerName" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">CancelTrackInLot</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarScenario/Synchronous/CancelTrackInLot" triggerProviderId="CamstarScenario" triggerCategoryId="Synchronous" triggerId="CancelTrackInLot">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="SnrCheckProcessState" id="20171221220657957" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="MesTrackOutOutboundResponse" id="20171130195429136" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarServiceImpl" bindingParameterId="CamstarService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="ResultXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarMesService/Asynchronous/TrackInComplete" triggerProviderId="CamstarMesService" triggerCategoryId="Asynchronous" triggerId="TrackInComplete">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapDispatchCamstarAsyncScenario" id="20180112113248968" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentIdentifier" bindingParameterId="EquipmentIdentifyService" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TriggerName" bindingParameterId="TriggerName" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters>
+<bindingParameter id="TriggerName" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">TrackInComplete</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarScenario/Asynchronous/TrackInComplete" triggerProviderId="CamstarScenario" triggerCategoryId="Asynchronous" triggerId="TrackInComplete">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapSleep" id="20180120135152176" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="DurationInSecond" bindingParameterId="DurationInSecond" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters>
+<bindingParameter id="DurationInSecond" type="java.lang.Integer" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">2</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                        <deoReference deoId="EapUpdateLastCapability" id="20180515150336303" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                        <deoReference deoId="EapVirtualRunCancelTrackIn" id="20180112151618077" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CMaterialManager" bindingParameterId="MaterialManager:Manager" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="MainEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarMesService/Asynchronous/TrackInWipMain" triggerProviderId="CamstarMesService" triggerCategoryId="Asynchronous" triggerId="TrackInWipMain">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EapDispatchCamstarAsyncScenario" id="20180226104949641" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="CCamstarService" bindingParameterId="CamstarMesService:Service" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="EquipmentIdentifier" bindingParameterId="EquipmentIdentifyService" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="DeoEventDispatcher" bindingParameterId="DeoEventDispatcher:Dispatcher" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="InputXml" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="TriggerName" bindingParameterId="TriggerName" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters>
+<bindingParameter id="TriggerName" type="java.lang.String" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">TrackInWipMain</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="CamstarScenario/Asynchronous/TrackInWipMain" triggerProviderId="CamstarScenario" triggerCategoryId="Asynchronous" triggerId="TrackInWipMain">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="MesSetTrackInWipMainInfo" id="20180226113126114" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="InputXmlDocument" bindingParameterId="InputXmlDocument" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="CEquipment" bindingParameterId="CEquipment" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpDisconnect_W02" version="1" id="EqpDisconnect_W02"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyMesPMMaintStatus" version="1" id="EapVerifyMesPMMaintStatus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesUpdatePMMaintStatus" version="1" id="MesUpdatePMMaintStatus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapHandleStateChange" version="1" id="EapHandleStateChange"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpLogEventMessage" version="1" id="EqpLogEventMessage"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpStoreEventParameter" version="1" id="EqpStoreEventParameter"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapArchiveLotInfoFileService" version="1" id="EapArchiveLotInfoFileService"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapArchiveLotInfoFileServiceByTiTime" version="1" id="EapArchiveLotInfoFileServiceByTiTime"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="DprDisconnectEquipment" version="1" id="DprDisconnectEquipment"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="DprRequestEstablishConnection" version="1" id="DprRequestEstablishConnection"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrRequestProcessData" version="1" id="SnrRequestProcessData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrDisconnectEquipment" version="1" id="SnrDisconnectEquipment"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrRequestEstablishConnection" version="1" id="SnrRequestEstablishConnection"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapHandlePMPastDueException" version="1" id="EapHandlePMPastDueException"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrMsmMesUpdatePMInfo" version="1" id="SnrMsmMesUpdatePMInfo"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpMesTrackOutSuceed" version="1" id="EqpMesTrackOutSuceed"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesSubmitAdHocWipData" version="1" id="MesSubmitAdHocWipData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrMsmEapVerifyMesPMMaintStatus" version="1" id="SnrMsmEapVerifyMesPMMaintStatus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrMsmEqpMesSubmitWipData" version="1" id="SnrMsmEqpMesSubmitWipData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesPrepareLotSetEquipmentRecipe" version="1" id="MesPrepareLotSetEquipmentRecipe"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesTrackInOutboundNotifySucceed" version="1" id="MesTrackInOutboundNotifySucceed"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpMesTrackInSucceed" version="1" id="EqpMesTrackInSucceed"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesTrackInOutboundVerifySingleWafer" version="1" id="MesTrackInOutboundVerifySingleWafer"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="_TestMesSubmitAdHocWipData" version="1" id="_TestMesSubmitAdHocWipData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyVirtualRun" version="1" id="EapVerifyVirtualRun"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapDispatchCamstarScenario" version="1" id="EapDispatchCamstarScenario"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapUpdateCapability" version="1" id="EapUpdateCapability"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapDispatchCamstarAsyncScenario" version="1" id="EapDispatchCamstarAsyncScenario"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapRemoveTrackOutWaferLot" version="1" id="EapRemoveTrackOutWaferLot"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapCheckThruput" version="1" id="EapCheckThruput"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="W02MesCompletePm" version="1" id="W02MesCompletePm"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrTrackInSucceed" version="1" id="SnrTrackInSucceed"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapCsvSetEqpCapability" version="1" id="EapCsvSetEqpCapability"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyFirstRunControl" version="1" id="EapVerifyFirstRunControl"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapToolSpcCompletePM" version="1" id="EapToolSpcCompletePM"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSetLotAttrRunCountByPM" version="1" id="EapSetLotAttrRunCountByPM"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapAutoTrackIn" version="1" id="EapAutoTrackIn"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSetLotAttrPreMeasValue" version="1" id="EapSetLotAttrPreMeasValue"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapCalcPrePostMeasValue" version="1" id="EapCalcPrePostMeasValue"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="W02EapCalculateWipResult" version="1" id="W02EapCalculateWipResult"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapStoreSpcDataDomainObject" version="1" id="EapStoreSpcDataDomainObject"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSendSpcDataCsvFile" version="1" id="EapSendSpcDataCsvFile"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapRemoveAllDomainObjects" version="1" id="EapRemoveAllDomainObjects"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapAddMeasureSpec" version="1" id="EapAddMeasureSpec"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyAllSpecDone" version="1" id="EapVerifyAllSpecDone"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVirtualRunCancelTrackIn" version="1" id="EapVirtualRunCancelTrackIn"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="SnrTrackOutSucceed" version="1" id="SnrTrackOutSucceed"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyCenterMinViolation" version="1" id="EapVerifyCenterMinViolation"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSpecResistanceRangeCheck" version="1" id="EapSpecResistanceRangeCheck"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapRealRunQtyTrackInVirtualEqp" version="1" id="EapRealRunQtyTrackInVirtualEqp"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapRealRunQtyTrackInRealEqp" version="1" id="EapRealRunQtyTrackInRealEqp"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSubmitWDRunCountByPM" version="1" id="EapSubmitWDRunCountByPM"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyPmStatus" version="1" id="EapVerifyPmStatus"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapWipDataCalcRRV" version="1" id="EapWipDataCalcRRV"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapSetVirtualRun" version="1" id="EapSetVirtualRun"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyPmThruput" version="1" id="EapVerifyPmThruput"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapAckowledgeError" version="1" id="EapAckowledgeError"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="MesSetRecipeWipData" version="1" id="MesSetRecipeWipData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapEvaluateCapability" version="1" id="EapEvaluateCapability"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapUpdateLastCapability" version="1" id="EapUpdateLastCapability"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapVerifyThruputControl" version="1" id="EapVerifyThruputControl"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapCheckDummyLotState" version="1" id="EapCheckDummyLotState"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapResetTestLotWorkflow" version="1" id="EapResetTestLotWorkflow"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EapRemoveTrackOutRecipeDO" version="1" id="EapRemoveTrackOutRecipeDO"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

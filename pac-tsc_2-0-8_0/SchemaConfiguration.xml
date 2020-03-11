@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ZWinApiSchemaConfiguration>
+    <Schema Id="1529775674210" Name="ZWinApiOperation">
+    </Schema>
+
+    <Schema Id="1529775696653" Name="ZWinApiAction">
+        <SchemaComponent Id="1529822320772" Name="Btn_PressButton">
+            <SchemaItem Id="1529822336400" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1529822378373" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1529822408676" Name="Ctrl_GetControlText">
+            <SchemaItem Id="1529822428517" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1529822441689" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1529913573799" Name="Win_WaitWindow">
+            <SchemaItem Id="1529913615467" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1529913717935" Name="Timeout" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1529913970492" Name="Win_CloseWindow">
+            <SchemaItem Id="1529913978719" Name="WinTitle" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530061105415" Name="Sleep">
+            <SchemaItem Id="1530061110784" Name="Seconds" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530082689447" Name="Ctrl_IsControlEnabled">
+            <SchemaItem Id="1530082740159" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530082765447" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530082791319" Name="Ctrl_IsControlVisible">
+            <SchemaItem Id="1530082941948" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530082960298" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530083036540" Name="Win_GetWindowPosition">
+            <SchemaItem Id="1530083048728" Name="WinTitle" Type="Component"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530083066833" Name="Ctrl_GetControlPosition">
+            <SchemaItem Id="1530083089202" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530083102297" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530083169001" Name="Ctrl_HideControl">
+            <SchemaItem Id="1530083196067" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530083216345" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530083233637" Name="Ctrl_ShowControl">
+            <SchemaItem Id="1530083245444" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530083254759" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530083316036" Name="Ctrl_SetControlText">
+            <SchemaItem Id="1530083347648" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530083366089" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530083373456" Name="Text" Type="Token"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530083467196" Name="Ctrl_SendControlText">
+            <SchemaItem Id="1530083486039" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530083493789" Name="Controlid" Type="String"/>
+            <SchemaItem Id="1530083504757" Name="Text" Type="Token"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530083704138" Name="ComboList_SetTextSelection">
+            <SchemaItem Id="1530084142053" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530084150480" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530084166009" Name="Text" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530085190258" Name="ComboList_GetSelectedText">
+            <SchemaItem Id="1530085250808" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530085258854" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530086014194" Name="List_SetTextSelectionEx">
+            <SchemaItem Id="1530086374063" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530086385111" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530086406490" Name="Text" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530086166110" Name="List_GetSelectedTextEx">
+            <SchemaItem Id="1530086420565" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530086430313" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530167020321" Name="List_GetItemCount">
+            <SchemaItem Id="1530167061343" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530167075713" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530167530211" Name="List_SetTextSelectionByIndex">
+            <SchemaItem Id="1530167543712" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530167560156" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530167577023" Name="Index" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530167611991" Name="List_GetTextByIndex">
+            <SchemaItem Id="1530168110804" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530168119163" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530168306168" Name="Index" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530168130639" Name="List_GetIndexByText">
+            <SchemaItem Id="1530168389067" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530168403659" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530168420137" Name="Text" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530168483042" Name="List_SetMultiSelectionByIndex">
+            <SchemaItem Id="1530168551303" Name="WInTitle" Type="String"/>
+            <SchemaItem Id="1530168560608" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530168574139" Name="Index" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530168686914" Name="ComboList_FindString">
+            <SchemaItem Id="1530168739313" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530168749541" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530168756764" Name="Text" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530169026465" Name="Combo_GetTextByIndex">
+            <SchemaItem Id="1530175321890" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530175333873" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530175350085" Name="Index" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530169149800" Name="Combo_SetTextSelectionByIndex">
+            <SchemaItem Id="1530175372089" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530175385464" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530175416205" Name="Index" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530169294100" Name="Tab_GetCurrentTabText">
+            <SchemaItem Id="1530175430211" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530175441955" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530169814673" Name="Tab_SetTextSelection">
+            <SchemaItem Id="1530175461609" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530175469863" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530175483975" Name="Text" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530169883048" Name="Tab_SetTextSelectionByIndex">
+            <SchemaItem Id="1530175571313" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530175583943" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530175592565" Name="Index" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530170005877" Name="Tab_GetCurrentTabIndex">
+            <SchemaItem Id="1530175630015" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530175639905" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530170221761" Name="ListView_ItemClick">
+            <SchemaItem Id="1530175659934" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530175668223" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530175677377" Name="Text" Type="String"/>
+            <SchemaItem Id="1530175859081" Name="Clicks" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530170271434" Name="ListView_SetTextByColRow">
+            <SchemaItem Id="1530175961511" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530175968629" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530175979705" Name="Text" Type="String"/>
+            <SchemaItem Id="1530175986656" Name="ColumnName" Type="String"/>
+            <SchemaItem Id="1530176015145" Name="RowName" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530170338539" Name="ListView_GetTextByColRow">
+            <SchemaItem Id="1530176043794" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530176058553" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530176083061" Name="ColumnName" Type="String"/>
+            <SchemaItem Id="1530176091634" Name="RowName" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530170354189" Name="TreeView_ItemClick">
+            <SchemaItem Id="1530176130370" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530176138624" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530176148600" Name="Text" Type="String"/>
+            <SchemaItem Id="1530176273022" Name="TreePath" Type="String"/>
+            <SchemaItem Id="1530176293844" Name="Click" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530170480777" Name="TreeView_GetAllText">
+            <SchemaItem Id="1530176327111" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530176337072" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530170519784" Name="Ctrl_GetControlFocus">
+            <SchemaItem Id="1530176430014" Name="WinTitle" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530170531788" Name="Ctrl_SetControlFocus">
+            <SchemaItem Id="1530176470856" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530176479028" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530174918353" Name="Ctrl_EnableControl">
+            <SchemaItem Id="1530176499606" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530176508418" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530174939503" Name="Ctrl_DisableControl">
+            <SchemaItem Id="1530176526017" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530176543618" Name="ControlId" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530174975435" Name="Win_GetWindowTitle">
+            <SchemaItem Id="1530176557135" Name="WinTitle" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530174996321" Name="Win_IsWindowPixelFound">
+            <SchemaItem Id="1530176568962" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530176591540" Name="LeftCoord" Type="String"/>
+            <SchemaItem Id="1530176643046" Name="TopCoord" Type="String"/>
+            <SchemaItem Id="1530176656532" Name="RightCoord" Type="String"/>
+            <SchemaItem Id="1530176676090" Name="BottomCoord" Type="String"/>
+            <SchemaItem Id="1530176697378" Name="Colour" Type="String"/>
+        </SchemaComponent>
+        <SchemaComponent Id="1530175057400" Name="Btn_ReclickButton">
+            <SchemaItem Id="1530176772727" Name="WinTitle" Type="String"/>
+            <SchemaItem Id="1530176783496" Name="ControlId" Type="String"/>
+            <SchemaItem Id="1530176794476" Name="NewWinTitle" Type="String"/>
+            <SchemaItem Id="1530176820105" Name="RetryClicks" Type="String"/>
+            <SchemaItem Id="1530176888964" Name="Interval" Type="String"/>
+            <SchemaItem Id="1530176901800" Name="CtrlRelativeCoordX" Type="String"/>
+            <SchemaItem Id="1530176943930" Name="CtrlRelativeCoordY" Type="String"/>
+        </SchemaComponent>
+    </Schema>
+
+    
+    <Schema Id="1529775674210" Name="ZWinApiMapping">
+    </Schema>
+    
+</ZWinApiSchemaConfiguration>

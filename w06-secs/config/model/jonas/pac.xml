@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<processAutomationController xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://www.znt-richter.com/pac_1_0"    xsi:schemaLocation="http://www.znt-richter.com/pac_1_0 http://www.znt-richter.com/pac/pac_1_0.xsd" >
+  <multiLangId id="${PacService}"/>
+  <controlAlgorithmManager>
+    <multiLangId id="ControlAlgorithmManager"/>
+  </controlAlgorithmManager>
+  <machineManager>
+    <multiLangId id="MachineManager"/>
+    
+      <machineTree machineTreeName="${Equipment1.Name}">
+      <machineTreeNode machineTreeNodeName="${Equipment1.Name}">
+        <machineTreeNode machineTreeNodeName="${Equipment1.Name}">
+          <machine machineName="SecsMachine">
+            <multiLangId id="${Equipment1.Name}"/>
+            <parameterSetList>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="EC"/>
+                <definitionList>
+                </definitionList>
+              </parameterSet>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="SV"/>
+                <definitionList>
+                </definitionList>
+              </parameterSet>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="DV"/>
+                <definitionList>
+                </definitionList>
+              </parameterSet>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="Properties"/>
+                <definitionList>
+                </definitionList>
+              </parameterSet>
+            </parameterSetList>
+            <deviceCommunication recipeTranslator="" requestSpoolData="false" vidSpoolCountActual="108" vidSpoolState="1020">
+              <multiLangId id="SECS Connection"/>
+            </deviceCommunication>
+            <machineState>
+              <eventTriggeredCAList>
+              </eventTriggeredCAList>
+              <alarmTriggeredCAList>
+              </alarmTriggeredCAList>
+              <tdrTriggeredCAList>
+              </tdrTriggeredCAList>
+            </machineState>
+          </machine>
+        </machineTreeNode>
+      </machineTreeNode>
+    </machineTree>
+  </machineManager>
+  <recipeManager machineToRecipeContainerMap="true">
+    <multiLangId id="RecipeManager"/>
+  </recipeManager>
+  <processJobManager processRunInformationContainer="ProcessRunInformationContainer">
+    <multiLangId id="ProcessJobManager"/>
+    <specialProcessList>
+    </specialProcessList>
+  </processJobManager>
+  <materialManager>
+    <multiLangId id="MaterialManager"/>
+    <specificationList>
+    </specificationList>
+  </materialManager>
+</processAutomationController>

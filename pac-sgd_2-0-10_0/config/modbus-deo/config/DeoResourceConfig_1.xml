@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="SimpleUI/Modbus Characterization/001_Read Address" triggerProviderId="SimpleUI" triggerCategoryId="Modbus Characterization" triggerId="001_Read Address">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="ModbusReadData" id="20171006104937088" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ModBusService" bindingParameterId="ModBusService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ParameterName" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Addresse" bindingParameterId="Address" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="DataType" bindingParameterId="INT_16" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="AddressType" bindingParameterId="HOLDING_REGISTER" bindingParameterSource="GLOBAL"/>
+<inputBindingParameterDefinition id="ArraySize" bindingParameterId="ArraySize" bindingParameterSource="DEOREF"/>
+<inputBindingParameterDefinition id="SlaveId" bindingParameterId="SlaveId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters>
+<bindingParameter id="ArraySize" type="java.lang.Short" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:short">1</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="SimpleUI/Modbus Characterization/003_Write Address" triggerProviderId="SimpleUI" triggerCategoryId="Modbus Characterization" triggerId="003_Write Address">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="ModbusWriteData" id="20171006111105717" asynchron="false" stopOnError="false" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ModBusService" bindingParameterId="ModBusService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="ParameterName" bindingParameterId="Result" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Addresse" bindingParameterId="Address" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Value" bindingParameterId="Value" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SlaveId" bindingParameterId="SlaveId" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="ModbusConnection/ALARM/TestModbusAlarm1" triggerProviderId="ModbusConnection" triggerCategoryId="ALARM" triggerId="TestModbusAlarm1">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="LogModbusFloatValue" id="20171009103107675" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Values" bindingParameterId="Values" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="ModbusReadData" version="1" id="ModbusReadData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="ModbusWriteData" version="1" id="ModbusWriteData"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="ModbusGetAddressType" version="1" id="ModbusGetAddressType"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="LogMessage" version="1" id="LogMessage"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="LogModbusFloatValue" version="1" id="LogModbusFloatValue"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

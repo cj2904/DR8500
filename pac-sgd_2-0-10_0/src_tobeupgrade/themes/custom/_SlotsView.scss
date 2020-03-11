@@ -1,0 +1,12 @@
+@mixin SlotsView {
+    .z-SlotsView {
+    
+        .z-selectAll {
+        	font-size: 12px;
+        }
+        
+        :nth-child(even) {
+        	background: rgba(0, 0, 0, 0.01);
+        }
+    }
+}

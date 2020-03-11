@@ -1,0 +1,49 @@
+@mixin PacAuthenticationHandler {
+
+	$border_line: 1px solid #DDDDDD;
+
+	#PacAuthenticationHandler {
+	    background: $z_white;
+	    border: $border_line;
+	    border-radius: 2px;
+	    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 50px;
+	
+		> div {
+    		padding-left: 20px;
+    		padding-right: 20px;
+		}
+
+		.v-slot-z-statusbarMessage {
+    		border-top: $border_line;
+    		background: rgba(0, 0, 0, 0.03);
+    		padding-bottom: 5px;
+    		
+    		:hover {
+    			color: black;
+    		}
+		}
+
+		.v-slot-z-welcomeMessage  {
+    		border-bottom: $border_line;
+			background: $z_dark-grey;
+		}
+
+		#welcomeMessage
+		{
+			text-align: center;
+			color: $z_white;
+		}
+
+		.v-link,
+		.v-button-link {
+			text-decoration: none;
+		}
+		.v-link {
+			color: $z_dark-grey;
+		}
+	}
+}

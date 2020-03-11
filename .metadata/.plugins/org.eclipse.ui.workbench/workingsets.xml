@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576121579438_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=pac-tsc_2-0-8_0/config\/w02-winapi-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pac-tsc_2-0-8_0/config\/w02-secs-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pac-tsc_2-0-8_0/config\/win-api-scenario-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pac-tsc_2-0-8_0/config\/w02-deo\/common" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pac-tsc_2-0-8_0/config\/w02-modbus-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pac-tsc_2-0-8_0/config\/w02-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pac-tsc_2-0-8_0/config\/mes-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pac-w06_0-1-1_0/config\/w06-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=pac-w06_0-1-1_0/src_ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/prober\/prober-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/semco-furnace\/semco-furnace-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/dis-grinder\/dis-grinder-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/default\/default-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/sputter\/sputter-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/axcelis-gsd200\/axcelis-gsd200-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/fittech-fcm6104\/fittech-fcm6104-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/ast-peva900el\/ast-peva900el-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/ke-furnace\/ke-furnace-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/deo\/common" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/dnk-ma-4000\/dnk-ma-4000-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=w06-secs/config\/model\/aoi\/aoi-deo\/deos" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576121579454_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576121587163_2" label="Window Working Set" name="Aggregate for window 1576121587163"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576196410876_3" label="Window Working Set" name="Aggregate for window 1576196410876"/>
+</workingSetManager>

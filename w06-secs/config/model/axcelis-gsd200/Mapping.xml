@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:MappingConfiguration xmlns:ns2="http://www.znt-richter.com/pacMapping/">
+    <Schema Id="3dea8b17-73a0-4f1a-8dc1-a57e2d6bbe9b" Name="MES">
+        <SchemaComponent Id="74a89750-8805-4b4d-aadb-d3c7513a7503" Name="WipData">
+            <SchemaItem Id="19165921-3bdb-4c17-996e-dd34168a17a9" Name="MIN_VOLTAGE" Type="Float" Unit="SV@DB_IDL_PLSM_FIL_VOLTAGE_MIN_AV"/>
+            <SchemaItem Id="7cb0b99e-7c12-4968-87dc-4da50daaa492" Name="MAX_VOLTAGE" Type="Float" Unit="SV@DB_IDL_PLSM_FIL_VOLTAGE_MAX_AV"/>
+        </SchemaComponent>
+    </Schema>
+</ns2:MappingConfiguration>

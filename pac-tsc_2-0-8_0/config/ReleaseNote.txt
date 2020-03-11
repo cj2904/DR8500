@@ -1,0 +1,145 @@
+##################################################################
+#               R E L E A S E  -  N O T E S
+#  ---------------------------------------------------------------
+#  Project:     pac for Yangxin Everwell Eletronics, China;
+#  ---------------------------------------------------------------
+#  Module:      pac-tsc;
+##################################################################
++ New     : <new feature/user story>
++ Improve : <improvement of existing feature/user story>
++ Bugfix  : <fix of (reported) bug>
+##################################################################
+
+Version: 1-3-17									  Date: 2018-06-22
+------------------------------------------------------------------
++ Improve: Include Recipe Thruput Factor In EapVerifyPmThruput
++ Improve: Add  Eap Evaluate Capabilities Error Handling
+
+Version: 1-3-9									  Date: 2018-06-05
+------------------------------------------------------------------
++ Improve: Use Lot Recipe to Select Recipe for MesTioSelectRecipe
++ Improve: Add Timestamp Into Comment Prevent No Change Error
++ Improve: Fix AddResourceComment for Modbus WipData
++ Improve: Remove EapUpdateCapability at CompleteLot
++ New: Add EapControlStatusLog for Record Online Offline Status
+
+
+
+Version: 1-3-5									  Date: 2018-05-15
+------------------------------------------------------------------
++ Improve: Evaluate & Update Capability At TrackIn
++ Improve: Set Equipment Last Process Capability At TrackInComplete
++ Improve: Perform MoveIn for Initialize CS Thruput & Recipe Double Thruput
++ Improve: Reset LotModifyWafers When Perform Recipe Double Thruput
+
+Version: 1-3-4									  Date: 2018-05-08
+------------------------------------------------------------------
++ Improve: ResetCapability whenever completePM
+
+Version: 1-3-4									  Date: 2018-05-08
+------------------------------------------------------------------
++ Improve: Complete PM if lot is tracked in after PM time
++ Bugfix : Update thruput qty after complete first dummy track out
+
+Version: 1-3-3									  Date: 2018-05-07
+------------------------------------------------------------------
++ Bugfix : Update capability when receive complete lot outbound
++ Bugfix : Fix recipe empty cause null pointer exception in recipe validation
++ Improve: Handle modbus hidden issues
+
+Version: 1-3-0									  Date: 2018-05-04
+------------------------------------------------------------------
++ Bugfix : Use outbound waferQty instead of wafer list size for real run qty deos
++ Bugfix : Fix pendingPM property not reset
++ Bugfix : Verify same recipe for by pass
+
+Version: 1-2-22									  Date: 2018-04-30
+------------------------------------------------------------------
++ Bugfix : Fix tolerance default value -1 if it's empty
+
+Version: 1-2-21									  Date: 2018-04-30
+------------------------------------------------------------------
++ Bugfix : Track in encounter lot on hold due to yield limit hold but still track in successfully
+
+Version: 1-2-20									  Date: 2018-04-27
+------------------------------------------------------------------
++ Improve : Clean up wafer
+
+Version: 1-2-19									  Date: 2018-04-27
+------------------------------------------------------------------
++ Improve : Remove PM and recipe during track out of wafer
++ Improve : Added logger for verify single recipe error
+
+Version: 1-2-14									  Date: 2018-04-23
+------------------------------------------------------------------
++ New  	  : Include Conditional Product GDPW in Outbound
++ Improve : Spec resistance range checking
+
+Version: 1-2-13									  Date: 2018-04-22
+------------------------------------------------------------------
++ Improve : Update Shared Deo Config for EapMesByPassSpec
+
+Version: 1-2-12									  Date: 2018-04-22
+------------------------------------------------------------------
++ Improve : Mes ByPass Spec Recipe Check
++ Improve : Verify PM Status By Next Due Date
++ Improve : Add Lot Id to Wafer Wip Data
+
+
+Version: 1-2-11									  Date: 2018-04-20
+------------------------------------------------------------------
++ Improve : Include WinApi Ping Connection
+
+Version: 1-2-10									  Date: 2018-04-20
+------------------------------------------------------------------
++ Improve : Fix Wafer Classification Domain Object
+
+Version: 1-2-9									  Date: 2018-04-19
+------------------------------------------------------------------
++ New  	  : Include MES TrackIn with Different Spec and Same Recipe Skip Checking
++ Improve : Recipe Thruput Range Selection with Include TrackIn Qty
++ Improve : PM Past Due Calculation Conditions with ThruputFactor and Greater Than Consideration
+
+
+Version: 1-2-0									  Date: 2018-03-28
+------------------------------------------------------------------
++ New  	  : Added Width depth sec for R_Fix, use Duration1+Duration2 for the value to submit
++ Improve : Handle water resistance by batch
++ Improve : Change mapping name to main equipment id instead of sub equipment id
+
+Version: 1-1-10									  Date: 2018-03-22
+------------------------------------------------------------------
++ Bugfix  : Fix track in wafer is not correct in TrackInComplete
+
+Version: 1-1-8									  Date: 2018-03-21
+------------------------------------------------------------------
++ Bugfix  : Fix track in wafer is not added correctly
+
+Version: 1-1-7									  Date: 2018-03-21
+------------------------------------------------------------------
++ Improve : Use containers for run count and spc data submit
+
+Version: 1-1-6									  Date: 2018-03-20
+------------------------------------------------------------------
++ Improve : Change TrackOutLotComplete to WipMainAfterCommit
+
+ModbusSubmitWipData
+Version: 1-1-6                                    Date: 2018-03-20
+------------------------------------------------------------------
++ Bugfix  : Fix recipe handling for modbus
+
+Version: 1-1-5                                    Date: 2018-03-20
+------------------------------------------------------------------
++ Bugfix  : Fix wip data is hidden should not send to Camstar during track out and track out
+
+Version: 1-1-4                                    Date: 2018-03-19
+------------------------------------------------------------------
++ New     : Add SetWIPData touchpoint
+
+Version: 1-1-3                                    Date: 2018-03-13
+------------------------------------------------------------------
++ Improve     : Change equipment ID to logical ID
+
+Version: 0-0-1                                    Date: 2017-11-07
+------------------------------------------------------------------
++ New     : Initial release

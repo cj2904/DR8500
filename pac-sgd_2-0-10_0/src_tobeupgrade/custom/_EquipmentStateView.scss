@@ -1,0 +1,55 @@
+@mixin EquipmentStateView {
+    .z-EquipmentStateView {
+        border-top: 1px solid rgb(187, 187, 187);
+        .z-systemId {
+        	padding-left: 5px;
+            font-weight: bold;
+        }
+        
+        > div.v-expand > div.v-slot:not(:first-child) {
+    		border-left: 1px solid $z_light-grey;
+        }
+        
+        > div.v-expand > div.v-slot:last-child {
+    		border-left: none;
+        }
+        
+        .z-connectionStateLabel {
+            padding-left: 15px;
+            font-weight: bold;
+        }
+        .z-connectionState {
+            padding-left: 5px;
+            font-weight: bold;
+        }
+        .z-controlStateLabel {
+            padding-left: 15px;
+            font-weight: bold;
+        }
+        .z-controlState {
+            padding-left: 5px;
+            font-weight: bold;
+        }
+        .z-processStateLabel {
+            padding-left: 15px;
+            font-weight: bold;
+        }
+        .z-processState {
+            padding-left: 5px;
+            font-weight: bold;
+        }
+        .z-statusInfo {
+           text-align: right;
+           padding-right: 10px;
+        }
+        .z-state-ok {
+            color: $z_green;
+        }
+        .z-state-error {
+            color: $z_red;
+        }
+        .z-state-warning {
+            color: $z_blue;
+        }
+    }
+}

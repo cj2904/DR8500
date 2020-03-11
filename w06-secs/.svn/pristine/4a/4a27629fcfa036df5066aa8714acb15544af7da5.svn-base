@@ -1,0 +1,4341 @@
+13:27:03 Loading Message File = 'c:\secsimpro+\merged library\plasmalab.sim'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\secsim.sso'...
+13:27:03 [S2F18] updated symbol vocabulary
+13:27:03 [S2F26] updated symbol vocabulary
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\definitions.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\fdsl.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\plasmalabfunctions.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\utils.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\plasmalabremotecmds.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\recipecmds.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\remotecmds.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\reportcmds.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\test_common.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\test_recipe.sso'...
+13:27:03 [ListRecipes] updated symbol vocabulary
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\test_cluster.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\test_scheduler.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\test_100.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\test_svc.sso'...
+13:27:03 Loading Script File = 'c:\secsimpro+\merged library\test_80.sso'...
+13:27:03 Enable Port Status = 0
+13:27:03 Script initialization completed. 
+13:27:03 
+13:27:03 
+13:27:03 Project initialisation
+13:27:03 Globals:
+13:27:03          GemControlState = 28
+13:27:03          GemProcessState = 
+13:27:09 (0) Sending Primary Message...
+13:27:09     <S1F13 W
+13:27:09     <L[0/1]>
+13:27:09 >
+13:27:09 Sending Connect Request: S1F13: length = 2
+13:27:13 (0) Sending Primary Message...
+13:27:13     <S1F13 W
+13:27:13     <L[0/1]>
+13:27:13 >
+13:27:13 Sending Connect Request: S1F13: length = 2
+13:27:14 (0) Received Reply Message...
+13:27:14     <S1F14
+13:27:14     <L[2/1]
+13:27:14         <B[1/1] 0x00>
+13:27:14         <L[2/1]
+13:27:14             <A[6/1] "PC4500">
+13:27:14             <A[6/1] "81.61 ">
+13:27:14         >
+13:27:14     >
+13:27:14 >
+13:27:14 (0) Received Reply Message...
+13:27:14     <S1F14
+13:27:14     <L[2/1]
+13:27:14         <B[1/1] 0x00>
+13:27:14         <L[2/1]
+13:27:14             <A[6/1] "PC4500">
+13:27:14             <A[6/1] "81.61 ">
+13:27:14         >
+13:27:14     >
+13:27:14 >
+13:27:18 (0) Sending Primary Message...
+13:27:18     <S1F17 W>
+13:27:18 Sending Request Online: S1F17: length = 0
+13:27:18 (0) Received Reply Message...
+13:27:18     <S1F18
+13:27:18     <B[1/1] 0x00>
+13:27:18 >
+13:27:18 (0) Received Primary Message...
+13:27:18     <S6F11 W
+13:27:18     <L[3/1]
+13:27:18         <U4[1/1] 100>
+13:27:18         <U4[1/1] 10>
+13:27:18         <L[0/1]>
+13:27:18     >
+13:27:18 >
+13:27:18 Received Event - ControlState_REMOTE / 10. (S6F11: length = 16)
+13:27:18 Looking up response S6F12
+13:27:18 (0) Sending Reply Message...
+13:27:18     <S6F12
+13:27:18     <B[1/1] 0x00>
+13:27:18 >
+13:27:18 Sending Reply: S6F12: length = 3
+13:27:28 
+13:27:28 
+13:27:28 -------------------------------------------------------------------------
+13:27:28 Test: Setup
+13:27:28 -------------------------------------------------------------------------
+13:27:30 Schedulers[0].LoadPort =1
+13:27:44 (0) Sending Primary Message...
+13:27:44     <S1F3 W
+13:27:44     <L[1/1]
+13:27:44         <U4[1/1] 410000>
+13:27:44     >
+13:27:44 >
+13:27:44 (0) Received Reply Message...
+13:27:44     <S1F4
+13:27:44     <L[1/1]
+13:27:44         <U1[1/1] 2>
+13:27:44     >
+13:27:44 >
+13:27:44 VID[ 410000 ] = 2
+13:27:44 Scheduler('1)
+13:27:44   Active     = 1
+13:27:44   State      = '2'
+13:27:44   Base       = 410000
+13:27:44   TotalCount = 1
+13:27:44   SelectType = 0
+13:27:44   PPID1      = HANDLING
+13:27:44   PPID2      = 
+13:27:44   Optimise   = <BOOLEAN[1/1] 0x00>
+13:27:44   SendLot    = 0
+13:27:44   SendBatch  = 1
+13:27:44   ReadyToRun = 0
+13:27:44   Map        = ',
+13:27:44 
+13:27:44 ----------------------------------------
+13:27:44 Starting Runs
+13:27:44 ----------------------------------------
+13:27:44 (0) Sending Primary Message...
+13:27:44     <S10F5 W
+13:27:44     <L[2/1]
+13:27:44         <B[1/1] 0x00>
+13:27:44         <L[1/1]
+13:27:44             <A[18/1] "Scheduler1 Started">
+13:27:44         >
+13:27:44     >
+13:27:44 >
+13:27:44 (0) Received Reply Message...
+13:27:44     <S10F6
+13:27:44     <B[1/1] 0x00>
+13:27:44 >
+13:27:44 (0) Sending Primary Message...
+13:27:44     <S10F5 W
+13:27:44     <L[2/1]
+13:27:44         <B[1/1] 0x00>
+13:27:44         <L[1/1]
+13:27:44             <A[29/1] "Scheduler1 Run #1/1 - Started">
+13:27:44         >
+13:27:44     >
+13:27:44 >
+13:27:44 (0) Received Reply Message...
+13:27:44     <S10F6
+13:27:44     <B[1/1] 0x00>
+13:27:44 >
+13:27:44 Loading recipe
+13:27:44 SelectProcessProgram
+13:27:44 (0) Sending Primary Message...
+13:27:44     <S2F41 W
+13:27:44     <L[2/1]
+13:27:44         <A[9/1] "PP-SELECT">
+13:27:44         <L[3/1]
+13:27:44             <L[2/1]
+13:27:44                 <A[4/1] "PPID">
+13:27:44                 <A[8/1] "HANDLING">
+13:27:44             >
+13:27:44             <L[2/1]
+13:27:44                 <A[7/1] "BATCHID">
+13:27:44                 <A[8/1] "Batch #1">
+13:27:44             >
+13:27:44             <L[2/1]
+13:27:44                 <A[6/1] "PORTID">
+13:27:44                 <U1[1/1] 1>
+13:27:44             >
+13:27:44         >
+13:27:44     >
+13:27:44 >
+13:27:44 (0) Received Primary Message...
+13:27:44     <S6F11 W
+13:27:44     <L[3/1]
+13:27:44         <U4[1/1] 101>
+13:27:44         <U4[1/1] 410004>
+13:27:44         <L[0/1]>
+13:27:44     >
+13:27:44 >
+13:27:44 (0) Received Primary Message...
+13:27:44     <S6F11 W
+13:27:44     <L[3/1]
+13:27:44         <U4[1/1] 102>
+13:27:44         <U4[1/1] 410000>
+13:27:44         <L[0/1]>
+13:27:44     >
+13:27:44 >
+13:27:44 (0) Received Reply Message...
+13:27:44     <S2F42
+13:27:44     <L[2/1]
+13:27:44         <B[1/1] 0x00>
+13:27:44         <L[0/1]>
+13:27:44     >
+13:27:44 >
+13:27:44 (0) Received Primary Message...
+13:27:44     <S6F11 W
+13:27:44     <L[3/1]
+13:27:44         <U4[1/1] 103>
+13:27:44         <U4[1/1] 19>
+13:27:44         <L[0/1]>
+13:27:44     >
+13:27:44 >
+13:27:44 (0) Sending Primary Message...
+13:27:44     <S1F3 W
+13:27:44     <L[1/1]
+13:27:44         <U4[1/1] 300023>
+13:27:44     >
+13:27:44 >
+13:27:45 (0) Received Reply Message...
+13:27:45     <S1F4
+13:27:45     <L[1/1]
+13:27:45         <U4[1/1] 0>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Sending Primary Message...
+13:27:45     <S1F3 W
+13:27:45     <L[1/1]
+13:27:45         <U4[1/1] 300024>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Reply Message...
+13:27:45     <S1F4
+13:27:45     <L[1/1]
+13:27:45         <A[2/1] "OK">
+13:27:45     >
+13:27:45 >
+13:27:45 Command result - Ok [0]
+13:27:45 Selected recipe - HACK = 
+13:27:45 -----------------------------------------------------------------------------
+13:27:45 Scheduler1 Run #1/1 - Waiting for state SCH1_WAITING_FOR_START
+13:27:45 -----------------------------------------------------------------------------
+13:27:45 (0) Sending Primary Message...
+13:27:45     <S1F3 W
+13:27:45     <L[1/1]
+13:27:45         <U4[1/1] 410000>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Reply Message...
+13:27:45     <S1F4
+13:27:45     <L[1/1]
+13:27:45         <U1[1/1] 3>
+13:27:45     >
+13:27:45 >
+13:27:45 VID[ 410000 ] = 3
+13:27:45 Already in state SCH1_WAITING_FOR_START
+13:27:45 Starting Batch
+13:27:45 Sending remote START command to PortID = 1
+13:27:45 (0) Sending Primary Message...
+13:27:45     <S2F41 W
+13:27:45     <L[2/1]
+13:27:45         <A[5/1] "START">
+13:27:45         <L[1/1]
+13:27:45             <L[2/1]
+13:27:45                 <A[6/1] "PortID">
+13:27:45                 <U1[1/1] 1>
+13:27:45             >
+13:27:45         >
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Primary Message...
+13:27:45     <S6F11 W
+13:27:45     <L[3/1]
+13:27:45         <U4[1/1] 104>
+13:27:45         <U4[1/1] 300100>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Primary Message...
+13:27:45     <S6F11 W
+13:27:45     <L[3/1]
+13:27:45         <U4[1/1] 105>
+13:27:45         <U4[1/1] 410005>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Primary Message...
+13:27:45     <S6F11 W
+13:27:45     <L[3/1]
+13:27:45         <U4[1/1] 106>
+13:27:45         <U4[1/1] 410000>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Primary Message...
+13:27:45     <S6F11 W
+13:27:45     <L[3/1]
+13:27:45         <U4[1/1] 107>
+13:27:45         <U4[1/1] 410100>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Primary Message...
+13:27:45     <S6F11 W
+13:27:45     <L[3/1]
+13:27:45         <U4[1/1] 108>
+13:27:45         <U4[1/1] 300006>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Primary Message...
+13:27:45     <S6F11 W
+13:27:45     <L[3/1]
+13:27:45         <U4[1/1] 109>
+13:27:45         <U4[1/1] 300010>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Reply Message...
+13:27:45     <S2F42
+13:27:45     <L[2/1]
+13:27:45         <B[1/1] 0x00>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Primary Message...
+13:27:45     <S6F11 W
+13:27:45     <L[3/1]
+13:27:45         <U4[1/1] 110>
+13:27:45         <U4[1/1] 210013>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Primary Message...
+13:27:45     <S6F11 W
+13:27:45     <L[3/1]
+13:27:45         <U4[1/1] 111>
+13:27:45         <U4[1/1] 210011>
+13:27:45         <L[0/1]>
+13:27:45     >
+13:27:45 >
+13:27:45 HCACK = 0 [ Accepted - Command Performed ]
+13:27:45 -----------------------------------------------------------------------------
+13:27:45 Scheduler1 Run #1/1 - Waiting for state SCH1_PROCESSING
+13:27:45 -----------------------------------------------------------------------------
+13:27:45 (0) Sending Primary Message...
+13:27:45     <S1F3 W
+13:27:45     <L[1/1]
+13:27:45         <U4[1/1] 410000>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Reply Message...
+13:27:45     <S1F4
+13:27:45     <L[1/1]
+13:27:45         <U1[1/1] 4>
+13:27:45     >
+13:27:45 >
+13:27:45 VID[ 410000 ] = 4
+13:27:45 Already in state SCH1_PROCESSING
+13:27:45 -----------------------------------------------------------------------------
+13:27:45 Scheduler1 Run #1/1 - Waiting for state SCH1_PROCESSED
+13:27:45 -----------------------------------------------------------------------------
+13:27:45 (0) Sending Primary Message...
+13:27:45     <S1F3 W
+13:27:45     <L[1/1]
+13:27:45         <U4[1/1] 410000>
+13:27:45     >
+13:27:45 >
+13:27:45 (0) Received Reply Message...
+13:27:45     <S1F4
+13:27:45     <L[1/1]
+13:27:45         <U1[1/1] 4>
+13:27:45     >
+13:27:45 >
+13:27:45 VID[ 410000 ] = 4
+13:27:45 Scheduler_WaitForCEID::Waiting for SCH1.PROCESSED / 410006
+13:27:45 Received Event - SCH1.WAITING_FOR_START / 410004. (S6F11: length = 16)
+13:27:45 Looking up response S6F12
+13:27:45 (0) Sending Reply Message...
+13:27:45     <S6F12
+13:27:45     <B[1/1] 0x00>
+13:27:45 >
+13:27:45 Sending Reply: S6F12: length = 3
+13:27:45 Received Event - SCH1.STATE_CHANGED / 410000. (S6F11: length = 16)
+13:27:45 Looking up response S6F12
+13:27:45 (0) Sending Reply Message...
+13:27:45     <S6F12
+13:27:45     <B[1/1] 0x00>
+13:27:45 >
+13:27:45 Sending Reply: S6F12: length = 3
+13:27:45 Received Event - ProcessProgramSelected / 19. (S6F11: length = 16)
+13:27:45 Looking up response S6F12
+13:27:45 (0) Sending Reply Message...
+13:27:45     <S6F12
+13:27:45     <B[1/1] 0x00>
+13:27:45 >
+13:27:45 Sending Reply: S6F12: length = 3
+13:27:45 Received Event - LOT_STARTED / 300100. (S6F11: length = 16)
+13:27:45 Looking up response S6F12
+13:27:45 (0) Sending Reply Message...
+13:27:45     <S6F12
+13:27:45     <B[1/1] 0x00>
+13:27:45 >
+13:27:45 Sending Reply: S6F12: length = 3
+13:27:45 Received Event - SCH1.PROCESSING / 410005. (S6F11: length = 16)
+13:27:45 Looking up response S6F12
+13:27:45 (0) Sending Reply Message...
+13:27:45     <S6F12
+13:27:45     <B[1/1] 0x00>
+13:27:45 >
+13:27:45 Sending Reply: S6F12: length = 3
+13:27:46 Received Event - SCH1.STATE_CHANGED / 410000. (S6F11: length = 16)
+13:27:46 Looking up response S6F12
+13:27:46 (0) Sending Reply Message...
+13:27:46     <S6F12
+13:27:46     <B[1/1] 0x00>
+13:27:46 >
+13:27:46 Sending Reply: S6F12: length = 3
+13:27:46 Received Event - SCH1.LOT_STARTED / 410100. (S6F11: length = 16)
+13:27:46 Looking up response S6F12
+13:27:46 (0) Sending Reply Message...
+13:27:46     <S6F12
+13:27:46     <B[1/1] 0x00>
+13:27:46 >
+13:27:46 Sending Reply: S6F12: length = 3
+13:27:46 Received Event - TOOL_ACTIVE / 300006. (S6F11: length = 16)
+13:27:46 Looking up response S6F12
+13:27:46 (0) Sending Reply Message...
+13:27:46     <S6F12
+13:27:46     <B[1/1] 0x00>
+13:27:46 >
+13:27:46 Sending Reply: S6F12: length = 3
+13:27:46 Received Event - TOOL_STATE_CHANGED / 300010. (S6F11: length = 16)
+13:27:46 Looking up response S6F12
+13:27:46 (0) Sending Reply Message...
+13:27:46     <S6F12
+13:27:46     <B[1/1] 0x00>
+13:27:46 >
+13:27:46 Sending Reply: S6F12: length = 3
+13:27:46 Received Event - LP1_PUMPING_IDLE / 210013. (S6F11: length = 16)
+13:27:46 Looking up response S6F12
+13:27:46 (0) Sending Reply Message...
+13:27:46     <S6F12
+13:27:46     <B[1/1] 0x00>
+13:27:46 >
+13:27:46 Sending Reply: S6F12: length = 3
+13:27:46 Received Event - LP1_PUMPING_STATE_CHANGED / 210011. (S6F11: length = 16)
+13:27:46 Looking up response S6F12
+13:27:46 (0) Sending Reply Message...
+13:27:46     <S6F12
+13:27:46     <B[1/1] 0x00>
+13:27:46 >
+13:27:46 Sending Reply: S6F12: length = 3
+13:27:47 (0) Received Primary Message...
+13:27:47     <S6F11 W
+13:27:47     <L[3/1]
+13:27:47         <U4[1/1] 112>
+13:27:47         <U4[1/1] 210006>
+13:27:47         <L[0/1]>
+13:27:47     >
+13:27:47 >
+13:27:47 Received Event - LP1_ACTIVE / 210006. (S6F11: length = 16)
+13:27:47 Looking up response S6F12
+13:27:47 (0) Sending Reply Message...
+13:27:47     <S6F12
+13:27:47     <B[1/1] 0x00>
+13:27:47 >
+13:27:47 Sending Reply: S6F12: length = 3
+13:27:47 (0) Received Primary Message...
+13:27:47     <S6F11 W
+13:27:47     <L[3/1]
+13:27:47         <U4[1/1] 113>
+13:27:47         <U4[1/1] 210010>
+13:27:47         <L[0/1]>
+13:27:47     >
+13:27:47 >
+13:27:47 (0) Received Primary Message...
+13:27:47     <S6F11 W
+13:27:47     <L[3/1]
+13:27:47         <U4[1/1] 114>
+13:27:47         <U4[1/1] 210014>
+13:27:47         <L[0/1]>
+13:27:47     >
+13:27:47 >
+13:27:47 (0) Received Primary Message...
+13:27:47     <S6F11 W
+13:27:47     <L[3/1]
+13:27:47         <U4[1/1] 115>
+13:27:47         <U4[1/1] 210011>
+13:27:47         <L[0/1]>
+13:27:47     >
+13:27:47 >
+13:27:47 Received Event - LP1_STATE_CHANGED / 210010. (S6F11: length = 16)
+13:27:47 Looking up response S6F12
+13:27:47 (0) Sending Reply Message...
+13:27:47     <S6F12
+13:27:47     <B[1/1] 0x00>
+13:27:47 >
+13:27:47 Sending Reply: S6F12: length = 3
+13:27:47 Received Event - LP1_PUMPING_EVACUATING / 210014. (S6F11: length = 16)
+13:27:47 Looking up response S6F12
+13:27:47 (0) Sending Reply Message...
+13:27:47     <S6F12
+13:27:47     <B[1/1] 0x00>
+13:27:47 >
+13:27:47 Sending Reply: S6F12: length = 3
+13:27:47 Received Event - LP1_PUMPING_STATE_CHANGED / 210011. (S6F11: length = 16)
+13:27:47 Looking up response S6F12
+13:27:47 (0) Sending Reply Message...
+13:27:47     <S6F12
+13:27:47     <B[1/1] 0x00>
+13:27:47 >
+13:27:47 Sending Reply: S6F12: length = 3
+13:27:59 (0) Received Primary Message...
+13:27:59     <S6F11 W
+13:27:59     <L[3/1]
+13:27:59         <U4[1/1] 116>
+13:27:59         <U4[1/1] 210015>
+13:27:59         <L[0/1]>
+13:27:59     >
+13:27:59 >
+13:27:59 Received Event - LP1_PUMPING_EVACUATED / 210015. (S6F11: length = 16)
+13:27:59 Looking up response S6F12
+13:27:59 (0) Sending Reply Message...
+13:27:59     <S6F12
+13:27:59     <B[1/1] 0x00>
+13:27:59 >
+13:27:59 Sending Reply: S6F12: length = 3
+13:27:59 (0) Received Primary Message...
+13:27:59     <S6F11 W
+13:27:59     <L[3/1]
+13:27:59         <U4[1/1] 117>
+13:27:59         <U4[1/1] 210011>
+13:27:59         <L[0/1]>
+13:27:59     >
+13:27:59 >
+13:27:59 (0) Received Primary Message...
+13:27:59     <S6F11 W
+13:27:59     <L[3/1]
+13:27:59         <U4[1/1] 118>
+13:27:59         <U4[1/1] 210007>
+13:27:59         <L[0/1]>
+13:27:59     >
+13:27:59 >
+13:27:59 (0) Received Primary Message...
+13:27:59     <S6F11 W
+13:27:59     <L[3/1]
+13:27:59         <U4[1/1] 119>
+13:27:59         <U4[1/1] 210010>
+13:27:59         <L[0/1]>
+13:27:59     >
+13:27:59 >
+13:27:59 (0) Received Primary Message...
+13:27:59     <S6F11 W
+13:27:59     <L[3/1]
+13:27:59         <U4[1/1] 120>
+13:27:59         <U4[1/1] 210002>
+13:27:59         <L[0/1]>
+13:27:59     >
+13:27:59 >
+13:27:59 (0) Received Primary Message...
+13:27:59     <S6F11 W
+13:27:59     <L[3/1]
+13:27:59         <U4[1/1] 121>
+13:27:59         <U4[1/1] 210010>
+13:27:59         <L[0/1]>
+13:27:59     >
+13:27:59 >
+13:27:59 (0) Received Primary Message...
+13:27:59     <S6F11 W
+13:27:59     <L[3/1]
+13:27:59         <U4[1/1] 122>
+13:27:59         <U4[1/1] 210039>
+13:27:59         <L[0/1]>
+13:27:59     >
+13:27:59 >
+13:27:59 Received Event - LP1_PUMPING_STATE_CHANGED / 210011. (S6F11: length = 16)
+13:27:59 Looking up response S6F12
+13:27:59 (0) Sending Reply Message...
+13:27:59     <S6F12
+13:27:59     <B[1/1] 0x00>
+13:27:59 >
+13:27:59 Sending Reply: S6F12: length = 3
+13:27:59 Received Event - LP1_STOPPING / 210007. (S6F11: length = 16)
+13:27:59 Looking up response S6F12
+13:27:59 (0) Sending Reply Message...
+13:27:59     <S6F12
+13:27:59     <B[1/1] 0x00>
+13:27:59 >
+13:27:59 Sending Reply: S6F12: length = 3
+13:27:59 Received Event - LP1_STATE_CHANGED / 210010. (S6F11: length = 16)
+13:27:59 Looking up response S6F12
+13:27:59 (0) Sending Reply Message...
+13:27:59     <S6F12
+13:27:59     <B[1/1] 0x00>
+13:27:59 >
+13:27:59 Sending Reply: S6F12: length = 3
+13:27:59 Received Event - LP1_IDLE / 210002. (S6F11: length = 16)
+13:27:59 Looking up response S6F12
+13:27:59 (0) Sending Reply Message...
+13:27:59     <S6F12
+13:27:59     <B[1/1] 0x00>
+13:27:59 >
+13:27:59 Sending Reply: S6F12: length = 3
+13:27:59 Received Event - LP1_STATE_CHANGED / 210010. (S6F11: length = 16)
+13:27:59 Looking up response S6F12
+13:27:59 (0) Sending Reply Message...
+13:27:59     <S6F12
+13:27:59     <B[1/1] 0x00>
+13:27:59 >
+13:27:59 Sending Reply: S6F12: length = 3
+13:27:59 Received Event - LP1_TASK_STARTED / 210039. (S6F11: length = 16)
+13:27:59 Looking up response S6F12
+13:27:59 (0) Sending Reply Message...
+13:27:59     <S6F12
+13:27:59     <B[1/1] 0x00>
+13:27:59 >
+13:27:59 Sending Reply: S6F12: length = 3
+13:28:11 (0) Received Primary Message...
+13:28:11     <S6F11 W
+13:28:11     <L[3/1]
+13:28:11         <U4[1/1] 123>
+13:28:11         <U4[1/1] 210038>
+13:28:11         <L[0/1]>
+13:28:11     >
+13:28:11 >
+13:28:11 Received Event - LP1_MATERIAL_LEAVING / 210038. (S6F11: length = 16)
+13:28:11 Looking up response S6F12
+13:28:11 (0) Sending Reply Message...
+13:28:11     <S6F12
+13:28:11     <B[1/1] 0x00>
+13:28:11 >
+13:28:11 Sending Reply: S6F12: length = 3
+13:28:11 (0) Received Primary Message...
+13:28:11     <S6F11 W
+13:28:11     <L[3/1]
+13:28:11         <U4[1/1] 124>
+13:28:11         <U4[1/1] 110037>
+13:28:11         <L[0/1]>
+13:28:11     >
+13:28:11 >
+13:28:11 Received Event - CH1_MATERIAL_ENTERING / 110037. (S6F11: length = 16)
+13:28:11 Looking up response S6F12
+13:28:11 (0) Sending Reply Message...
+13:28:11     <S6F12
+13:28:11     <B[1/1] 0x00>
+13:28:11 >
+13:28:11 Sending Reply: S6F12: length = 3
+13:28:11 (0) Received Primary Message...
+13:28:11     <S6F11 W
+13:28:11     <L[3/1]
+13:28:11         <U4[1/1] 125>
+13:28:11         <U4[1/1] 110006>
+13:28:11         <L[0/1]>
+13:28:11     >
+13:28:11 >
+13:28:11 (0) Received Primary Message...
+13:28:11     <S6F11 W
+13:28:11     <L[3/1]
+13:28:11         <U4[1/1] 126>
+13:28:11         <U4[1/1] 110010>
+13:28:11         <L[0/1]>
+13:28:11     >
+13:28:11 >
+13:28:11 (0) Received Primary Message...
+13:28:11     <S6F11 W
+13:28:11     <L[3/1]
+13:28:11         <U4[1/1] 127>
+13:28:11         <U4[1/1] 110025>
+13:28:11         <L[0/1]>
+13:28:11     >
+13:28:11 >
+13:28:11 (0) Received Primary Message...
+13:28:11     <S6F11 W
+13:28:11     <L[3/1]
+13:28:11         <U4[1/1] 128>
+13:28:11         <U4[1/1] 110020>
+13:28:11         <L[0/1]>
+13:28:11     >
+13:28:11 >
+13:28:11 Received Event - CH1_ACTIVE / 110006. (S6F11: length = 16)
+13:28:11 Looking up response S6F12
+13:28:11 (0) Sending Reply Message...
+13:28:11     <S6F12
+13:28:11     <B[1/1] 0x00>
+13:28:11 >
+13:28:11 Sending Reply: S6F12: length = 3
+13:28:11 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:28:11 Looking up response S6F12
+13:28:11 (0) Sending Reply Message...
+13:28:11     <S6F12
+13:28:11     <B[1/1] 0x00>
+13:28:11 >
+13:28:11 Sending Reply: S6F12: length = 3
+13:28:11 Received Event - CH1_RECIPE_STARTED / 110025. (S6F11: length = 16)
+13:28:11 Looking up response S6F12
+13:28:11 (0) Sending Reply Message...
+13:28:11     <S6F12
+13:28:11     <B[1/1] 0x00>
+13:28:11 >
+13:28:11 Sending Reply: S6F12: length = 3
+13:28:11 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:28:11 Looking up response S6F12
+13:28:11 (0) Sending Reply Message...
+13:28:11     <S6F12
+13:28:11     <B[1/1] 0x00>
+13:28:11 >
+13:28:11 Sending Reply: S6F12: length = 3
+13:28:20 (0) Received Primary Message...
+13:28:20     <S6F11 W
+13:28:20     <L[3/1]
+13:28:20         <U4[1/1] 129>
+13:28:20         <U4[1/1] 110023>
+13:28:20         <L[0/1]>
+13:28:20     >
+13:28:20 >
+13:28:20 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:28:20 Looking up response S6F12
+13:28:20 (0) Sending Reply Message...
+13:28:20     <S6F12
+13:28:20     <B[1/1] 0x00>
+13:28:20 >
+13:28:20 Sending Reply: S6F12: length = 3
+13:28:24 (0) Received Primary Message...
+13:28:24     <S6F11 W
+13:28:24     <L[3/1]
+13:28:24         <U4[1/1] 130>
+13:28:24         <U4[1/1] 110024>
+13:28:24         <L[0/1]>
+13:28:24     >
+13:28:24 >
+13:28:24 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:28:24 Looking up response S6F12
+13:28:24 (0) Sending Reply Message...
+13:28:24     <S6F12
+13:28:24     <B[1/1] 0x00>
+13:28:24 >
+13:28:24 Sending Reply: S6F12: length = 3
+13:28:24 (0) Received Primary Message...
+13:28:24     <S6F11 W
+13:28:24     <L[3/1]
+13:28:24         <U4[1/1] 131>
+13:28:24         <U4[1/1] 110020>
+13:28:24         <L[0/1]>
+13:28:24     >
+13:28:24 >
+13:28:24 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:28:24 Looking up response S6F12
+13:28:24 (0) Sending Reply Message...
+13:28:24     <S6F12
+13:28:24     <B[1/1] 0x00>
+13:28:24 >
+13:28:24 Sending Reply: S6F12: length = 3
+13:28:33 (0) Received Primary Message...
+13:28:33     <S6F11 W
+13:28:33     <L[3/1]
+13:28:33         <U4[1/1] 132>
+13:28:33         <U4[1/1] 110023>
+13:28:33         <L[0/1]>
+13:28:33     >
+13:28:33 >
+13:28:33 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:28:33 Looking up response S6F12
+13:28:33 (0) Sending Reply Message...
+13:28:33     <S6F12
+13:28:33     <B[1/1] 0x00>
+13:28:33 >
+13:28:33 Sending Reply: S6F12: length = 3
+13:28:37 (0) Received Primary Message...
+13:28:37     <S6F11 W
+13:28:37     <L[3/1]
+13:28:37         <U4[1/1] 133>
+13:28:37         <U4[1/1] 110024>
+13:28:37         <L[0/1]>
+13:28:37     >
+13:28:37 >
+13:28:37 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:28:37 Looking up response S6F12
+13:28:37 (0) Sending Reply Message...
+13:28:37     <S6F12
+13:28:37     <B[1/1] 0x00>
+13:28:37 >
+13:28:37 Sending Reply: S6F12: length = 3
+13:28:37 (0) Received Primary Message...
+13:28:37     <S6F11 W
+13:28:37     <L[3/1]
+13:28:37         <U4[1/1] 134>
+13:28:37         <U4[1/1] 110026>
+13:28:37         <L[0/1]>
+13:28:37     >
+13:28:37 >
+13:28:37 (0) Received Primary Message...
+13:28:37     <S6F11 W
+13:28:37     <L[3/1]
+13:28:37         <U4[1/1] 135>
+13:28:37         <U4[1/1] 110007>
+13:28:37         <L[0/1]>
+13:28:37     >
+13:28:37 >
+13:28:37 (0) Received Primary Message...
+13:28:37     <S6F11 W
+13:28:37     <L[3/1]
+13:28:37         <U4[1/1] 136>
+13:28:37         <U4[1/1] 110010>
+13:28:37         <L[0/1]>
+13:28:37     >
+13:28:37 >
+13:28:37 (0) Received Primary Message...
+13:28:37     <S6F11 W
+13:28:37     <L[3/1]
+13:28:37         <U4[1/1] 137>
+13:28:37         <U4[1/1] 110002>
+13:28:37         <L[0/1]>
+13:28:37     >
+13:28:37 >
+13:28:37 (0) Received Primary Message...
+13:28:37     <S6F11 W
+13:28:37     <L[3/1]
+13:28:37         <U4[1/1] 138>
+13:28:37         <U4[1/1] 110010>
+13:28:37         <L[0/1]>
+13:28:37     >
+13:28:37 >
+13:28:37 Received Event - CH1_RECIPE_FINISHED / 110026. (S6F11: length = 16)
+13:28:37 Looking up response S6F12
+13:28:37 (0) Sending Reply Message...
+13:28:37     <S6F12
+13:28:37     <B[1/1] 0x00>
+13:28:37 >
+13:28:37 Sending Reply: S6F12: length = 3
+13:28:37 Received Event - CH1_STOPPING / 110007. (S6F11: length = 16)
+13:28:37 Looking up response S6F12
+13:28:37 (0) Sending Reply Message...
+13:28:37     <S6F12
+13:28:37     <B[1/1] 0x00>
+13:28:37 >
+13:28:37 Sending Reply: S6F12: length = 3
+13:28:37 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:28:37 Looking up response S6F12
+13:28:37 (0) Sending Reply Message...
+13:28:37     <S6F12
+13:28:37     <B[1/1] 0x00>
+13:28:37 >
+13:28:37 Sending Reply: S6F12: length = 3
+13:28:37 Received Event - CH1_IDLE / 110002. (S6F11: length = 16)
+13:28:37 Looking up response S6F12
+13:28:37 (0) Sending Reply Message...
+13:28:37     <S6F12
+13:28:37     <B[1/1] 0x00>
+13:28:37 >
+13:28:37 Sending Reply: S6F12: length = 3
+13:28:37 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:28:37 Looking up response S6F12
+13:28:37 (0) Sending Reply Message...
+13:28:37     <S6F12
+13:28:37     <B[1/1] 0x00>
+13:28:37 >
+13:28:37 Sending Reply: S6F12: length = 3
+13:28:51 (0) Received Primary Message...
+13:28:51     <S6F11 W
+13:28:51     <L[3/1]
+13:28:51         <U4[1/1] 139>
+13:28:51         <U4[1/1] 110038>
+13:28:51         <L[0/1]>
+13:28:51     >
+13:28:51 >
+13:28:51 Received Event - CH1_MATERIAL_LEAVING / 110038. (S6F11: length = 16)
+13:28:51 Looking up response S6F12
+13:28:51 (0) Sending Reply Message...
+13:28:51     <S6F12
+13:28:51     <B[1/1] 0x00>
+13:28:51 >
+13:28:51 Sending Reply: S6F12: length = 3
+13:28:51 (0) Received Primary Message...
+13:28:51     <S6F11 W
+13:28:51     <L[3/1]
+13:28:51         <U4[1/1] 140>
+13:28:51         <U4[1/1] 120037>
+13:28:51         <L[0/1]>
+13:28:51     >
+13:28:51 >
+13:28:51 Received Event - CH2_MATERIAL_ENTERING / 120037. (S6F11: length = 16)
+13:28:51 Looking up response S6F12
+13:28:51 (0) Sending Reply Message...
+13:28:51     <S6F12
+13:28:51     <B[1/1] 0x00>
+13:28:51 >
+13:28:51 Sending Reply: S6F12: length = 3
+13:28:51 (0) Received Primary Message...
+13:28:51     <S6F11 W
+13:28:51     <L[3/1]
+13:28:51         <U4[1/1] 141>
+13:28:51         <U4[1/1] 120006>
+13:28:51         <L[0/1]>
+13:28:51     >
+13:28:51 >
+13:28:51 (0) Received Primary Message...
+13:28:51     <S6F11 W
+13:28:51     <L[3/1]
+13:28:51         <U4[1/1] 142>
+13:28:51         <U4[1/1] 120010>
+13:28:51         <L[0/1]>
+13:28:51     >
+13:28:51 >
+13:28:51 (0) Received Primary Message...
+13:28:51     <S6F11 W
+13:28:51     <L[3/1]
+13:28:51         <U4[1/1] 143>
+13:28:51         <U4[1/1] 120025>
+13:28:51         <L[0/1]>
+13:28:51     >
+13:28:51 >
+13:28:51 (0) Received Primary Message...
+13:28:51     <S6F11 W
+13:28:51     <L[3/1]
+13:28:51         <U4[1/1] 144>
+13:28:51         <U4[1/1] 120020>
+13:28:51         <L[0/1]>
+13:28:51     >
+13:28:51 >
+13:28:51 Received Event - CH2_ACTIVE / 120006. (S6F11: length = 16)
+13:28:51 Looking up response S6F12
+13:28:51 (0) Sending Reply Message...
+13:28:51     <S6F12
+13:28:51     <B[1/1] 0x00>
+13:28:51 >
+13:28:51 Sending Reply: S6F12: length = 3
+13:28:51 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:28:51 Looking up response S6F12
+13:28:51 (0) Sending Reply Message...
+13:28:51     <S6F12
+13:28:51     <B[1/1] 0x00>
+13:28:51 >
+13:28:51 Sending Reply: S6F12: length = 3
+13:28:51 Received Event - CH2_RECIPE_STARTED / 120025. (S6F11: length = 16)
+13:28:51 Looking up response S6F12
+13:28:51 (0) Sending Reply Message...
+13:28:51     <S6F12
+13:28:51     <B[1/1] 0x00>
+13:28:51 >
+13:28:51 Sending Reply: S6F12: length = 3
+13:28:51 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:28:51 Looking up response S6F12
+13:28:51 (0) Sending Reply Message...
+13:28:51     <S6F12
+13:28:51     <B[1/1] 0x00>
+13:28:51 >
+13:28:51 Sending Reply: S6F12: length = 3
+13:29:00 (0) Received Primary Message...
+13:29:00     <S6F11 W
+13:29:00     <L[3/1]
+13:29:00         <U4[1/1] 145>
+13:29:00         <U4[1/1] 120023>
+13:29:00         <L[0/1]>
+13:29:00     >
+13:29:00 >
+13:29:00 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:29:00 Looking up response S6F12
+13:29:00 (0) Sending Reply Message...
+13:29:00     <S6F12
+13:29:00     <B[1/1] 0x00>
+13:29:00 >
+13:29:00 Sending Reply: S6F12: length = 3
+13:29:03 (0) Received Primary Message...
+13:29:03     <S6F11 W
+13:29:03     <L[3/1]
+13:29:03         <U4[1/1] 146>
+13:29:03         <U4[1/1] 210038>
+13:29:03         <L[0/1]>
+13:29:03     >
+13:29:03 >
+13:29:03 Received Event - LP1_MATERIAL_LEAVING / 210038. (S6F11: length = 16)
+13:29:03 Looking up response S6F12
+13:29:03 (0) Sending Reply Message...
+13:29:03     <S6F12
+13:29:03     <B[1/1] 0x00>
+13:29:03 >
+13:29:03 Sending Reply: S6F12: length = 3
+13:29:03 (0) Received Primary Message...
+13:29:03     <S6F11 W
+13:29:03     <L[3/1]
+13:29:03         <U4[1/1] 147>
+13:29:03         <U4[1/1] 110037>
+13:29:03         <L[0/1]>
+13:29:03     >
+13:29:03 >
+13:29:03 Received Event - CH1_MATERIAL_ENTERING / 110037. (S6F11: length = 16)
+13:29:03 Looking up response S6F12
+13:29:03 (0) Sending Reply Message...
+13:29:03     <S6F12
+13:29:03     <B[1/1] 0x00>
+13:29:03 >
+13:29:03 Sending Reply: S6F12: length = 3
+13:29:03 (0) Received Primary Message...
+13:29:03     <S6F11 W
+13:29:03     <L[3/1]
+13:29:03         <U4[1/1] 148>
+13:29:03         <U4[1/1] 110006>
+13:29:03         <L[0/1]>
+13:29:03     >
+13:29:03 >
+13:29:03 (0) Received Primary Message...
+13:29:03     <S6F11 W
+13:29:03     <L[3/1]
+13:29:03         <U4[1/1] 149>
+13:29:03         <U4[1/1] 110010>
+13:29:03         <L[0/1]>
+13:29:03     >
+13:29:03 >
+13:29:03 (0) Received Primary Message...
+13:29:03     <S6F11 W
+13:29:03     <L[3/1]
+13:29:03         <U4[1/1] 150>
+13:29:03         <U4[1/1] 110025>
+13:29:03         <L[0/1]>
+13:29:03     >
+13:29:03 >
+13:29:03 (0) Received Primary Message...
+13:29:03     <S6F11 W
+13:29:03     <L[3/1]
+13:29:03         <U4[1/1] 151>
+13:29:03         <U4[1/1] 110020>
+13:29:03         <L[0/1]>
+13:29:03     >
+13:29:03 >
+13:29:03 Received Event - CH1_ACTIVE / 110006. (S6F11: length = 16)
+13:29:03 Looking up response S6F12
+13:29:03 (0) Sending Reply Message...
+13:29:03     <S6F12
+13:29:03     <B[1/1] 0x00>
+13:29:03 >
+13:29:03 Sending Reply: S6F12: length = 3
+13:29:03 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:29:03 Looking up response S6F12
+13:29:03 (0) Sending Reply Message...
+13:29:03     <S6F12
+13:29:03     <B[1/1] 0x00>
+13:29:03 >
+13:29:03 Sending Reply: S6F12: length = 3
+13:29:03 Received Event - CH1_RECIPE_STARTED / 110025. (S6F11: length = 16)
+13:29:03 Looking up response S6F12
+13:29:03 (0) Sending Reply Message...
+13:29:03     <S6F12
+13:29:03     <B[1/1] 0x00>
+13:29:03 >
+13:29:03 Sending Reply: S6F12: length = 3
+13:29:03 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:29:03 Looking up response S6F12
+13:29:03 (0) Sending Reply Message...
+13:29:03     <S6F12
+13:29:03     <B[1/1] 0x00>
+13:29:03 >
+13:29:03 Sending Reply: S6F12: length = 3
+13:29:04 (0) Received Primary Message...
+13:29:04     <S6F11 W
+13:29:04     <L[3/1]
+13:29:04         <U4[1/1] 152>
+13:29:04         <U4[1/1] 120024>
+13:29:04         <L[0/1]>
+13:29:04     >
+13:29:04 >
+13:29:04 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:29:04 Looking up response S6F12
+13:29:04 (0) Sending Reply Message...
+13:29:04     <S6F12
+13:29:04     <B[1/1] 0x00>
+13:29:04 >
+13:29:04 Sending Reply: S6F12: length = 3
+13:29:04 (0) Received Primary Message...
+13:29:04     <S6F11 W
+13:29:04     <L[3/1]
+13:29:04         <U4[1/1] 153>
+13:29:04         <U4[1/1] 120020>
+13:29:04         <L[0/1]>
+13:29:04     >
+13:29:04 >
+13:29:04 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:29:04 Looking up response S6F12
+13:29:04 (0) Sending Reply Message...
+13:29:04     <S6F12
+13:29:04     <B[1/1] 0x00>
+13:29:04 >
+13:29:04 Sending Reply: S6F12: length = 3
+13:29:12 (0) Received Primary Message...
+13:29:12     <S6F11 W
+13:29:12     <L[3/1]
+13:29:12         <U4[1/1] 154>
+13:29:12         <U4[1/1] 110023>
+13:29:12         <L[0/1]>
+13:29:12     >
+13:29:12 >
+13:29:12 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:29:12 Looking up response S6F12
+13:29:12 (0) Sending Reply Message...
+13:29:12     <S6F12
+13:29:12     <B[1/1] 0x00>
+13:29:12 >
+13:29:12 Sending Reply: S6F12: length = 3
+13:29:13 (0) Received Primary Message...
+13:29:13     <S6F11 W
+13:29:13     <L[3/1]
+13:29:13         <U4[1/1] 155>
+13:29:13         <U4[1/1] 120023>
+13:29:13         <L[0/1]>
+13:29:13     >
+13:29:13 >
+13:29:13 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:29:13 Looking up response S6F12
+13:29:13 (0) Sending Reply Message...
+13:29:13     <S6F12
+13:29:13     <B[1/1] 0x00>
+13:29:13 >
+13:29:13 Sending Reply: S6F12: length = 3
+13:29:16 (0) Received Primary Message...
+13:29:16     <S6F11 W
+13:29:16     <L[3/1]
+13:29:16         <U4[1/1] 156>
+13:29:16         <U4[1/1] 110024>
+13:29:16         <L[0/1]>
+13:29:16     >
+13:29:16 >
+13:29:16 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:29:16 Looking up response S6F12
+13:29:16 (0) Sending Reply Message...
+13:29:16     <S6F12
+13:29:16     <B[1/1] 0x00>
+13:29:16 >
+13:29:16 Sending Reply: S6F12: length = 3
+13:29:16 (0) Received Primary Message...
+13:29:16     <S6F11 W
+13:29:16     <L[3/1]
+13:29:16         <U4[1/1] 157>
+13:29:16         <U4[1/1] 110020>
+13:29:16         <L[0/1]>
+13:29:16     >
+13:29:16 >
+13:29:16 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:29:16 Looking up response S6F12
+13:29:16 (0) Sending Reply Message...
+13:29:16     <S6F12
+13:29:16     <B[1/1] 0x00>
+13:29:16 >
+13:29:16 Sending Reply: S6F12: length = 3
+13:29:17 (0) Received Primary Message...
+13:29:17     <S6F11 W
+13:29:17     <L[3/1]
+13:29:17         <U4[1/1] 158>
+13:29:17         <U4[1/1] 120024>
+13:29:17         <L[0/1]>
+13:29:17     >
+13:29:17 >
+13:29:17 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:29:17 Looking up response S6F12
+13:29:17 (0) Sending Reply Message...
+13:29:17     <S6F12
+13:29:17     <B[1/1] 0x00>
+13:29:17 >
+13:29:17 Sending Reply: S6F12: length = 3
+13:29:17 (0) Received Primary Message...
+13:29:17     <S6F11 W
+13:29:17     <L[3/1]
+13:29:17         <U4[1/1] 159>
+13:29:17         <U4[1/1] 120026>
+13:29:17         <L[0/1]>
+13:29:17     >
+13:29:17 >
+13:29:17 (0) Received Primary Message...
+13:29:17     <S6F11 W
+13:29:17     <L[3/1]
+13:29:17         <U4[1/1] 160>
+13:29:17         <U4[1/1] 120007>
+13:29:17         <L[0/1]>
+13:29:17     >
+13:29:17 >
+13:29:17 (0) Received Primary Message...
+13:29:17     <S6F11 W
+13:29:17     <L[3/1]
+13:29:17         <U4[1/1] 161>
+13:29:17         <U4[1/1] 120010>
+13:29:17         <L[0/1]>
+13:29:17     >
+13:29:17 >
+13:29:17 Received Event - CH2_RECIPE_FINISHED / 120026. (S6F11: length = 16)
+13:29:17 Looking up response S6F12
+13:29:17 (0) Sending Reply Message...
+13:29:17     <S6F12
+13:29:17     <B[1/1] 0x00>
+13:29:17 >
+13:29:17 Sending Reply: S6F12: length = 3
+13:29:17 (0) Received Primary Message...
+13:29:17     <S6F11 W
+13:29:17     <L[3/1]
+13:29:17         <U4[1/1] 162>
+13:29:17         <U4[1/1] 120002>
+13:29:17         <L[0/1]>
+13:29:17     >
+13:29:17 >
+13:29:17 (0) Received Primary Message...
+13:29:17     <S6F11 W
+13:29:17     <L[3/1]
+13:29:17         <U4[1/1] 163>
+13:29:17         <U4[1/1] 120010>
+13:29:17         <L[0/1]>
+13:29:17     >
+13:29:17 >
+13:29:17 Received Event - CH2_STOPPING / 120007. (S6F11: length = 16)
+13:29:17 Looking up response S6F12
+13:29:17 (0) Sending Reply Message...
+13:29:17     <S6F12
+13:29:17     <B[1/1] 0x00>
+13:29:17 >
+13:29:17 Sending Reply: S6F12: length = 3
+13:29:17 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:29:17 Looking up response S6F12
+13:29:17 (0) Sending Reply Message...
+13:29:17     <S6F12
+13:29:17     <B[1/1] 0x00>
+13:29:17 >
+13:29:17 Sending Reply: S6F12: length = 3
+13:29:17 Received Event - CH2_IDLE / 120002. (S6F11: length = 16)
+13:29:17 Looking up response S6F12
+13:29:17 (0) Sending Reply Message...
+13:29:17     <S6F12
+13:29:17     <B[1/1] 0x00>
+13:29:17 >
+13:29:17 Sending Reply: S6F12: length = 3
+13:29:17 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:29:17 Looking up response S6F12
+13:29:17 (0) Sending Reply Message...
+13:29:17     <S6F12
+13:29:17     <B[1/1] 0x00>
+13:29:17 >
+13:29:17 Sending Reply: S6F12: length = 3
+13:29:25 (0) Received Primary Message...
+13:29:25     <S6F11 W
+13:29:25     <L[3/1]
+13:29:25         <U4[1/1] 164>
+13:29:25         <U4[1/1] 110023>
+13:29:25         <L[0/1]>
+13:29:25     >
+13:29:25 >
+13:29:25 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:29:25 Looking up response S6F12
+13:29:25 (0) Sending Reply Message...
+13:29:25     <S6F12
+13:29:25     <B[1/1] 0x00>
+13:29:25 >
+13:29:25 Sending Reply: S6F12: length = 3
+13:29:29 (0) Received Primary Message...
+13:29:29     <S6F11 W
+13:29:29     <L[3/1]
+13:29:29         <U4[1/1] 165>
+13:29:29         <U4[1/1] 110024>
+13:29:29         <L[0/1]>
+13:29:29     >
+13:29:29 >
+13:29:29 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:29:29 Looking up response S6F12
+13:29:29 (0) Sending Reply Message...
+13:29:29     <S6F12
+13:29:29     <B[1/1] 0x00>
+13:29:29 >
+13:29:29 Sending Reply: S6F12: length = 3
+13:29:29 (0) Received Primary Message...
+13:29:29     <S6F11 W
+13:29:29     <L[3/1]
+13:29:29         <U4[1/1] 166>
+13:29:29         <U4[1/1] 110026>
+13:29:29         <L[0/1]>
+13:29:29     >
+13:29:29 >
+13:29:29 Received Event - CH1_RECIPE_FINISHED / 110026. (S6F11: length = 16)
+13:29:29 Looking up response S6F12
+13:29:29 (0) Sending Reply Message...
+13:29:29     <S6F12
+13:29:29     <B[1/1] 0x00>
+13:29:29 >
+13:29:29 Sending Reply: S6F12: length = 3
+13:29:29 (0) Received Primary Message...
+13:29:29     <S6F11 W
+13:29:29     <L[3/1]
+13:29:29         <U4[1/1] 167>
+13:29:29         <U4[1/1] 110007>
+13:29:29         <L[0/1]>
+13:29:29     >
+13:29:29 >
+13:29:29 (0) Received Primary Message...
+13:29:29     <S6F11 W
+13:29:29     <L[3/1]
+13:29:29         <U4[1/1] 168>
+13:29:29         <U4[1/1] 110010>
+13:29:29         <L[0/1]>
+13:29:29     >
+13:29:29 >
+13:29:29 Received Event - CH1_STOPPING / 110007. (S6F11: length = 16)
+13:29:29 Looking up response S6F12
+13:29:29 (0) Sending Reply Message...
+13:29:29     <S6F12
+13:29:29     <B[1/1] 0x00>
+13:29:29 >
+13:29:29 Sending Reply: S6F12: length = 3
+13:29:29 (0) Received Primary Message...
+13:29:29     <S6F11 W
+13:29:29     <L[3/1]
+13:29:29         <U4[1/1] 169>
+13:29:29         <U4[1/1] 110002>
+13:29:29         <L[0/1]>
+13:29:29     >
+13:29:29 >
+13:29:29 (0) Received Primary Message...
+13:29:29     <S6F11 W
+13:29:29     <L[3/1]
+13:29:29         <U4[1/1] 170>
+13:29:29         <U4[1/1] 110010>
+13:29:29         <L[0/1]>
+13:29:29     >
+13:29:29 >
+13:29:29 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:29:29 Looking up response S6F12
+13:29:29 (0) Sending Reply Message...
+13:29:29     <S6F12
+13:29:29     <B[1/1] 0x00>
+13:29:29 >
+13:29:29 Sending Reply: S6F12: length = 3
+13:29:29 Received Event - CH1_IDLE / 110002. (S6F11: length = 16)
+13:29:29 Looking up response S6F12
+13:29:29 (0) Sending Reply Message...
+13:29:29     <S6F12
+13:29:29     <B[1/1] 0x00>
+13:29:29 >
+13:29:29 Sending Reply: S6F12: length = 3
+13:29:29 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:29:29 Looking up response S6F12
+13:29:29 (0) Sending Reply Message...
+13:29:29     <S6F12
+13:29:29     <B[1/1] 0x00>
+13:29:29 >
+13:29:29 Sending Reply: S6F12: length = 3
+13:29:31 (0) Received Primary Message...
+13:29:31     <S6F11 W
+13:29:31     <L[3/1]
+13:29:31         <U4[1/1] 171>
+13:29:31         <U4[1/1] 120038>
+13:29:31         <L[0/1]>
+13:29:31     >
+13:29:31 >
+13:29:31 Received Event - CH2_MATERIAL_LEAVING / 120038. (S6F11: length = 16)
+13:29:31 Looking up response S6F12
+13:29:31 (0) Sending Reply Message...
+13:29:31     <S6F12
+13:29:31     <B[1/1] 0x00>
+13:29:31 >
+13:29:31 Sending Reply: S6F12: length = 3
+13:29:31 (0) Received Primary Message...
+13:29:31     <S6F11 W
+13:29:31     <L[3/1]
+13:29:31         <U4[1/1] 172>
+13:29:31         <U4[1/1] 210037>
+13:29:31         <L[0/1]>
+13:29:31     >
+13:29:31 >
+13:29:31 Received Event - LP1_MATERIAL_ENTERING / 210037. (S6F11: length = 16)
+13:29:31 Looking up response S6F12
+13:29:31 (0) Sending Reply Message...
+13:29:31     <S6F12
+13:29:31     <B[1/1] 0x00>
+13:29:31 >
+13:29:31 Sending Reply: S6F12: length = 3
+13:29:43 (0) Received Primary Message...
+13:29:43     <S6F11 W
+13:29:43     <L[3/1]
+13:29:43         <U4[1/1] 173>
+13:29:43         <U4[1/1] 110038>
+13:29:43         <L[0/1]>
+13:29:43     >
+13:29:43 >
+13:29:43 Received Event - CH1_MATERIAL_LEAVING / 110038. (S6F11: length = 16)
+13:29:43 Looking up response S6F12
+13:29:43 (0) Sending Reply Message...
+13:29:43     <S6F12
+13:29:43     <B[1/1] 0x00>
+13:29:43 >
+13:29:43 Sending Reply: S6F12: length = 3
+13:29:43 (0) Received Primary Message...
+13:29:43     <S6F11 W
+13:29:43     <L[3/1]
+13:29:43         <U4[1/1] 174>
+13:29:43         <U4[1/1] 120037>
+13:29:43         <L[0/1]>
+13:29:43     >
+13:29:43 >
+13:29:43 Received Event - CH2_MATERIAL_ENTERING / 120037. (S6F11: length = 16)
+13:29:43 Looking up response S6F12
+13:29:43 (0) Sending Reply Message...
+13:29:43     <S6F12
+13:29:43     <B[1/1] 0x00>
+13:29:43 >
+13:29:43 Sending Reply: S6F12: length = 3
+13:29:43 (0) Received Primary Message...
+13:29:43     <S6F11 W
+13:29:43     <L[3/1]
+13:29:43         <U4[1/1] 175>
+13:29:43         <U4[1/1] 120006>
+13:29:43         <L[0/1]>
+13:29:43     >
+13:29:43 >
+13:29:43 (0) Received Primary Message...
+13:29:43     <S6F11 W
+13:29:43     <L[3/1]
+13:29:43         <U4[1/1] 176>
+13:29:43         <U4[1/1] 120010>
+13:29:43         <L[0/1]>
+13:29:43     >
+13:29:43 >
+13:29:43 (0) Received Primary Message...
+13:29:43     <S6F11 W
+13:29:43     <L[3/1]
+13:29:43         <U4[1/1] 177>
+13:29:43         <U4[1/1] 120025>
+13:29:43         <L[0/1]>
+13:29:43     >
+13:29:43 >
+13:29:43 (0) Received Primary Message...
+13:29:43     <S6F11 W
+13:29:43     <L[3/1]
+13:29:43         <U4[1/1] 178>
+13:29:43         <U4[1/1] 120020>
+13:29:43         <L[0/1]>
+13:29:43     >
+13:29:43 >
+13:29:43 Received Event - CH2_ACTIVE / 120006. (S6F11: length = 16)
+13:29:43 Looking up response S6F12
+13:29:43 (0) Sending Reply Message...
+13:29:43     <S6F12
+13:29:43     <B[1/1] 0x00>
+13:29:43 >
+13:29:43 Sending Reply: S6F12: length = 3
+13:29:43 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:29:43 Looking up response S6F12
+13:29:43 (0) Sending Reply Message...
+13:29:43     <S6F12
+13:29:43     <B[1/1] 0x00>
+13:29:43 >
+13:29:43 Sending Reply: S6F12: length = 3
+13:29:43 Received Event - CH2_RECIPE_STARTED / 120025. (S6F11: length = 16)
+13:29:43 Looking up response S6F12
+13:29:43 (0) Sending Reply Message...
+13:29:43     <S6F12
+13:29:43     <B[1/1] 0x00>
+13:29:43 >
+13:29:43 Sending Reply: S6F12: length = 3
+13:29:43 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:29:43 Looking up response S6F12
+13:29:43 (0) Sending Reply Message...
+13:29:43     <S6F12
+13:29:43     <B[1/1] 0x00>
+13:29:43 >
+13:29:43 Sending Reply: S6F12: length = 3
+13:29:52 (0) Received Primary Message...
+13:29:52     <S6F11 W
+13:29:52     <L[3/1]
+13:29:52         <U4[1/1] 179>
+13:29:52         <U4[1/1] 120023>
+13:29:52         <L[0/1]>
+13:29:52     >
+13:29:52 >
+13:29:52 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:29:52 Looking up response S6F12
+13:29:52 (0) Sending Reply Message...
+13:29:52     <S6F12
+13:29:52     <B[1/1] 0x00>
+13:29:52 >
+13:29:52 Sending Reply: S6F12: length = 3
+13:29:55 (0) Received Primary Message...
+13:29:55     <S6F11 W
+13:29:55     <L[3/1]
+13:29:55         <U4[1/1] 180>
+13:29:55         <U4[1/1] 210038>
+13:29:55         <L[0/1]>
+13:29:55     >
+13:29:55 >
+13:29:55 Received Event - LP1_MATERIAL_LEAVING / 210038. (S6F11: length = 16)
+13:29:55 Looking up response S6F12
+13:29:55 (0) Sending Reply Message...
+13:29:55     <S6F12
+13:29:55     <B[1/1] 0x00>
+13:29:55 >
+13:29:55 Sending Reply: S6F12: length = 3
+13:29:55 (0) Received Primary Message...
+13:29:55     <S6F11 W
+13:29:55     <L[3/1]
+13:29:55         <U4[1/1] 181>
+13:29:55         <U4[1/1] 110037>
+13:29:55         <L[0/1]>
+13:29:55     >
+13:29:55 >
+13:29:55 Received Event - CH1_MATERIAL_ENTERING / 110037. (S6F11: length = 16)
+13:29:55 Looking up response S6F12
+13:29:55 (0) Sending Reply Message...
+13:29:55     <S6F12
+13:29:55     <B[1/1] 0x00>
+13:29:55 >
+13:29:55 Sending Reply: S6F12: length = 3
+13:29:55 (0) Received Primary Message...
+13:29:55     <S6F11 W
+13:29:55     <L[3/1]
+13:29:55         <U4[1/1] 182>
+13:29:55         <U4[1/1] 110006>
+13:29:55         <L[0/1]>
+13:29:55     >
+13:29:55 >
+13:29:55 (0) Received Primary Message...
+13:29:55     <S6F11 W
+13:29:55     <L[3/1]
+13:29:55         <U4[1/1] 183>
+13:29:55         <U4[1/1] 110010>
+13:29:55         <L[0/1]>
+13:29:55     >
+13:29:55 >
+13:29:55 (0) Received Primary Message...
+13:29:55     <S6F11 W
+13:29:55     <L[3/1]
+13:29:55         <U4[1/1] 184>
+13:29:55         <U4[1/1] 110025>
+13:29:55         <L[0/1]>
+13:29:55     >
+13:29:55 >
+13:29:55 (0) Received Primary Message...
+13:29:55     <S6F11 W
+13:29:55     <L[3/1]
+13:29:55         <U4[1/1] 185>
+13:29:55         <U4[1/1] 110020>
+13:29:55         <L[0/1]>
+13:29:55     >
+13:29:55 >
+13:29:55 Received Event - CH1_ACTIVE / 110006. (S6F11: length = 16)
+13:29:55 Looking up response S6F12
+13:29:55 (0) Sending Reply Message...
+13:29:55     <S6F12
+13:29:55     <B[1/1] 0x00>
+13:29:55 >
+13:29:55 Sending Reply: S6F12: length = 3
+13:29:55 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:29:55 Looking up response S6F12
+13:29:55 (0) Sending Reply Message...
+13:29:55     <S6F12
+13:29:55     <B[1/1] 0x00>
+13:29:55 >
+13:29:55 Sending Reply: S6F12: length = 3
+13:29:55 Received Event - CH1_RECIPE_STARTED / 110025. (S6F11: length = 16)
+13:29:55 Looking up response S6F12
+13:29:55 (0) Sending Reply Message...
+13:29:55     <S6F12
+13:29:55     <B[1/1] 0x00>
+13:29:55 >
+13:29:55 Sending Reply: S6F12: length = 3
+13:29:55 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:29:55 Looking up response S6F12
+13:29:55 (0) Sending Reply Message...
+13:29:55     <S6F12
+13:29:55     <B[1/1] 0x00>
+13:29:55 >
+13:29:55 Sending Reply: S6F12: length = 3
+13:29:56 (0) Received Primary Message...
+13:29:56     <S6F11 W
+13:29:56     <L[3/1]
+13:29:56         <U4[1/1] 186>
+13:29:56         <U4[1/1] 120024>
+13:29:56         <L[0/1]>
+13:29:56     >
+13:29:56 >
+13:29:56 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:29:56 Looking up response S6F12
+13:29:56 (0) Sending Reply Message...
+13:29:56     <S6F12
+13:29:56     <B[1/1] 0x00>
+13:29:56 >
+13:29:56 Sending Reply: S6F12: length = 3
+13:29:56 (0) Received Primary Message...
+13:29:56     <S6F11 W
+13:29:56     <L[3/1]
+13:29:56         <U4[1/1] 187>
+13:29:56         <U4[1/1] 120020>
+13:29:56         <L[0/1]>
+13:29:56     >
+13:29:56 >
+13:29:56 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:29:56 Looking up response S6F12
+13:29:56 (0) Sending Reply Message...
+13:29:56     <S6F12
+13:29:56     <B[1/1] 0x00>
+13:29:56 >
+13:29:56 Sending Reply: S6F12: length = 3
+13:30:04 (0) Received Primary Message...
+13:30:04     <S6F11 W
+13:30:04     <L[3/1]
+13:30:04         <U4[1/1] 188>
+13:30:04         <U4[1/1] 110023>
+13:30:04         <L[0/1]>
+13:30:04     >
+13:30:04 >
+13:30:04 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:30:04 Looking up response S6F12
+13:30:04 (0) Sending Reply Message...
+13:30:04     <S6F12
+13:30:04     <B[1/1] 0x00>
+13:30:04 >
+13:30:04 Sending Reply: S6F12: length = 3
+13:30:05 (0) Received Primary Message...
+13:30:05     <S6F11 W
+13:30:05     <L[3/1]
+13:30:05         <U4[1/1] 189>
+13:30:05         <U4[1/1] 120023>
+13:30:05         <L[0/1]>
+13:30:05     >
+13:30:05 >
+13:30:05 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:30:05 Looking up response S6F12
+13:30:05 (0) Sending Reply Message...
+13:30:05     <S6F12
+13:30:05     <B[1/1] 0x00>
+13:30:05 >
+13:30:05 Sending Reply: S6F12: length = 3
+13:30:08 (0) Received Primary Message...
+13:30:08     <S6F11 W
+13:30:08     <L[3/1]
+13:30:08         <U4[1/1] 190>
+13:30:08         <U4[1/1] 110024>
+13:30:08         <L[0/1]>
+13:30:08     >
+13:30:08 >
+13:30:08 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:30:08 Looking up response S6F12
+13:30:08 (0) Sending Reply Message...
+13:30:08     <S6F12
+13:30:08     <B[1/1] 0x00>
+13:30:08 >
+13:30:08 Sending Reply: S6F12: length = 3
+13:30:08 (0) Received Primary Message...
+13:30:08     <S6F11 W
+13:30:08     <L[3/1]
+13:30:08         <U4[1/1] 191>
+13:30:08         <U4[1/1] 110020>
+13:30:08         <L[0/1]>
+13:30:08     >
+13:30:08 >
+13:30:08 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:30:08 Looking up response S6F12
+13:30:08 (0) Sending Reply Message...
+13:30:08     <S6F12
+13:30:08     <B[1/1] 0x00>
+13:30:08 >
+13:30:08 Sending Reply: S6F12: length = 3
+13:30:09 (0) Received Primary Message...
+13:30:09     <S6F11 W
+13:30:09     <L[3/1]
+13:30:09         <U4[1/1] 192>
+13:30:09         <U4[1/1] 120024>
+13:30:09         <L[0/1]>
+13:30:09     >
+13:30:09 >
+13:30:09 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:30:09 Looking up response S6F12
+13:30:09 (0) Sending Reply Message...
+13:30:09     <S6F12
+13:30:09     <B[1/1] 0x00>
+13:30:09 >
+13:30:09 Sending Reply: S6F12: length = 3
+13:30:09 (0) Received Primary Message...
+13:30:09     <S6F11 W
+13:30:09     <L[3/1]
+13:30:09         <U4[1/1] 193>
+13:30:09         <U4[1/1] 120026>
+13:30:09         <L[0/1]>
+13:30:09     >
+13:30:09 >
+13:30:09 (0) Received Primary Message...
+13:30:09     <S6F11 W
+13:30:09     <L[3/1]
+13:30:09         <U4[1/1] 194>
+13:30:09         <U4[1/1] 120007>
+13:30:09         <L[0/1]>
+13:30:09     >
+13:30:09 >
+13:30:09 (0) Received Primary Message...
+13:30:09     <S6F11 W
+13:30:09     <L[3/1]
+13:30:09         <U4[1/1] 195>
+13:30:09         <U4[1/1] 120010>
+13:30:09         <L[0/1]>
+13:30:09     >
+13:30:09 >
+13:30:09 Received Event - CH2_RECIPE_FINISHED / 120026. (S6F11: length = 16)
+13:30:09 Looking up response S6F12
+13:30:09 (0) Sending Reply Message...
+13:30:09     <S6F12
+13:30:09     <B[1/1] 0x00>
+13:30:09 >
+13:30:09 Sending Reply: S6F12: length = 3
+13:30:09 (0) Received Primary Message...
+13:30:09     <S6F11 W
+13:30:09     <L[3/1]
+13:30:09         <U4[1/1] 196>
+13:30:09         <U4[1/1] 120002>
+13:30:09         <L[0/1]>
+13:30:09     >
+13:30:09 >
+13:30:09 (0) Received Primary Message...
+13:30:09     <S6F11 W
+13:30:09     <L[3/1]
+13:30:09         <U4[1/1] 197>
+13:30:09         <U4[1/1] 120010>
+13:30:09         <L[0/1]>
+13:30:09     >
+13:30:09 >
+13:30:09 Received Event - CH2_STOPPING / 120007. (S6F11: length = 16)
+13:30:09 Looking up response S6F12
+13:30:09 (0) Sending Reply Message...
+13:30:09     <S6F12
+13:30:09     <B[1/1] 0x00>
+13:30:09 >
+13:30:09 Sending Reply: S6F12: length = 3
+13:30:09 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:30:09 Looking up response S6F12
+13:30:09 (0) Sending Reply Message...
+13:30:09     <S6F12
+13:30:09     <B[1/1] 0x00>
+13:30:09 >
+13:30:09 Sending Reply: S6F12: length = 3
+13:30:09 Received Event - CH2_IDLE / 120002. (S6F11: length = 16)
+13:30:09 Looking up response S6F12
+13:30:09 (0) Sending Reply Message...
+13:30:09     <S6F12
+13:30:09     <B[1/1] 0x00>
+13:30:09 >
+13:30:09 Sending Reply: S6F12: length = 3
+13:30:09 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:30:09 Looking up response S6F12
+13:30:09 (0) Sending Reply Message...
+13:30:09     <S6F12
+13:30:09     <B[1/1] 0x00>
+13:30:09 >
+13:30:09 Sending Reply: S6F12: length = 3
+13:30:17 (0) Received Primary Message...
+13:30:17     <S6F11 W
+13:30:17     <L[3/1]
+13:30:17         <U4[1/1] 198>
+13:30:17         <U4[1/1] 110023>
+13:30:17         <L[0/1]>
+13:30:17     >
+13:30:17 >
+13:30:17 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:30:17 Looking up response S6F12
+13:30:17 (0) Sending Reply Message...
+13:30:17     <S6F12
+13:30:17     <B[1/1] 0x00>
+13:30:17 >
+13:30:17 Sending Reply: S6F12: length = 3
+13:30:21 (0) Received Primary Message...
+13:30:21     <S6F11 W
+13:30:21     <L[3/1]
+13:30:21         <U4[1/1] 199>
+13:30:21         <U4[1/1] 110024>
+13:30:21         <L[0/1]>
+13:30:21     >
+13:30:21 >
+13:30:21 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:30:21 Looking up response S6F12
+13:30:21 (0) Sending Reply Message...
+13:30:21     <S6F12
+13:30:21     <B[1/1] 0x00>
+13:30:21 >
+13:30:21 Sending Reply: S6F12: length = 3
+13:30:21 (0) Received Primary Message...
+13:30:21     <S6F11 W
+13:30:21     <L[3/1]
+13:30:21         <U4[1/1] 200>
+13:30:21         <U4[1/1] 110026>
+13:30:21         <L[0/1]>
+13:30:21     >
+13:30:21 >
+13:30:21 (0) Received Primary Message...
+13:30:21     <S6F11 W
+13:30:21     <L[3/1]
+13:30:21         <U4[1/1] 201>
+13:30:21         <U4[1/1] 110007>
+13:30:21         <L[0/1]>
+13:30:21     >
+13:30:21 >
+13:30:21 (0) Received Primary Message...
+13:30:21     <S6F11 W
+13:30:21     <L[3/1]
+13:30:21         <U4[1/1] 202>
+13:30:21         <U4[1/1] 110010>
+13:30:21         <L[0/1]>
+13:30:21     >
+13:30:21 >
+13:30:21 Received Event - CH1_RECIPE_FINISHED / 110026. (S6F11: length = 16)
+13:30:21 Looking up response S6F12
+13:30:21 (0) Sending Reply Message...
+13:30:21     <S6F12
+13:30:21     <B[1/1] 0x00>
+13:30:21 >
+13:30:21 Sending Reply: S6F12: length = 3
+13:30:21 (0) Received Primary Message...
+13:30:21     <S6F11 W
+13:30:21     <L[3/1]
+13:30:21         <U4[1/1] 203>
+13:30:21         <U4[1/1] 110002>
+13:30:21         <L[0/1]>
+13:30:21     >
+13:30:21 >
+13:30:21 (0) Received Primary Message...
+13:30:21     <S6F11 W
+13:30:21     <L[3/1]
+13:30:21         <U4[1/1] 204>
+13:30:21         <U4[1/1] 110010>
+13:30:21         <L[0/1]>
+13:30:21     >
+13:30:21 >
+13:30:21 Received Event - CH1_STOPPING / 110007. (S6F11: length = 16)
+13:30:21 Looking up response S6F12
+13:30:21 (0) Sending Reply Message...
+13:30:21     <S6F12
+13:30:21     <B[1/1] 0x00>
+13:30:21 >
+13:30:21 Sending Reply: S6F12: length = 3
+13:30:21 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:30:21 Looking up response S6F12
+13:30:21 (0) Sending Reply Message...
+13:30:21     <S6F12
+13:30:21     <B[1/1] 0x00>
+13:30:21 >
+13:30:21 Sending Reply: S6F12: length = 3
+13:30:21 Received Event - CH1_IDLE / 110002. (S6F11: length = 16)
+13:30:21 Looking up response S6F12
+13:30:21 (0) Sending Reply Message...
+13:30:21     <S6F12
+13:30:21     <B[1/1] 0x00>
+13:30:21 >
+13:30:21 Sending Reply: S6F12: length = 3
+13:30:21 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:30:21 Looking up response S6F12
+13:30:21 (0) Sending Reply Message...
+13:30:21     <S6F12
+13:30:21     <B[1/1] 0x00>
+13:30:21 >
+13:30:21 Sending Reply: S6F12: length = 3
+13:30:23 (0) Received Primary Message...
+13:30:23     <S6F11 W
+13:30:23     <L[3/1]
+13:30:23         <U4[1/1] 205>
+13:30:23         <U4[1/1] 120038>
+13:30:23         <L[0/1]>
+13:30:23     >
+13:30:23 >
+13:30:23 Received Event - CH2_MATERIAL_LEAVING / 120038. (S6F11: length = 16)
+13:30:23 Looking up response S6F12
+13:30:23 (0) Sending Reply Message...
+13:30:23     <S6F12
+13:30:23     <B[1/1] 0x00>
+13:30:23 >
+13:30:23 Sending Reply: S6F12: length = 3
+13:30:23 (0) Received Primary Message...
+13:30:23     <S6F11 W
+13:30:23     <L[3/1]
+13:30:23         <U4[1/1] 206>
+13:30:23         <U4[1/1] 210037>
+13:30:23         <L[0/1]>
+13:30:23     >
+13:30:23 >
+13:30:23 Received Event - LP1_MATERIAL_ENTERING / 210037. (S6F11: length = 16)
+13:30:23 Looking up response S6F12
+13:30:23 (0) Sending Reply Message...
+13:30:23     <S6F12
+13:30:23     <B[1/1] 0x00>
+13:30:23 >
+13:30:23 Sending Reply: S6F12: length = 3
+13:30:35 (0) Received Primary Message...
+13:30:35     <S6F11 W
+13:30:35     <L[3/1]
+13:30:35         <U4[1/1] 207>
+13:30:35         <U4[1/1] 110038>
+13:30:35         <L[0/1]>
+13:30:35     >
+13:30:35 >
+13:30:35 Received Event - CH1_MATERIAL_LEAVING / 110038. (S6F11: length = 16)
+13:30:35 Looking up response S6F12
+13:30:35 (0) Sending Reply Message...
+13:30:35     <S6F12
+13:30:35     <B[1/1] 0x00>
+13:30:35 >
+13:30:35 Sending Reply: S6F12: length = 3
+13:30:35 (0) Received Primary Message...
+13:30:35     <S6F11 W
+13:30:35     <L[3/1]
+13:30:35         <U4[1/1] 208>
+13:30:35         <U4[1/1] 120037>
+13:30:35         <L[0/1]>
+13:30:35     >
+13:30:35 >
+13:30:35 Received Event - CH2_MATERIAL_ENTERING / 120037. (S6F11: length = 16)
+13:30:35 Looking up response S6F12
+13:30:35 (0) Sending Reply Message...
+13:30:35     <S6F12
+13:30:35     <B[1/1] 0x00>
+13:30:35 >
+13:30:35 Sending Reply: S6F12: length = 3
+13:30:35 (0) Received Primary Message...
+13:30:35     <S6F11 W
+13:30:35     <L[3/1]
+13:30:35         <U4[1/1] 209>
+13:30:35         <U4[1/1] 120006>
+13:30:35         <L[0/1]>
+13:30:35     >
+13:30:35 >
+13:30:35 (0) Received Primary Message...
+13:30:35     <S6F11 W
+13:30:35     <L[3/1]
+13:30:35         <U4[1/1] 210>
+13:30:35         <U4[1/1] 120010>
+13:30:35         <L[0/1]>
+13:30:35     >
+13:30:35 >
+13:30:35 (0) Received Primary Message...
+13:30:35     <S6F11 W
+13:30:35     <L[3/1]
+13:30:35         <U4[1/1] 211>
+13:30:35         <U4[1/1] 120025>
+13:30:35         <L[0/1]>
+13:30:35     >
+13:30:35 >
+13:30:35 (0) Received Primary Message...
+13:30:35     <S6F11 W
+13:30:35     <L[3/1]
+13:30:35         <U4[1/1] 212>
+13:30:35         <U4[1/1] 120020>
+13:30:35         <L[0/1]>
+13:30:35     >
+13:30:35 >
+13:30:35 Received Event - CH2_ACTIVE / 120006. (S6F11: length = 16)
+13:30:35 Looking up response S6F12
+13:30:35 (0) Sending Reply Message...
+13:30:35     <S6F12
+13:30:35     <B[1/1] 0x00>
+13:30:35 >
+13:30:35 Sending Reply: S6F12: length = 3
+13:30:35 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:30:35 Looking up response S6F12
+13:30:35 (0) Sending Reply Message...
+13:30:35     <S6F12
+13:30:35     <B[1/1] 0x00>
+13:30:35 >
+13:30:35 Sending Reply: S6F12: length = 3
+13:30:35 Received Event - CH2_RECIPE_STARTED / 120025. (S6F11: length = 16)
+13:30:35 Looking up response S6F12
+13:30:35 (0) Sending Reply Message...
+13:30:35     <S6F12
+13:30:35     <B[1/1] 0x00>
+13:30:35 >
+13:30:35 Sending Reply: S6F12: length = 3
+13:30:35 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:30:35 Looking up response S6F12
+13:30:35 (0) Sending Reply Message...
+13:30:35     <S6F12
+13:30:35     <B[1/1] 0x00>
+13:30:35 >
+13:30:35 Sending Reply: S6F12: length = 3
+13:30:44 (0) Received Primary Message...
+13:30:44     <S6F11 W
+13:30:44     <L[3/1]
+13:30:44         <U4[1/1] 213>
+13:30:44         <U4[1/1] 120023>
+13:30:44         <L[0/1]>
+13:30:44     >
+13:30:44 >
+13:30:44 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:30:44 Looking up response S6F12
+13:30:44 (0) Sending Reply Message...
+13:30:44     <S6F12
+13:30:44     <B[1/1] 0x00>
+13:30:44 >
+13:30:44 Sending Reply: S6F12: length = 3
+13:30:47 (0) Received Primary Message...
+13:30:47     <S6F11 W
+13:30:47     <L[3/1]
+13:30:47         <U4[1/1] 214>
+13:30:47         <U4[1/1] 210038>
+13:30:47         <L[0/1]>
+13:30:47     >
+13:30:47 >
+13:30:47 Received Event - LP1_MATERIAL_LEAVING / 210038. (S6F11: length = 16)
+13:30:47 Looking up response S6F12
+13:30:47 (0) Sending Reply Message...
+13:30:47     <S6F12
+13:30:47     <B[1/1] 0x00>
+13:30:47 >
+13:30:47 Sending Reply: S6F12: length = 3
+13:30:47 (0) Received Primary Message...
+13:30:47     <S6F11 W
+13:30:47     <L[3/1]
+13:30:47         <U4[1/1] 215>
+13:30:47         <U4[1/1] 110037>
+13:30:47         <L[0/1]>
+13:30:47     >
+13:30:47 >
+13:30:47 Received Event - CH1_MATERIAL_ENTERING / 110037. (S6F11: length = 16)
+13:30:47 Looking up response S6F12
+13:30:47 (0) Sending Reply Message...
+13:30:47     <S6F12
+13:30:47     <B[1/1] 0x00>
+13:30:47 >
+13:30:47 Sending Reply: S6F12: length = 3
+13:30:47 (0) Received Primary Message...
+13:30:47     <S6F11 W
+13:30:47     <L[3/1]
+13:30:47         <U4[1/1] 216>
+13:30:47         <U4[1/1] 110006>
+13:30:47         <L[0/1]>
+13:30:47     >
+13:30:47 >
+13:30:47 (0) Received Primary Message...
+13:30:47     <S6F11 W
+13:30:47     <L[3/1]
+13:30:47         <U4[1/1] 217>
+13:30:47         <U4[1/1] 110010>
+13:30:47         <L[0/1]>
+13:30:47     >
+13:30:47 >
+13:30:47 (0) Received Primary Message...
+13:30:47     <S6F11 W
+13:30:47     <L[3/1]
+13:30:47         <U4[1/1] 218>
+13:30:47         <U4[1/1] 110025>
+13:30:47         <L[0/1]>
+13:30:47     >
+13:30:47 >
+13:30:47 (0) Received Primary Message...
+13:30:47     <S6F11 W
+13:30:47     <L[3/1]
+13:30:47         <U4[1/1] 219>
+13:30:47         <U4[1/1] 110020>
+13:30:47         <L[0/1]>
+13:30:47     >
+13:30:47 >
+13:30:47 Received Event - CH1_ACTIVE / 110006. (S6F11: length = 16)
+13:30:47 Looking up response S6F12
+13:30:47 (0) Sending Reply Message...
+13:30:47     <S6F12
+13:30:47     <B[1/1] 0x00>
+13:30:47 >
+13:30:47 Sending Reply: S6F12: length = 3
+13:30:47 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:30:47 Looking up response S6F12
+13:30:47 (0) Sending Reply Message...
+13:30:47     <S6F12
+13:30:47     <B[1/1] 0x00>
+13:30:47 >
+13:30:47 Sending Reply: S6F12: length = 3
+13:30:47 Received Event - CH1_RECIPE_STARTED / 110025. (S6F11: length = 16)
+13:30:47 Looking up response S6F12
+13:30:47 (0) Sending Reply Message...
+13:30:47     <S6F12
+13:30:47     <B[1/1] 0x00>
+13:30:47 >
+13:30:47 Sending Reply: S6F12: length = 3
+13:30:47 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:30:47 Looking up response S6F12
+13:30:47 (0) Sending Reply Message...
+13:30:47     <S6F12
+13:30:47     <B[1/1] 0x00>
+13:30:47 >
+13:30:47 Sending Reply: S6F12: length = 3
+13:30:48 (0) Received Primary Message...
+13:30:48     <S6F11 W
+13:30:48     <L[3/1]
+13:30:48         <U4[1/1] 220>
+13:30:48         <U4[1/1] 120024>
+13:30:48         <L[0/1]>
+13:30:48     >
+13:30:48 >
+13:30:48 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:30:48 Looking up response S6F12
+13:30:48 (0) Sending Reply Message...
+13:30:48     <S6F12
+13:30:48     <B[1/1] 0x00>
+13:30:48 >
+13:30:48 Sending Reply: S6F12: length = 3
+13:30:48 (0) Received Primary Message...
+13:30:48     <S6F11 W
+13:30:48     <L[3/1]
+13:30:48         <U4[1/1] 221>
+13:30:48         <U4[1/1] 120020>
+13:30:48         <L[0/1]>
+13:30:48     >
+13:30:48 >
+13:30:48 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:30:48 Looking up response S6F12
+13:30:48 (0) Sending Reply Message...
+13:30:48     <S6F12
+13:30:48     <B[1/1] 0x00>
+13:30:48 >
+13:30:48 Sending Reply: S6F12: length = 3
+13:30:56 (0) Received Primary Message...
+13:30:56     <S6F11 W
+13:30:56     <L[3/1]
+13:30:56         <U4[1/1] 222>
+13:30:56         <U4[1/1] 110023>
+13:30:56         <L[0/1]>
+13:30:56     >
+13:30:56 >
+13:30:56 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:30:56 Looking up response S6F12
+13:30:56 (0) Sending Reply Message...
+13:30:56     <S6F12
+13:30:56     <B[1/1] 0x00>
+13:30:56 >
+13:30:56 Sending Reply: S6F12: length = 3
+13:30:57 (0) Received Primary Message...
+13:30:57     <S6F11 W
+13:30:57     <L[3/1]
+13:30:57         <U4[1/1] 223>
+13:30:57         <U4[1/1] 120023>
+13:30:57         <L[0/1]>
+13:30:57     >
+13:30:57 >
+13:30:57 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:30:57 Looking up response S6F12
+13:30:57 (0) Sending Reply Message...
+13:30:57     <S6F12
+13:30:57     <B[1/1] 0x00>
+13:30:57 >
+13:30:57 Sending Reply: S6F12: length = 3
+13:31:00 (0) Received Primary Message...
+13:31:00     <S6F11 W
+13:31:00     <L[3/1]
+13:31:00         <U4[1/1] 224>
+13:31:00         <U4[1/1] 110024>
+13:31:00         <L[0/1]>
+13:31:00     >
+13:31:00 >
+13:31:00 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:31:00 Looking up response S6F12
+13:31:00 (0) Sending Reply Message...
+13:31:00     <S6F12
+13:31:00     <B[1/1] 0x00>
+13:31:00 >
+13:31:00 Sending Reply: S6F12: length = 3
+13:31:00 (0) Received Primary Message...
+13:31:00     <S6F11 W
+13:31:00     <L[3/1]
+13:31:00         <U4[1/1] 225>
+13:31:00         <U4[1/1] 110020>
+13:31:00         <L[0/1]>
+13:31:00     >
+13:31:00 >
+13:31:00 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:31:00 Looking up response S6F12
+13:31:00 (0) Sending Reply Message...
+13:31:00     <S6F12
+13:31:00     <B[1/1] 0x00>
+13:31:00 >
+13:31:00 Sending Reply: S6F12: length = 3
+13:31:01 (0) Received Primary Message...
+13:31:01     <S6F11 W
+13:31:01     <L[3/1]
+13:31:01         <U4[1/1] 226>
+13:31:01         <U4[1/1] 120024>
+13:31:01         <L[0/1]>
+13:31:01     >
+13:31:01 >
+13:31:01 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:31:01 Looking up response S6F12
+13:31:01 (0) Sending Reply Message...
+13:31:01     <S6F12
+13:31:01     <B[1/1] 0x00>
+13:31:01 >
+13:31:01 Sending Reply: S6F12: length = 3
+13:31:01 (0) Received Primary Message...
+13:31:01     <S6F11 W
+13:31:01     <L[3/1]
+13:31:01         <U4[1/1] 227>
+13:31:01         <U4[1/1] 120026>
+13:31:01         <L[0/1]>
+13:31:01     >
+13:31:01 >
+13:31:01 Received Event - CH2_RECIPE_FINISHED / 120026. (S6F11: length = 16)
+13:31:01 Looking up response S6F12
+13:31:01 (0) Sending Reply Message...
+13:31:01     <S6F12
+13:31:01     <B[1/1] 0x00>
+13:31:01 >
+13:31:01 Sending Reply: S6F12: length = 3
+13:31:01 (0) Received Primary Message...
+13:31:01     <S6F11 W
+13:31:01     <L[3/1]
+13:31:01         <U4[1/1] 228>
+13:31:01         <U4[1/1] 120007>
+13:31:01         <L[0/1]>
+13:31:01     >
+13:31:01 >
+13:31:01 (0) Received Primary Message...
+13:31:01     <S6F11 W
+13:31:01     <L[3/1]
+13:31:01         <U4[1/1] 229>
+13:31:01         <U4[1/1] 120010>
+13:31:01         <L[0/1]>
+13:31:01     >
+13:31:01 >
+13:31:01 Received Event - CH2_STOPPING / 120007. (S6F11: length = 16)
+13:31:01 Looking up response S6F12
+13:31:01 (0) Sending Reply Message...
+13:31:01     <S6F12
+13:31:01     <B[1/1] 0x00>
+13:31:01 >
+13:31:01 Sending Reply: S6F12: length = 3
+13:31:01 (0) Received Primary Message...
+13:31:01     <S6F11 W
+13:31:01     <L[3/1]
+13:31:01         <U4[1/1] 230>
+13:31:01         <U4[1/1] 120002>
+13:31:01         <L[0/1]>
+13:31:01     >
+13:31:01 >
+13:31:01 (0) Received Primary Message...
+13:31:01     <S6F11 W
+13:31:01     <L[3/1]
+13:31:01         <U4[1/1] 231>
+13:31:01         <U4[1/1] 120010>
+13:31:01         <L[0/1]>
+13:31:01     >
+13:31:01 >
+13:31:01 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:31:01 Looking up response S6F12
+13:31:01 (0) Sending Reply Message...
+13:31:01     <S6F12
+13:31:01     <B[1/1] 0x00>
+13:31:01 >
+13:31:01 Sending Reply: S6F12: length = 3
+13:31:01 Received Event - CH2_IDLE / 120002. (S6F11: length = 16)
+13:31:01 Looking up response S6F12
+13:31:01 (0) Sending Reply Message...
+13:31:01     <S6F12
+13:31:01     <B[1/1] 0x00>
+13:31:01 >
+13:31:01 Sending Reply: S6F12: length = 3
+13:31:01 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:31:01 Looking up response S6F12
+13:31:01 (0) Sending Reply Message...
+13:31:01     <S6F12
+13:31:01     <B[1/1] 0x00>
+13:31:01 >
+13:31:01 Sending Reply: S6F12: length = 3
+13:31:09 (0) Received Primary Message...
+13:31:09     <S6F11 W
+13:31:09     <L[3/1]
+13:31:09         <U4[1/1] 232>
+13:31:09         <U4[1/1] 110023>
+13:31:09         <L[0/1]>
+13:31:09     >
+13:31:09 >
+13:31:09 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:31:09 Looking up response S6F12
+13:31:09 (0) Sending Reply Message...
+13:31:09     <S6F12
+13:31:09     <B[1/1] 0x00>
+13:31:09 >
+13:31:09 Sending Reply: S6F12: length = 3
+13:31:13 (0) Received Primary Message...
+13:31:13     <S6F11 W
+13:31:13     <L[3/1]
+13:31:13         <U4[1/1] 233>
+13:31:13         <U4[1/1] 110024>
+13:31:13         <L[0/1]>
+13:31:13     >
+13:31:13 >
+13:31:13 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:31:13 Looking up response S6F12
+13:31:13 (0) Sending Reply Message...
+13:31:13     <S6F12
+13:31:13     <B[1/1] 0x00>
+13:31:13 >
+13:31:13 Sending Reply: S6F12: length = 3
+13:31:13 (0) Received Primary Message...
+13:31:13     <S6F11 W
+13:31:13     <L[3/1]
+13:31:13         <U4[1/1] 234>
+13:31:13         <U4[1/1] 110026>
+13:31:13         <L[0/1]>
+13:31:13     >
+13:31:13 >
+13:31:13 Received Event - CH1_RECIPE_FINISHED / 110026. (S6F11: length = 16)
+13:31:13 Looking up response S6F12
+13:31:13 (0) Sending Reply Message...
+13:31:13     <S6F12
+13:31:13     <B[1/1] 0x00>
+13:31:13 >
+13:31:13 Sending Reply: S6F12: length = 3
+13:31:13 (0) Received Primary Message...
+13:31:13     <S6F11 W
+13:31:13     <L[3/1]
+13:31:13         <U4[1/1] 235>
+13:31:13         <U4[1/1] 110007>
+13:31:13         <L[0/1]>
+13:31:13     >
+13:31:13 >
+13:31:13 (0) Received Primary Message...
+13:31:13     <S6F11 W
+13:31:13     <L[3/1]
+13:31:13         <U4[1/1] 236>
+13:31:13         <U4[1/1] 110010>
+13:31:13         <L[0/1]>
+13:31:13     >
+13:31:13 >
+13:31:13 Received Event - CH1_STOPPING / 110007. (S6F11: length = 16)
+13:31:13 Looking up response S6F12
+13:31:13 (0) Sending Reply Message...
+13:31:13     <S6F12
+13:31:13     <B[1/1] 0x00>
+13:31:13 >
+13:31:13 Sending Reply: S6F12: length = 3
+13:31:13 (0) Received Primary Message...
+13:31:13     <S6F11 W
+13:31:13     <L[3/1]
+13:31:13         <U4[1/1] 237>
+13:31:13         <U4[1/1] 110002>
+13:31:13         <L[0/1]>
+13:31:13     >
+13:31:13 >
+13:31:13 (0) Received Primary Message...
+13:31:13     <S6F11 W
+13:31:13     <L[3/1]
+13:31:13         <U4[1/1] 238>
+13:31:13         <U4[1/1] 110010>
+13:31:13         <L[0/1]>
+13:31:13     >
+13:31:13 >
+13:31:13 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:31:13 Looking up response S6F12
+13:31:13 (0) Sending Reply Message...
+13:31:13     <S6F12
+13:31:13     <B[1/1] 0x00>
+13:31:13 >
+13:31:13 Sending Reply: S6F12: length = 3
+13:31:13 Received Event - CH1_IDLE / 110002. (S6F11: length = 16)
+13:31:13 Looking up response S6F12
+13:31:13 (0) Sending Reply Message...
+13:31:13     <S6F12
+13:31:13     <B[1/1] 0x00>
+13:31:13 >
+13:31:13 Sending Reply: S6F12: length = 3
+13:31:13 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:31:13 Looking up response S6F12
+13:31:13 (0) Sending Reply Message...
+13:31:13     <S6F12
+13:31:13     <B[1/1] 0x00>
+13:31:13 >
+13:31:13 Sending Reply: S6F12: length = 3
+13:31:15 (0) Received Primary Message...
+13:31:15     <S6F11 W
+13:31:15     <L[3/1]
+13:31:15         <U4[1/1] 239>
+13:31:15         <U4[1/1] 120038>
+13:31:15         <L[0/1]>
+13:31:15     >
+13:31:15 >
+13:31:15 Received Event - CH2_MATERIAL_LEAVING / 120038. (S6F11: length = 16)
+13:31:15 Looking up response S6F12
+13:31:15 (0) Sending Reply Message...
+13:31:15     <S6F12
+13:31:15     <B[1/1] 0x00>
+13:31:15 >
+13:31:15 Sending Reply: S6F12: length = 3
+13:31:15 (0) Received Primary Message...
+13:31:15     <S6F11 W
+13:31:15     <L[3/1]
+13:31:15         <U4[1/1] 240>
+13:31:15         <U4[1/1] 210037>
+13:31:15         <L[0/1]>
+13:31:15     >
+13:31:15 >
+13:31:15 Received Event - LP1_MATERIAL_ENTERING / 210037. (S6F11: length = 16)
+13:31:15 Looking up response S6F12
+13:31:15 (0) Sending Reply Message...
+13:31:15     <S6F12
+13:31:15     <B[1/1] 0x00>
+13:31:15 >
+13:31:15 Sending Reply: S6F12: length = 3
+13:31:27 (0) Received Primary Message...
+13:31:27     <S6F11 W
+13:31:27     <L[3/1]
+13:31:27         <U4[1/1] 241>
+13:31:27         <U4[1/1] 110038>
+13:31:27         <L[0/1]>
+13:31:27     >
+13:31:27 >
+13:31:27 Received Event - CH1_MATERIAL_LEAVING / 110038. (S6F11: length = 16)
+13:31:27 Looking up response S6F12
+13:31:27 (0) Sending Reply Message...
+13:31:27     <S6F12
+13:31:27     <B[1/1] 0x00>
+13:31:27 >
+13:31:27 Sending Reply: S6F12: length = 3
+13:31:27 (0) Received Primary Message...
+13:31:27     <S6F11 W
+13:31:27     <L[3/1]
+13:31:27         <U4[1/1] 242>
+13:31:27         <U4[1/1] 120037>
+13:31:27         <L[0/1]>
+13:31:27     >
+13:31:27 >
+13:31:27 Received Event - CH2_MATERIAL_ENTERING / 120037. (S6F11: length = 16)
+13:31:27 Looking up response S6F12
+13:31:27 (0) Sending Reply Message...
+13:31:27     <S6F12
+13:31:27     <B[1/1] 0x00>
+13:31:27 >
+13:31:27 Sending Reply: S6F12: length = 3
+13:31:27 (0) Received Primary Message...
+13:31:27     <S6F11 W
+13:31:27     <L[3/1]
+13:31:27         <U4[1/1] 243>
+13:31:27         <U4[1/1] 120006>
+13:31:27         <L[0/1]>
+13:31:27     >
+13:31:27 >
+13:31:27 (0) Received Primary Message...
+13:31:27     <S6F11 W
+13:31:27     <L[3/1]
+13:31:27         <U4[1/1] 244>
+13:31:27         <U4[1/1] 120010>
+13:31:27         <L[0/1]>
+13:31:27     >
+13:31:27 >
+13:31:27 (0) Received Primary Message...
+13:31:27     <S6F11 W
+13:31:27     <L[3/1]
+13:31:27         <U4[1/1] 245>
+13:31:27         <U4[1/1] 120025>
+13:31:27         <L[0/1]>
+13:31:27     >
+13:31:27 >
+13:31:27 (0) Received Primary Message...
+13:31:27     <S6F11 W
+13:31:27     <L[3/1]
+13:31:27         <U4[1/1] 246>
+13:31:27         <U4[1/1] 120020>
+13:31:27         <L[0/1]>
+13:31:27     >
+13:31:27 >
+13:31:27 Received Event - CH2_ACTIVE / 120006. (S6F11: length = 16)
+13:31:27 Looking up response S6F12
+13:31:27 (0) Sending Reply Message...
+13:31:27     <S6F12
+13:31:27     <B[1/1] 0x00>
+13:31:27 >
+13:31:27 Sending Reply: S6F12: length = 3
+13:31:27 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:31:27 Looking up response S6F12
+13:31:27 (0) Sending Reply Message...
+13:31:27     <S6F12
+13:31:27     <B[1/1] 0x00>
+13:31:27 >
+13:31:27 Sending Reply: S6F12: length = 3
+13:31:27 Received Event - CH2_RECIPE_STARTED / 120025. (S6F11: length = 16)
+13:31:27 Looking up response S6F12
+13:31:27 (0) Sending Reply Message...
+13:31:27     <S6F12
+13:31:27     <B[1/1] 0x00>
+13:31:27 >
+13:31:27 Sending Reply: S6F12: length = 3
+13:31:27 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:31:27 Looking up response S6F12
+13:31:27 (0) Sending Reply Message...
+13:31:27     <S6F12
+13:31:27     <B[1/1] 0x00>
+13:31:27 >
+13:31:27 Sending Reply: S6F12: length = 3
+13:31:36 (0) Received Primary Message...
+13:31:36     <S6F11 W
+13:31:36     <L[3/1]
+13:31:36         <U4[1/1] 247>
+13:31:36         <U4[1/1] 120023>
+13:31:36         <L[0/1]>
+13:31:36     >
+13:31:36 >
+13:31:36 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:31:36 Looking up response S6F12
+13:31:36 (0) Sending Reply Message...
+13:31:36     <S6F12
+13:31:36     <B[1/1] 0x00>
+13:31:36 >
+13:31:36 Sending Reply: S6F12: length = 3
+13:31:39 (0) Received Primary Message...
+13:31:39     <S6F11 W
+13:31:39     <L[3/1]
+13:31:39         <U4[1/1] 248>
+13:31:39         <U4[1/1] 210038>
+13:31:39         <L[0/1]>
+13:31:39     >
+13:31:39 >
+13:31:39 Received Event - LP1_MATERIAL_LEAVING / 210038. (S6F11: length = 16)
+13:31:39 Looking up response S6F12
+13:31:39 (0) Sending Reply Message...
+13:31:39     <S6F12
+13:31:39     <B[1/1] 0x00>
+13:31:39 >
+13:31:39 Sending Reply: S6F12: length = 3
+13:31:39 (0) Received Primary Message...
+13:31:39     <S6F11 W
+13:31:39     <L[3/1]
+13:31:39         <U4[1/1] 249>
+13:31:39         <U4[1/1] 110037>
+13:31:39         <L[0/1]>
+13:31:39     >
+13:31:39 >
+13:31:39 Received Event - CH1_MATERIAL_ENTERING / 110037. (S6F11: length = 16)
+13:31:39 Looking up response S6F12
+13:31:39 (0) Sending Reply Message...
+13:31:39     <S6F12
+13:31:39     <B[1/1] 0x00>
+13:31:39 >
+13:31:39 Sending Reply: S6F12: length = 3
+13:31:39 (0) Received Primary Message...
+13:31:39     <S6F11 W
+13:31:39     <L[3/1]
+13:31:39         <U4[1/1] 250>
+13:31:39         <U4[1/1] 110006>
+13:31:39         <L[0/1]>
+13:31:39     >
+13:31:39 >
+13:31:39 (0) Received Primary Message...
+13:31:39     <S6F11 W
+13:31:39     <L[3/1]
+13:31:39         <U4[1/1] 251>
+13:31:39         <U4[1/1] 110010>
+13:31:39         <L[0/1]>
+13:31:39     >
+13:31:39 >
+13:31:39 (0) Received Primary Message...
+13:31:39     <S6F11 W
+13:31:39     <L[3/1]
+13:31:39         <U4[1/1] 252>
+13:31:39         <U4[1/1] 110025>
+13:31:39         <L[0/1]>
+13:31:39     >
+13:31:39 >
+13:31:39 (0) Received Primary Message...
+13:31:39     <S6F11 W
+13:31:39     <L[3/1]
+13:31:39         <U4[1/1] 253>
+13:31:39         <U4[1/1] 110020>
+13:31:39         <L[0/1]>
+13:31:39     >
+13:31:39 >
+13:31:39 Received Event - CH1_ACTIVE / 110006. (S6F11: length = 16)
+13:31:39 Looking up response S6F12
+13:31:39 (0) Sending Reply Message...
+13:31:39     <S6F12
+13:31:39     <B[1/1] 0x00>
+13:31:39 >
+13:31:39 Sending Reply: S6F12: length = 3
+13:31:39 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:31:39 Looking up response S6F12
+13:31:39 (0) Sending Reply Message...
+13:31:39     <S6F12
+13:31:39     <B[1/1] 0x00>
+13:31:39 >
+13:31:39 Sending Reply: S6F12: length = 3
+13:31:39 Received Event - CH1_RECIPE_STARTED / 110025. (S6F11: length = 16)
+13:31:39 Looking up response S6F12
+13:31:39 (0) Sending Reply Message...
+13:31:39     <S6F12
+13:31:39     <B[1/1] 0x00>
+13:31:39 >
+13:31:39 Sending Reply: S6F12: length = 3
+13:31:39 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:31:39 Looking up response S6F12
+13:31:39 (0) Sending Reply Message...
+13:31:39     <S6F12
+13:31:39     <B[1/1] 0x00>
+13:31:39 >
+13:31:39 Sending Reply: S6F12: length = 3
+13:31:40 (0) Received Primary Message...
+13:31:40     <S6F11 W
+13:31:40     <L[3/1]
+13:31:40         <U4[1/1] 254>
+13:31:40         <U4[1/1] 120024>
+13:31:40         <L[0/1]>
+13:31:40     >
+13:31:40 >
+13:31:40 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:31:40 Looking up response S6F12
+13:31:40 (0) Sending Reply Message...
+13:31:40     <S6F12
+13:31:40     <B[1/1] 0x00>
+13:31:40 >
+13:31:40 Sending Reply: S6F12: length = 3
+13:31:40 (0) Received Primary Message...
+13:31:40     <S6F11 W
+13:31:40     <L[3/1]
+13:31:40         <U4[1/1] 255>
+13:31:40         <U4[1/1] 120020>
+13:31:40         <L[0/1]>
+13:31:40     >
+13:31:40 >
+13:31:40 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:31:40 Looking up response S6F12
+13:31:40 (0) Sending Reply Message...
+13:31:40     <S6F12
+13:31:40     <B[1/1] 0x00>
+13:31:40 >
+13:31:40 Sending Reply: S6F12: length = 3
+13:31:48 (0) Received Primary Message...
+13:31:48     <S6F11 W
+13:31:48     <L[3/1]
+13:31:48         <U4[1/1] 256>
+13:31:48         <U4[1/1] 110023>
+13:31:48         <L[0/1]>
+13:31:48     >
+13:31:48 >
+13:31:48 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:31:48 Looking up response S6F12
+13:31:48 (0) Sending Reply Message...
+13:31:48     <S6F12
+13:31:48     <B[1/1] 0x00>
+13:31:48 >
+13:31:48 Sending Reply: S6F12: length = 3
+13:31:49 (0) Received Primary Message...
+13:31:49     <S6F11 W
+13:31:49     <L[3/1]
+13:31:49         <U4[1/1] 257>
+13:31:49         <U4[1/1] 120023>
+13:31:49         <L[0/1]>
+13:31:49     >
+13:31:49 >
+13:31:49 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:31:49 Looking up response S6F12
+13:31:49 (0) Sending Reply Message...
+13:31:49     <S6F12
+13:31:49     <B[1/1] 0x00>
+13:31:49 >
+13:31:49 Sending Reply: S6F12: length = 3
+13:31:52 (0) Received Primary Message...
+13:31:52     <S6F11 W
+13:31:52     <L[3/1]
+13:31:52         <U4[1/1] 258>
+13:31:52         <U4[1/1] 110024>
+13:31:52         <L[0/1]>
+13:31:52     >
+13:31:52 >
+13:31:52 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:31:52 Looking up response S6F12
+13:31:52 (0) Sending Reply Message...
+13:31:52     <S6F12
+13:31:52     <B[1/1] 0x00>
+13:31:52 >
+13:31:52 Sending Reply: S6F12: length = 3
+13:31:52 (0) Received Primary Message...
+13:31:52     <S6F11 W
+13:31:52     <L[3/1]
+13:31:52         <U4[1/1] 259>
+13:31:52         <U4[1/1] 110020>
+13:31:52         <L[0/1]>
+13:31:52     >
+13:31:52 >
+13:31:52 Received Event - CH1_STEP_STARTED / 110020. (S6F11: length = 16)
+13:31:52 Looking up response S6F12
+13:31:52 (0) Sending Reply Message...
+13:31:52     <S6F12
+13:31:52     <B[1/1] 0x00>
+13:31:52 >
+13:31:52 Sending Reply: S6F12: length = 3
+13:31:53 (0) Received Primary Message...
+13:31:53     <S6F11 W
+13:31:53     <L[3/1]
+13:31:53         <U4[1/1] 260>
+13:31:53         <U4[1/1] 120024>
+13:31:53         <L[0/1]>
+13:31:53     >
+13:31:53 >
+13:31:53 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:31:53 Looking up response S6F12
+13:31:53 (0) Sending Reply Message...
+13:31:53     <S6F12
+13:31:53     <B[1/1] 0x00>
+13:31:53 >
+13:31:53 Sending Reply: S6F12: length = 3
+13:31:53 (0) Received Primary Message...
+13:31:53     <S6F11 W
+13:31:53     <L[3/1]
+13:31:53         <U4[1/1] 261>
+13:31:53         <U4[1/1] 120026>
+13:31:53         <L[0/1]>
+13:31:53     >
+13:31:53 >
+13:31:53 Received Event - CH2_RECIPE_FINISHED / 120026. (S6F11: length = 16)
+13:31:53 Looking up response S6F12
+13:31:53 (0) Sending Reply Message...
+13:31:53     <S6F12
+13:31:53     <B[1/1] 0x00>
+13:31:53 >
+13:31:53 Sending Reply: S6F12: length = 3
+13:31:53 (0) Received Primary Message...
+13:31:53     <S6F11 W
+13:31:53     <L[3/1]
+13:31:53         <U4[1/1] 262>
+13:31:53         <U4[1/1] 120007>
+13:31:53         <L[0/1]>
+13:31:53     >
+13:31:53 >
+13:31:53 (0) Received Primary Message...
+13:31:53     <S6F11 W
+13:31:53     <L[3/1]
+13:31:53         <U4[1/1] 263>
+13:31:53         <U4[1/1] 120010>
+13:31:53         <L[0/1]>
+13:31:53     >
+13:31:53 >
+13:31:53 Received Event - CH2_STOPPING / 120007. (S6F11: length = 16)
+13:31:53 Looking up response S6F12
+13:31:53 (0) Sending Reply Message...
+13:31:53     <S6F12
+13:31:53     <B[1/1] 0x00>
+13:31:53 >
+13:31:53 Sending Reply: S6F12: length = 3
+13:31:53 (0) Received Primary Message...
+13:31:53     <S6F11 W
+13:31:53     <L[3/1]
+13:31:53         <U4[1/1] 264>
+13:31:53         <U4[1/1] 120002>
+13:31:53         <L[0/1]>
+13:31:53     >
+13:31:53 >
+13:31:53 (0) Received Primary Message...
+13:31:53     <S6F11 W
+13:31:53     <L[3/1]
+13:31:53         <U4[1/1] 265>
+13:31:53         <U4[1/1] 120010>
+13:31:53         <L[0/1]>
+13:31:53     >
+13:31:53 >
+13:31:53 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:31:53 Looking up response S6F12
+13:31:53 (0) Sending Reply Message...
+13:31:53     <S6F12
+13:31:53     <B[1/1] 0x00>
+13:31:53 >
+13:31:53 Sending Reply: S6F12: length = 3
+13:31:53 Received Event - CH2_IDLE / 120002. (S6F11: length = 16)
+13:31:53 Looking up response S6F12
+13:31:53 (0) Sending Reply Message...
+13:31:53     <S6F12
+13:31:53     <B[1/1] 0x00>
+13:31:53 >
+13:31:53 Sending Reply: S6F12: length = 3
+13:31:53 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:31:53 Looking up response S6F12
+13:31:53 (0) Sending Reply Message...
+13:31:53     <S6F12
+13:31:53     <B[1/1] 0x00>
+13:31:53 >
+13:31:53 Sending Reply: S6F12: length = 3
+13:32:01 (0) Received Primary Message...
+13:32:01     <S6F11 W
+13:32:01     <L[3/1]
+13:32:01         <U4[1/1] 266>
+13:32:01         <U4[1/1] 110023>
+13:32:01         <L[0/1]>
+13:32:01     >
+13:32:01 >
+13:32:01 Received Event - CH1_STEP_FINISHING / 110023. (S6F11: length = 16)
+13:32:01 Looking up response S6F12
+13:32:01 (0) Sending Reply Message...
+13:32:01     <S6F12
+13:32:01     <B[1/1] 0x00>
+13:32:01 >
+13:32:01 Sending Reply: S6F12: length = 3
+13:32:05 (0) Received Primary Message...
+13:32:05     <S6F11 W
+13:32:05     <L[3/1]
+13:32:05         <U4[1/1] 267>
+13:32:05         <U4[1/1] 110024>
+13:32:05         <L[0/1]>
+13:32:05     >
+13:32:05 >
+13:32:05 Received Event - CH1_STEP_FINISHED / 110024. (S6F11: length = 16)
+13:32:05 Looking up response S6F12
+13:32:05 (0) Sending Reply Message...
+13:32:05     <S6F12
+13:32:05     <B[1/1] 0x00>
+13:32:05 >
+13:32:05 Sending Reply: S6F12: length = 3
+13:32:05 (0) Received Primary Message...
+13:32:05     <S6F11 W
+13:32:05     <L[3/1]
+13:32:05         <U4[1/1] 268>
+13:32:05         <U4[1/1] 110026>
+13:32:05         <L[0/1]>
+13:32:05     >
+13:32:05 >
+13:32:05 (0) Received Primary Message...
+13:32:05     <S6F11 W
+13:32:05     <L[3/1]
+13:32:05         <U4[1/1] 269>
+13:32:05         <U4[1/1] 110007>
+13:32:05         <L[0/1]>
+13:32:05     >
+13:32:05 >
+13:32:05 (0) Received Primary Message...
+13:32:05     <S6F11 W
+13:32:05     <L[3/1]
+13:32:05         <U4[1/1] 270>
+13:32:05         <U4[1/1] 110010>
+13:32:05         <L[0/1]>
+13:32:05     >
+13:32:05 >
+13:32:05 Received Event - CH1_RECIPE_FINISHED / 110026. (S6F11: length = 16)
+13:32:05 Looking up response S6F12
+13:32:05 (0) Sending Reply Message...
+13:32:05     <S6F12
+13:32:05     <B[1/1] 0x00>
+13:32:05 >
+13:32:05 Sending Reply: S6F12: length = 3
+13:32:05 (0) Received Primary Message...
+13:32:05     <S6F11 W
+13:32:05     <L[3/1]
+13:32:05         <U4[1/1] 271>
+13:32:05         <U4[1/1] 110002>
+13:32:05         <L[0/1]>
+13:32:05     >
+13:32:05 >
+13:32:05 (0) Received Primary Message...
+13:32:05     <S6F11 W
+13:32:05     <L[3/1]
+13:32:05         <U4[1/1] 272>
+13:32:05         <U4[1/1] 110010>
+13:32:05         <L[0/1]>
+13:32:05     >
+13:32:05 >
+13:32:05 Received Event - CH1_STOPPING / 110007. (S6F11: length = 16)
+13:32:05 Looking up response S6F12
+13:32:05 (0) Sending Reply Message...
+13:32:05     <S6F12
+13:32:05     <B[1/1] 0x00>
+13:32:05 >
+13:32:05 Sending Reply: S6F12: length = 3
+13:32:05 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:32:05 Looking up response S6F12
+13:32:05 (0) Sending Reply Message...
+13:32:05     <S6F12
+13:32:05     <B[1/1] 0x00>
+13:32:05 >
+13:32:05 Sending Reply: S6F12: length = 3
+13:32:05 Received Event - CH1_IDLE / 110002. (S6F11: length = 16)
+13:32:05 Looking up response S6F12
+13:32:05 (0) Sending Reply Message...
+13:32:05     <S6F12
+13:32:05     <B[1/1] 0x00>
+13:32:05 >
+13:32:05 Sending Reply: S6F12: length = 3
+13:32:05 Received Event - CH1_STATE_CHANGED / 110010. (S6F11: length = 16)
+13:32:05 Looking up response S6F12
+13:32:05 (0) Sending Reply Message...
+13:32:05     <S6F12
+13:32:05     <B[1/1] 0x00>
+13:32:05 >
+13:32:05 Sending Reply: S6F12: length = 3
+13:32:07 (0) Received Primary Message...
+13:32:07     <S6F11 W
+13:32:07     <L[3/1]
+13:32:07         <U4[1/1] 273>
+13:32:07         <U4[1/1] 120038>
+13:32:07         <L[0/1]>
+13:32:07     >
+13:32:07 >
+13:32:07 Received Event - CH2_MATERIAL_LEAVING / 120038. (S6F11: length = 16)
+13:32:07 Looking up response S6F12
+13:32:07 (0) Sending Reply Message...
+13:32:07     <S6F12
+13:32:07     <B[1/1] 0x00>
+13:32:07 >
+13:32:07 Sending Reply: S6F12: length = 3
+13:32:07 (0) Received Primary Message...
+13:32:07     <S6F11 W
+13:32:07     <L[3/1]
+13:32:07         <U4[1/1] 274>
+13:32:07         <U4[1/1] 210037>
+13:32:07         <L[0/1]>
+13:32:07     >
+13:32:07 >
+13:32:07 Received Event - LP1_MATERIAL_ENTERING / 210037. (S6F11: length = 16)
+13:32:07 Looking up response S6F12
+13:32:07 (0) Sending Reply Message...
+13:32:07     <S6F12
+13:32:07     <B[1/1] 0x00>
+13:32:07 >
+13:32:07 Sending Reply: S6F12: length = 3
+13:32:19 (0) Received Primary Message...
+13:32:19     <S6F11 W
+13:32:19     <L[3/1]
+13:32:19         <U4[1/1] 275>
+13:32:19         <U4[1/1] 110038>
+13:32:19         <L[0/1]>
+13:32:19     >
+13:32:19 >
+13:32:19 Received Event - CH1_MATERIAL_LEAVING / 110038. (S6F11: length = 16)
+13:32:19 Looking up response S6F12
+13:32:19 (0) Sending Reply Message...
+13:32:19     <S6F12
+13:32:19     <B[1/1] 0x00>
+13:32:19 >
+13:32:19 Sending Reply: S6F12: length = 3
+13:32:19 (0) Received Primary Message...
+13:32:19     <S6F11 W
+13:32:19     <L[3/1]
+13:32:19         <U4[1/1] 276>
+13:32:19         <U4[1/1] 120037>
+13:32:19         <L[0/1]>
+13:32:19     >
+13:32:19 >
+13:32:19 Received Event - CH2_MATERIAL_ENTERING / 120037. (S6F11: length = 16)
+13:32:19 Looking up response S6F12
+13:32:19 (0) Sending Reply Message...
+13:32:19     <S6F12
+13:32:19     <B[1/1] 0x00>
+13:32:19 >
+13:32:19 Sending Reply: S6F12: length = 3
+13:32:19 (0) Received Primary Message...
+13:32:19     <S6F11 W
+13:32:19     <L[3/1]
+13:32:19         <U4[1/1] 277>
+13:32:19         <U4[1/1] 120006>
+13:32:19         <L[0/1]>
+13:32:19     >
+13:32:19 >
+13:32:19 (0) Received Primary Message...
+13:32:19     <S6F11 W
+13:32:19     <L[3/1]
+13:32:19         <U4[1/1] 278>
+13:32:19         <U4[1/1] 120010>
+13:32:19         <L[0/1]>
+13:32:19     >
+13:32:19 >
+13:32:19 (0) Received Primary Message...
+13:32:19     <S6F11 W
+13:32:19     <L[3/1]
+13:32:19         <U4[1/1] 279>
+13:32:19         <U4[1/1] 120025>
+13:32:19         <L[0/1]>
+13:32:19     >
+13:32:19 >
+13:32:19 (0) Received Primary Message...
+13:32:19     <S6F11 W
+13:32:19     <L[3/1]
+13:32:19         <U4[1/1] 280>
+13:32:19         <U4[1/1] 120020>
+13:32:19         <L[0/1]>
+13:32:19     >
+13:32:19 >
+13:32:19 Received Event - CH2_ACTIVE / 120006. (S6F11: length = 16)
+13:32:19 Looking up response S6F12
+13:32:19 (0) Sending Reply Message...
+13:32:19     <S6F12
+13:32:19     <B[1/1] 0x00>
+13:32:19 >
+13:32:19 Sending Reply: S6F12: length = 3
+13:32:19 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:32:19 Looking up response S6F12
+13:32:19 (0) Sending Reply Message...
+13:32:19     <S6F12
+13:32:19     <B[1/1] 0x00>
+13:32:19 >
+13:32:19 Sending Reply: S6F12: length = 3
+13:32:19 Received Event - CH2_RECIPE_STARTED / 120025. (S6F11: length = 16)
+13:32:19 Looking up response S6F12
+13:32:19 (0) Sending Reply Message...
+13:32:19     <S6F12
+13:32:19     <B[1/1] 0x00>
+13:32:19 >
+13:32:19 Sending Reply: S6F12: length = 3
+13:32:19 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:32:19 Looking up response S6F12
+13:32:19 (0) Sending Reply Message...
+13:32:19     <S6F12
+13:32:19     <B[1/1] 0x00>
+13:32:19 >
+13:32:19 Sending Reply: S6F12: length = 3
+13:32:28 (0) Received Primary Message...
+13:32:28     <S6F11 W
+13:32:28     <L[3/1]
+13:32:28         <U4[1/1] 281>
+13:32:28         <U4[1/1] 120023>
+13:32:28         <L[0/1]>
+13:32:28     >
+13:32:28 >
+13:32:28 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:32:28 Looking up response S6F12
+13:32:28 (0) Sending Reply Message...
+13:32:28     <S6F12
+13:32:28     <B[1/1] 0x00>
+13:32:28 >
+13:32:28 Sending Reply: S6F12: length = 3
+13:32:32 (0) Received Primary Message...
+13:32:32     <S6F11 W
+13:32:32     <L[3/1]
+13:32:32         <U4[1/1] 282>
+13:32:32         <U4[1/1] 120024>
+13:32:32         <L[0/1]>
+13:32:32     >
+13:32:32 >
+13:32:32 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:32:32 Looking up response S6F12
+13:32:32 (0) Sending Reply Message...
+13:32:32     <S6F12
+13:32:32     <B[1/1] 0x00>
+13:32:32 >
+13:32:32 Sending Reply: S6F12: length = 3
+13:32:32 (0) Received Primary Message...
+13:32:32     <S6F11 W
+13:32:32     <L[3/1]
+13:32:32         <U4[1/1] 283>
+13:32:32         <U4[1/1] 120020>
+13:32:32         <L[0/1]>
+13:32:32     >
+13:32:32 >
+13:32:32 Received Event - CH2_STEP_STARTED / 120020. (S6F11: length = 16)
+13:32:32 Looking up response S6F12
+13:32:32 (0) Sending Reply Message...
+13:32:32     <S6F12
+13:32:32     <B[1/1] 0x00>
+13:32:32 >
+13:32:32 Sending Reply: S6F12: length = 3
+13:32:41 (0) Received Primary Message...
+13:32:41     <S6F11 W
+13:32:41     <L[3/1]
+13:32:41         <U4[1/1] 284>
+13:32:41         <U4[1/1] 120023>
+13:32:41         <L[0/1]>
+13:32:41     >
+13:32:41 >
+13:32:41 Received Event - CH2_STEP_FINISHING / 120023. (S6F11: length = 16)
+13:32:41 Looking up response S6F12
+13:32:41 (0) Sending Reply Message...
+13:32:41     <S6F12
+13:32:41     <B[1/1] 0x00>
+13:32:41 >
+13:32:41 Sending Reply: S6F12: length = 3
+13:32:45 (0) Received Primary Message...
+13:32:45     <S6F11 W
+13:32:45     <L[3/1]
+13:32:45         <U4[1/1] 285>
+13:32:45         <U4[1/1] 120024>
+13:32:45         <L[0/1]>
+13:32:45     >
+13:32:45 >
+13:32:45 Received Event - CH2_STEP_FINISHED / 120024. (S6F11: length = 16)
+13:32:45 Looking up response S6F12
+13:32:45 (0) Sending Reply Message...
+13:32:45     <S6F12
+13:32:45     <B[1/1] 0x00>
+13:32:45 >
+13:32:45 Sending Reply: S6F12: length = 3
+13:32:45 (0) Received Primary Message...
+13:32:45     <S6F11 W
+13:32:45     <L[3/1]
+13:32:45         <U4[1/1] 286>
+13:32:45         <U4[1/1] 120026>
+13:32:45         <L[0/1]>
+13:32:45     >
+13:32:45 >
+13:32:45 (0) Received Primary Message...
+13:32:45     <S6F11 W
+13:32:45     <L[3/1]
+13:32:45         <U4[1/1] 287>
+13:32:45         <U4[1/1] 120007>
+13:32:45         <L[0/1]>
+13:32:45     >
+13:32:45 >
+13:32:45 (0) Received Primary Message...
+13:32:45     <S6F11 W
+13:32:45     <L[3/1]
+13:32:45         <U4[1/1] 288>
+13:32:45         <U4[1/1] 120010>
+13:32:45         <L[0/1]>
+13:32:45     >
+13:32:45 >
+13:32:45 Received Event - CH2_RECIPE_FINISHED / 120026. (S6F11: length = 16)
+13:32:45 Looking up response S6F12
+13:32:45 (0) Sending Reply Message...
+13:32:45     <S6F12
+13:32:45     <B[1/1] 0x00>
+13:32:45 >
+13:32:45 Sending Reply: S6F12: length = 3
+13:32:45 (0) Received Primary Message...
+13:32:45     <S6F11 W
+13:32:45     <L[3/1]
+13:32:45         <U4[1/1] 289>
+13:32:45         <U4[1/1] 120002>
+13:32:45         <L[0/1]>
+13:32:45     >
+13:32:45 >
+13:32:45 (0) Received Primary Message...
+13:32:45     <S6F11 W
+13:32:45     <L[3/1]
+13:32:45         <U4[1/1] 290>
+13:32:45         <U4[1/1] 120010>
+13:32:45         <L[0/1]>
+13:32:45     >
+13:32:45 >
+13:32:45 Received Event - CH2_STOPPING / 120007. (S6F11: length = 16)
+13:32:45 Looking up response S6F12
+13:32:45 (0) Sending Reply Message...
+13:32:45     <S6F12
+13:32:45     <B[1/1] 0x00>
+13:32:45 >
+13:32:45 Sending Reply: S6F12: length = 3
+13:32:45 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:32:45 Looking up response S6F12
+13:32:45 (0) Sending Reply Message...
+13:32:45     <S6F12
+13:32:45     <B[1/1] 0x00>
+13:32:45 >
+13:32:45 Sending Reply: S6F12: length = 3
+13:32:45 Received Event - CH2_IDLE / 120002. (S6F11: length = 16)
+13:32:45 Looking up response S6F12
+13:32:45 (0) Sending Reply Message...
+13:32:45     <S6F12
+13:32:45     <B[1/1] 0x00>
+13:32:45 >
+13:32:45 Sending Reply: S6F12: length = 3
+13:32:45 Received Event - CH2_STATE_CHANGED / 120010. (S6F11: length = 16)
+13:32:45 Looking up response S6F12
+13:32:45 (0) Sending Reply Message...
+13:32:45     <S6F12
+13:32:45     <B[1/1] 0x00>
+13:32:45 >
+13:32:45 Sending Reply: S6F12: length = 3
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 291>
+13:32:59         <U4[1/1] 120038>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 Received Event - CH2_MATERIAL_LEAVING / 120038. (S6F11: length = 16)
+13:32:59 Looking up response S6F12
+13:32:59 (0) Sending Reply Message...
+13:32:59     <S6F12
+13:32:59     <B[1/1] 0x00>
+13:32:59 >
+13:32:59 Sending Reply: S6F12: length = 3
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 292>
+13:32:59         <U4[1/1] 210037>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 Received Event - LP1_MATERIAL_ENTERING / 210037. (S6F11: length = 16)
+13:32:59 Looking up response S6F12
+13:32:59 (0) Sending Reply Message...
+13:32:59     <S6F12
+13:32:59     <B[1/1] 0x00>
+13:32:59 >
+13:32:59 Sending Reply: S6F12: length = 3
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 293>
+13:32:59         <U4[1/1] 210040>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 Received Event - LP1_TASK_COMPLETED / 210040. (S6F11: length = 16)
+13:32:59 Looking up response S6F12
+13:32:59 (0) Sending Reply Message...
+13:32:59     <S6F12
+13:32:59     <B[1/1] 0x00>
+13:32:59 >
+13:32:59 Sending Reply: S6F12: length = 3
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 294>
+13:32:59         <U4[1/1] 410006>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 295>
+13:32:59         <U4[1/1] 410000>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 296>
+13:32:59         <U4[1/1] 410007>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 297>
+13:32:59         <U4[1/1] 410000>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 298>
+13:32:59         <U4[1/1] 300007>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 299>
+13:32:59         <U4[1/1] 300010>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 .Received Event - SCH1.PROCESSED / 410006
+13:32:59 (0) Sending Reply Message...
+13:32:59     <S6F12
+13:32:59     <B[1/1] 0x00>
+13:32:59 >
+13:32:59 -----------------------------------------------------------------------------
+13:32:59 Scheduler1 Run #1/1 - Waiting for state SCH1_WAITING_FOR_UNLOAD
+13:32:59 -----------------------------------------------------------------------------
+13:32:59 (0) Sending Primary Message...
+13:32:59     <S1F3 W
+13:32:59     <L[1/1]
+13:32:59         <U4[1/1] 410000>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Reply Message...
+13:32:59     <S1F4
+13:32:59     <L[1/1]
+13:32:59         <U1[1/1] 6>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 300>
+13:32:59         <U4[1/1] 210013>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 301>
+13:32:59         <U4[1/1] 210011>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 VID[ 410000 ] = 6
+13:32:59 Already in state SCH1_WAITING_FOR_UNLOAD
+13:32:59 -----------------------------------------------------------------------------
+13:32:59 Scheduler1 Run #1/1 - Waiting for state SCH1_UNLOADED
+13:32:59 -----------------------------------------------------------------------------
+13:32:59 (0) Sending Primary Message...
+13:32:59     <S1F3 W
+13:32:59     <L[1/1]
+13:32:59         <U4[1/1] 410000>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 302>
+13:32:59         <U4[1/1] 210006>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 303>
+13:32:59         <U4[1/1] 210010>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 304>
+13:32:59         <U4[1/1] 210016>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 305>
+13:32:59         <U4[1/1] 210011>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Primary Message...
+13:32:59     <S6F11 W
+13:32:59     <L[3/1]
+13:32:59         <U4[1/1] 306>
+13:32:59         <U4[1/1] 210043>
+13:32:59         <L[0/1]>
+13:32:59     >
+13:32:59 >
+13:32:59 (0) Received Reply Message...
+13:32:59     <S1F4
+13:32:59     <L[1/1]
+13:32:59         <U1[1/1] 6>
+13:32:59     >
+13:32:59 >
+13:32:59 VID[ 410000 ] = 6
+13:32:59 Scheduler_WaitForCEID::Waiting for SCH1.UNLOADED / 410008
+13:32:59 Received Event - SCH1.STATE_CHANGED / 410000. (S6F11: length = 16)
+13:32:59 Looking up response S6F12
+13:32:59 (0) Sending Reply Message...
+13:32:59     <S6F12
+13:32:59     <B[1/1] 0x00>
+13:32:59 >
+13:32:59 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - SCH1.WAITING_FOR_UNLOAD / 410007. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - SCH1.STATE_CHANGED / 410000. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - TOOL_STOPPING / 300007. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - TOOL_STATE_CHANGED / 300010. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - LP1_PUMPING_IDLE / 210013. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - LP1_PUMPING_STATE_CHANGED / 210011. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - LP1_ACTIVE / 210006. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - LP1_STATE_CHANGED / 210010. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - LP1_PUMPING_VENTING / 210016. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - LP1_PUMPING_STATE_CHANGED / 210011. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:00 Received Event - LP1_REQUEST_LID_OPENED / 210043. (S6F11: length = 16)
+13:33:00 Looking up response S6F12
+13:33:00 (0) Sending Reply Message...
+13:33:00     <S6F12
+13:33:00     <B[1/1] 0x00>
+13:33:00 >
+13:33:00 Sending Reply: S6F12: length = 3
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 307>
+13:33:21         <U4[1/1] 210017>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 Received Event - LP1_PUMPING_VENTED / 210017. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 308>
+13:33:21         <U4[1/1] 210011>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 309>
+13:33:21         <U4[1/1] 210007>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 310>
+13:33:21         <U4[1/1] 210010>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 311>
+13:33:21         <U4[1/1] 210002>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 312>
+13:33:21         <U4[1/1] 210010>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 Received Event - LP1_PUMPING_STATE_CHANGED / 210011. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 313>
+13:33:21         <U4[1/1] 300102>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 314>
+13:33:21         <U4[1/1] 210036>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 315>
+13:33:21         <U4[1/1] 210034>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 316>
+13:33:21         <U4[1/1] 210047>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 317>
+13:33:21         <U4[1/1] 410008>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 318>
+13:33:21         <U4[1/1] 410000>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 319>
+13:33:21         <U4[1/1] 410101>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 320>
+13:33:21         <U4[1/1] 300002>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 321>
+13:33:21         <U4[1/1] 300010>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 322>
+13:33:21         <U4[1/1] 300101>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 323>
+13:33:21         <U4[1/1] 410002>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 324>
+13:33:21         <U4[1/1] 410000>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 325>
+13:33:21         <U4[1/1] 210038>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 326>
+13:33:21         <U4[1/1] 210038>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 327>
+13:33:21         <U4[1/1] 210038>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 328>
+13:33:21         <U4[1/1] 210038>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 329>
+13:33:21         <U4[1/1] 210038>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 Received Event - LP1_STOPPING / 210007. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 (0) Received Primary Message...
+13:33:21     <S6F11 W
+13:33:21     <L[3/1]
+13:33:21         <U4[1/1] 330>
+13:33:21         <U4[1/1] 300103>
+13:33:21         <L[0/1]>
+13:33:21     >
+13:33:21 >
+13:33:21 Received Event - LP1_STATE_CHANGED / 210010. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 Received Event - LP1_IDLE / 210002. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 Received Event - LP1_STATE_CHANGED / 210010. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 Received Event - BUZZER_ON / 300102. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 Received Event - LP1_LID_OPENED / 210036. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 Received Event - LP1_MAPPING_FAILED / 210034. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 Received Event - LP1_UNLOAD_COMPLETE / 210047. (S6F11: length = 16)
+13:33:21 Looking up response S6F12
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 Sending Reply: S6F12: length = 3
+13:33:21 .Received Event - SCH1.UNLOADED / 410008
+13:33:21 (0) Sending Reply Message...
+13:33:21     <S6F12
+13:33:21     <B[1/1] 0x00>
+13:33:21 >
+13:33:21 -----------------------------------------------------------------------------
+13:33:21 Scheduler1 Run #1/1 - Waiting for state SCH1_WAITING_FOR_LOAD
+13:33:21 -----------------------------------------------------------------------------
+13:33:21 (0) Sending Primary Message...
+13:33:21     <S1F3 W
+13:33:21     <L[1/1]
+13:33:21         <U4[1/1] 410000>
+13:33:21     >
+13:33:21 >
+13:33:22 (0) Received Reply Message...
+13:33:22     <S1F4
+13:33:22     <L[1/1]
+13:33:22         <U1[1/1] 1>
+13:33:22     >
+13:33:22 >
+13:33:22 VID[ 410000 ] = 1
+13:33:22 Already in state SCH1_WAITING_FOR_LOAD
+13:33:22 (0) Sending Primary Message...
+13:33:22     <S10F5 W
+13:33:22     <L[2/1]
+13:33:22         <B[1/1] 0x00>
+13:33:22         <L[1/1]
+13:33:22             <A[31/1] "Scheduler1 Run #1/1 - Completed">
+13:33:22         >
+13:33:22     >
+13:33:22 >
+13:33:22 (0) Received Reply Message...
+13:33:22     <S10F6
+13:33:22     <B[1/1] 0x00>
+13:33:22 >
+13:33:22 (0) Sending Primary Message...
+13:33:22     <S10F5 W
+13:33:22     <L[2/1]
+13:33:22         <B[1/1] 0x00>
+13:33:22         <L[1/1]
+13:33:22             <A[30/1] "Scheduler1 - All Runs Complete">
+13:33:22         >
+13:33:22     >
+13:33:22 >
+13:33:22 (0) Received Reply Message...
+13:33:22     <S10F6
+13:33:22     <B[1/1] 0x00>
+13:33:22 >
+13:33:22 Scheduler1 - Test Runs Completed
+13:33:22 ***************************************************
+13:33:22 ***************************************************
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 331>
+13:33:25         <U4[1/1] 210035>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 332>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 333>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 334>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 335>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 336>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 337>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 338>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 339>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 340>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 341>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 342>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 343>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 344>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 345>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 346>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 347>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 348>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 349>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 350>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 351>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 352>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 353>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 354>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 355>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 356>
+13:33:25         <U4[1/1] 210037>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 357>
+13:33:25         <U4[1/1] 210033>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 358>
+13:33:25         <U4[1/1] 210046>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 359>
+13:33:25         <U4[1/1] 410003>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:25 (0) Received Primary Message...
+13:33:25     <S6F11 W
+13:33:25     <L[3/1]
+13:33:25         <U4[1/1] 360>
+13:33:25         <U4[1/1] 410000>
+13:33:25         <L[0/1]>
+13:33:25     >
+13:33:25 >
+13:33:52 (0) Received Primary Message...
+13:33:52     <S1F1 W>
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xBC>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xBE>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xC0>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xC2>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xC4>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xC6>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xC8>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xCA>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xCC>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xCE>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xD0>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xD2>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xD4>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xD6>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xD8>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xDA>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xDC>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xDE>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xE0>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xE2>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xE4>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xE6>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xE8>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xEA>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xEC>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xEE>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xF0>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xF2>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xF4>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xF6>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xF8>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xFA>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xFC>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x01 0xFE>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x00>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x02>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x04>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x06>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x08>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x0A>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x0C>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x0E>
+13:34:11 >
+13:34:11 (0) Received Primary Message...
+13:34:11     <S9F9
+13:34:11     <B[10/1] 0x00 0x00 0x06 0x0C 0x00 0x00 0x00 0x00 0x02 0x10>
+13:34:11 >
+13:34:41 (0) Received Primary Message...
+13:34:41     <S9F9
+13:34:41     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x12>
+13:34:41 >
+13:34:42 (0) Received Primary Message...
+13:34:42     <S1F1 W>
+13:35:29 (0) Received Primary Message...
+13:35:29     <S9F9
+13:35:29     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x40>
+13:35:29 >
+13:35:30 (0) Received Primary Message...
+13:35:30     <S1F1 W>
+13:36:17 (0) Received Primary Message...
+13:36:17     <S9F9
+13:36:17     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x43>
+13:36:17 >
+13:36:18 (0) Received Primary Message...
+13:36:18     <S1F1 W>
+13:37:05 (0) Received Primary Message...
+13:37:05     <S9F9
+13:37:05     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x46>
+13:37:05 >
+13:37:06 (0) Received Primary Message...
+13:37:06     <S1F1 W>
+13:37:53 (0) Received Primary Message...
+13:37:53     <S9F9
+13:37:53     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x49>
+13:37:53 >
+13:37:54 (0) Received Primary Message...
+13:37:54     <S1F1 W>
+13:38:42 (0) Received Primary Message...
+13:38:42     <S9F9
+13:38:42     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x4C>
+13:38:42 >
+13:38:42 (0) Received Primary Message...
+13:38:42     <S1F1 W>
+13:39:30 (0) Received Primary Message...
+13:39:30     <S9F9
+13:39:30     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x4F>
+13:39:30 >
+13:39:31 (0) Received Primary Message...
+13:39:31     <S1F1 W>
+13:40:17 (0) Received Primary Message...
+13:40:17     <S9F9
+13:40:17     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x52>
+13:40:17 >
+13:40:18 (0) Received Primary Message...
+13:40:18     <S1F1 W>
+13:41:05 (0) Received Primary Message...
+13:41:05     <S9F9
+13:41:05     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x55>
+13:41:05 >
+13:41:06 (0) Received Primary Message...
+13:41:06     <S1F1 W>
+13:41:53 (0) Received Primary Message...
+13:41:53     <S9F9
+13:41:53     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x58>
+13:41:53 >
+13:41:54 (0) Received Primary Message...
+13:41:54     <S1F1 W>
+13:42:41 (0) Received Primary Message...
+13:42:41     <S9F9
+13:42:41     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x5B>
+13:42:41 >
+13:42:42 (0) Received Primary Message...
+13:42:42     <S1F1 W>
+13:43:29 (0) Received Primary Message...
+13:43:29     <S9F9
+13:43:29     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x5E>
+13:43:29 >
+13:43:30 (0) Received Primary Message...
+13:43:30     <S1F1 W>
+13:44:17 (0) Received Primary Message...
+13:44:17     <S9F9
+13:44:17     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x61>
+13:44:17 >
+13:44:18 (0) Received Primary Message...
+13:44:18     <S1F1 W>
+13:45:05 (0) Received Primary Message...
+13:45:05     <S9F9
+13:45:05     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x64>
+13:45:05 >
+13:45:06 (0) Received Primary Message...
+13:45:06     <S1F1 W>
+13:45:53 (0) Received Primary Message...
+13:45:53     <S9F9
+13:45:53     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x67>
+13:45:53 >
+13:45:54 (0) Received Primary Message...
+13:45:54     <S1F1 W>
+13:46:41 (0) Received Primary Message...
+13:46:41     <S9F9
+13:46:41     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x6A>
+13:46:41 >
+13:46:42 (0) Received Primary Message...
+13:46:42     <S1F1 W>
+13:47:30 (0) Received Primary Message...
+13:47:30     <S9F9
+13:47:30     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x6D>
+13:47:30 >
+13:47:30 (0) Received Primary Message...
+13:47:30     <S1F1 W>
+13:48:18 (0) Received Primary Message...
+13:48:18     <S9F9
+13:48:18     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x70>
+13:48:18 >
+13:48:19 (0) Received Primary Message...
+13:48:19     <S1F1 W>
+13:49:05 (0) Received Primary Message...
+13:49:05     <S9F9
+13:49:05     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x73>
+13:49:05 >
+13:49:06 (0) Received Primary Message...
+13:49:06     <S1F1 W>
+13:49:53 (0) Received Primary Message...
+13:49:53     <S9F9
+13:49:53     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x76>
+13:49:53 >
+13:49:54 (0) Received Primary Message...
+13:49:54     <S1F1 W>
+13:50:41 (0) Received Primary Message...
+13:50:41     <S9F9
+13:50:41     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x79>
+13:50:41 >
+13:50:42 (0) Received Primary Message...
+13:50:42     <S1F1 W>
+13:51:29 (0) Received Primary Message...
+13:51:29     <S9F9
+13:51:29     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x7C>
+13:51:29 >
+13:51:30 (0) Received Primary Message...
+13:51:30     <S1F1 W>
+13:52:17 (0) Received Primary Message...
+13:52:17     <S9F9
+13:52:17     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x7F>
+13:52:17 >
+13:52:18 (0) Received Primary Message...
+13:52:18     <S1F1 W>
+13:53:05 (0) Received Primary Message...
+13:53:05     <S9F9
+13:53:05     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x82>
+13:53:05 >
+13:53:06 (0) Received Primary Message...
+13:53:06     <S1F1 W>
+13:53:53 (0) Received Primary Message...
+13:53:53     <S9F9
+13:53:53     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x85>
+13:53:53 >
+13:53:54 (0) Received Primary Message...
+13:53:54     <S1F1 W>
+13:54:41 (0) Received Primary Message...
+13:54:41     <S9F9
+13:54:41     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x88>
+13:54:41 >
+13:54:42 (0) Received Primary Message...
+13:54:42     <S1F1 W>
+13:55:29 (0) Received Primary Message...
+13:55:29     <S9F9
+13:55:29     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x8B>
+13:55:29 >
+13:55:30 (0) Received Primary Message...
+13:55:30     <S1F1 W>
+13:56:17 (0) Received Primary Message...
+13:56:17     <S9F9
+13:56:17     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x8E>
+13:56:17 >
+13:56:18 (0) Received Primary Message...
+13:56:18     <S1F1 W>
+13:57:06 (0) Received Primary Message...
+13:57:06     <S9F9
+13:57:06     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x91>
+13:57:06 >
+13:57:06 (0) Received Primary Message...
+13:57:06     <S1F1 W>
+13:57:54 (0) Received Primary Message...
+13:57:54     <S9F9
+13:57:54     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x94>
+13:57:54 >
+13:57:55 (0) Received Primary Message...
+13:57:55     <S1F1 W>
+13:58:41 (0) Received Primary Message...
+13:58:41     <S9F9
+13:58:41     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x97>
+13:58:41 >
+13:58:42 (0) Received Primary Message...
+13:58:42     <S1F1 W>
+13:59:29 (0) Received Primary Message...
+13:59:29     <S9F9
+13:59:29     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x9A>
+13:59:29 >
+13:59:30 (0) Received Primary Message...
+13:59:30     <S1F1 W>
+14:00:17 (0) Received Primary Message...
+14:00:17     <S9F9
+14:00:17     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0x9D>
+14:00:17 >
+14:00:18 (0) Received Primary Message...
+14:00:18     <S1F1 W>
+14:01:05 (0) Received Primary Message...
+14:01:05     <S9F9
+14:01:05     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0xA0>
+14:01:05 >
+14:01:06 (0) Received Primary Message...
+14:01:06     <S1F1 W>
+14:01:53 (0) Received Primary Message...
+14:01:53     <S9F9
+14:01:53     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0xA3>
+14:01:53 >
+14:01:54 (0) Received Primary Message...
+14:01:54     <S1F1 W>
+14:02:41 (0) Received Primary Message...
+14:02:41     <S9F9
+14:02:41     <B[10/1] 0x00 0x00 0x01 0x02 0x00 0x00 0x00 0x00 0x02 0xA6>
+14:02:41 >
+14:02:42 (0) Received Primary Message...
+14:02:42     <S1F1 W>
+14:02:46 (0) Received Primary Message...
+14:02:46     <S6F11 W
+14:02:46     <L[3/1]
+14:02:46         <U4[1/1] 361>
+14:02:46         <U4[1/1] 9>
+14:02:4

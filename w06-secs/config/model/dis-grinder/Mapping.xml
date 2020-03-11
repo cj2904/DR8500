@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:MappingConfiguration xmlns:ns2="http://www.znt-richter.com/pacMapping/">
+    <Schema Id="4228eaf9-b26b-4ea4-9e40-ee5244024982" Name="MES">
+        <SchemaComponent Id="fdc48f4a-e28e-4584-b84f-c11615b0126c" Name="WipData">
+            <SchemaItem Id="0858c123-c1eb-4efb-995b-e64ce7e1371b" Name="Usable Tooth-1" Type="String" Unit="SV@ST_Z1_USABLE_TOOTH"/>
+            <SchemaItem Id="24b0a015-2c0c-44a0-b368-1957b8576866" Name="Usable Tooth-2" Type="String" Unit="SV@ST_Z2_USABLE_TOOTH"/>
+            <SchemaItem Id="5d27cdbf-4934-4eca-abbd-01467682280d" Name="Ground Wafers-1" Type="String" Unit="SV@ST_Z1_GROUND_WAFERS"/>
+            <SchemaItem Id="b58fd0ef-bfcc-4d94-8303-2c59c87d54a1" Name="Ground Wafers-2" Type="String" Unit="SV@ST_Z2_GROUND_WAFERS"/>
+        </SchemaComponent>
+    </Schema>
+</ns2:MappingConfiguration>

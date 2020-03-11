@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Creates a zam archive by following steps:
+ - copy files
+ - replace App.Version with current version defined in the mkdeploy.properties file
+ - update zam-deployment descriptor 
+   -  application version with version from the mkdeploy.properties
+   -  module version based on the reference sub projects defined in the eclipse classpath
+-->
+<project name="w06-secs" default="CreateZamArchive" basedir=".">
+
+	<property file="mkdeploy.properties" />
+
+	<property name="target.project.name" value="${ant.project.name}_${version}" />
+	<property name="targetDir" value="tmp" />
+	<property name="targetCompile" value="compile" />
+	<property name="targetHome" value="${targetDir}/${target.project.name}" />
+
+	<!-- 
+		Creates a zam archive from the current eclipse project.
+		Submodules are taken from the current eclipse classpath
+		Version is defined in the mkdeploy.properties
+	-->
+	<target name="CreateZamArchive">
+
+		<echo message="(1/6) Cleanup target directory: ${targetDir}" />
+		<delete failonerror="false" dir="${targetDir}" />
+
+		<echo message="(2/6) Copy files ..." />
+		<copy todir="${targetHome}">
+			<fileset dir=".." includes="bin/,lib/,META-INF/,config/,zwinapi/**/config/**/*" excludes="CVS/,config/properties/INSTANCE.properties,config/properties/common.properties,config/properties/mock.properties" />
+		</copy>
+		<copy todir="${targetDir}/${targetCompile}">
+			<fileset dir=".." includes="_classes/" />
+		</copy>
+
+		<echo message="(3/6) Replace App.Version" />
+		<replaceregexp byline="true">
+			<regexp pattern="App.Version=.*" />
+			<substitution expression="App.Version=${version}" />
+			<fileset dir="${targetHome}">
+				<include name="**/*.properties" />
+			</fileset>
+		</replaceregexp>
+
+		<echo message="(4/6) Update zam deployment descriptor" />
+		<script language="groovy">
+			private String getVersionFromClasspath(String component)
+			{
+			    def classpathXml = new XmlParser().parse("../.classpath")
+			    def version = ""
+			    classpathXml.classpathentry.each
+			    {
+			        def index = it.@path.indexOf(component)
+			        if(index >= 0)
+			        {
+			            version = it.@path.substring(index+component.length())
+			        }
+			    }
+			    return version
+			}
+
+			def zamDeploymentXml = project.getProperty("targetDir") + "/"+ project.getProperty("target.project.name")+"/META-INF/ZAM-DEPLOY.xml"
+			def xml = new XmlParser().parse(zamDeploymentXml)
+			def moduleVersion = ""
+			xml.ModuleList.Module.each
+			{
+		        it.@version=getVersionFromClasspath(it.@name+"_")
+		       	moduleVersion = moduleVersion + it.@name + "_" + it.@version + ", "
+				if(it.@version == "")
+				{
+					throw new Exception("Update zam deployment descriptor failed, missing classpath entry for sub module '${it.@name}'!")
+				}
+				println "Update zam module ${it.@name}, version ${it.@version}"
+			}
+			xml.@component=project.getProperty("ant.project.name")
+			xml.@version=project.getProperty("version")
+			moduleVersion = moduleVersion.substring(0, moduleVersion.length()-2)
+			xml.@description=xml.@description + ", reference " + moduleVersion + "."
+			def printer = new XmlNodePrinter(new PrintWriter(new FileWriter(zamDeploymentXml)))
+			printer.setPreserveWhitespace(true)
+			printer.print(xml)
+        </script>
+		
+		<replace dir="${targetHome}" includes="**/*ZAM-DEPLOY.xml">
+			<replacefilter token="@APPLICATION@" value="${applicationName}" />
+			<replacefilter token="@APPLICATION_VERSION@" value="${version}" />
+		</replace>
+
+		<echo message="(5/6) Update eclipse project file" />
+		<script language="groovy">
+			def eclipseProjectXmlFile = project.getProperty("targetDir") +"/"+project.getProperty("target.project.name")+ "/.project"
+			println "Replace project name in eclipse project file: "+eclipseProjectXmlFile
+			def eclipseProjectXml = new File(eclipseProjectXmlFile)
+	        if (eclipseProjectXml.exists())
+	        {
+				def xml = new XmlParser().parse(eclipseProjectXml)
+				xml.name[0].value = project.getProperty("target.project.name")
+				def printer = new XmlNodePrinter(new PrintWriter(new FileWriter(eclipseProjectXml)))
+				printer.setPreserveWhitespace(true)
+				printer.print(xml)
+			}
+		</script>
+		
+		<jar destfile="${targetHome}/lib/${target.project.name}.jar" basedir="${targetDir}/${targetCompile}/_classes" includes="**/*" />
+
+		<echo message="(6/6) Create zam archive :)" />
+		<zip destfile="${targetDir}/${target.project.name}.zar" basedir="${targetDir}/${target.project.name}" includes="**/*" />
+	</target>
+
+</project>

@@ -1,0 +1,49 @@
+######Model Property Key#################
+Pac.ApplicationContext=$(AppDir)/config/xml/AppContext.xml,\
+$(AppDir)/config/model/$(EqModel)/AppContext.xml
+Equipment1.Name=$(EqModel)
+
+#Model specific deo#
+deo.path=$(AppDir)/config/model/$(EqModel)/$(EqModel)-deo
+Pac.MappingSetContainer.Path=$(AppDir)/config/model/$(EqModel)/Mapping.xml
+de.znt.pac.PACService.xmlLocation=$(AppDir)/config/model/$(EqModel)/pac.xml
+
+Secs.ProcessState.$(Equipment1.Name).0=Undefined
+Secs.ProcessState.$(Equipment1.Name).1=Init
+Secs.ProcessState.$(Equipment1.Name).2=Idle
+Secs.ProcessState.$(Equipment1.Name).3=Setup
+Secs.ProcessState.$(Equipment1.Name).4=Ready
+Secs.ProcessState.$(Equipment1.Name).5=Executing
+Secs.ProcessState.$(Equipment1.Name).6=Paused
+Secs.ProcessState.$(Equipment1.Name).States.Ready2Start=2,3,4,6
+Secs.ProcessState.$(Equipment1.Name).States.Processing=5
+Secs.ProcessState.$(Equipment1.Name).StatusVariable.Name=CurrentProcessState
+
+Secs.ControlState.$(Equipment1.Name).0=Unknown
+Secs.ControlState.$(Equipment1.Name).1=Equipment-Offline
+Secs.ControlState.$(Equipment1.Name).2=Attempt Online
+Secs.ControlState.$(Equipment1.Name).3=Host Offline
+Secs.ControlState.$(Equipment1.Name).4=Online-Local
+Secs.ControlState.$(Equipment1.Name).5=Online-Remote
+Secs.ControlState.$(Equipment1.Name).Local=4
+Secs.ControlState.$(Equipment1.Name).Offline=1
+Secs.ControlState.$(Equipment1.Name).Remote=5
+Secs.ControlState.$(Equipment1.Name).States.Offline=0,1,2,3
+Secs.ControlState.$(Equipment1.Name).States.Online=4,5
+Secs.ControlState.$(Equipment1.Name).StatusVariable.Name=CurrentRCS
+
+#########################################################################
+### SECS communication settings  
+#########################################################################
+$(Equipment1.Name).SecsConnectionMode=active
+$(Equipment1.Name).T3Timeout=45
+$(Equipment1.Name).T5Timeout=10
+$(Equipment1.Name).T6Timeout=5
+$(Equipment1.Name).T7Timeout=20
+$(Equipment1.Name).T8Timeout=5
+$(Equipment1.Name).LinktestInterval=60
+
+Secs.MachineLoadedRecipe.${Equipment1.Name}.StatusVariable.Name=
+Secs.RemoteCommand.PpidSelect.Name=PP-SELECT
+
+#HostCommand.WaferSlot.Count=25

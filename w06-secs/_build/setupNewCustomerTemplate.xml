@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Creates a new customer template
+-->
+<project name="Tsc-diebonder" default="CreateProductZip" basedir=".">
+
+	<property file="setupNewCustomerTemplate.properties" />
+
+	<import file="${ant.project.name}_HEAD.xml" />
+
+	<property name="target.project.name" value="pac-${CustomerSolution.Name}Template" />
+	<property name="project.version" value="12-1-0_0" />
+
+	<property name="targetPath" value="tmp" />
+	<property name="targetDir" value="${targetPath}/${target.project.name}" />
+
+	<target name="Cleanup">
+		<delete failonerror="false" dir="${targetPath}" />
+	</target>
+
+	<target name="CopyCommonFiles">
+
+		<copy todir="${targetDir}">
+			<fileset dir=".." includes="bin/,build/,config/,META-INF/,eclipse.*,INSTANCE.properties,test/" excludes="CVS/,*.dummy" />
+		</copy>
+
+		<move file="${targetDir}/bin/Tsc-diebonder.launch" tofile="${targetDir}/bin/${target.project.name}.launch" />
+		<move file="${targetDir}/bin/Tsc-diebonder_AdminUI.bat" tofile="${targetDir}/bin/${target.project.name}_AdminUI.bat" />
+
+	</target>
+
+	<target name="Replace">
+
+		<echo message="Replace ${ant.project.name} to pac-${CustomerSolution.Name} ..." />
+		<replace dir="${targetDir}" includes="**/*.launch,.project,build/*.*,**/*.bat,eclipse.*,**/*.properties" excludes="**/application.properties">
+			<replacefilter token="${ant.project.name}" value="${target.project.name}" />
+			<replacefilter token="CSTemplate" value="${CustomerSolution.Name}Template" />
+			<replacefilter token="@submodule1@" value="${components.pac-all.product}" />
+			<replacefilter token="Tsc-diebonder" value="pac-${CustomerSolution.Name}" />
+		</replace>
+	</target>
+
+	<!-- build -->
+	<target name="CreateProductZip">
+
+		<antcall target="Cleanup" />
+		<antcall target="CopyCommonFiles" />
+		<antcall target="Replace" />
+
+		<move file="${targetDir}/eclipse.classpath" tofile="${targetDir}/.classpath" />
+		<move file="${targetDir}/eclipse.project" tofile="${targetDir}/.project" />
+
+		<delete dir="${targetDir}/.nbprofiler" />
+		<delete dir="${targetDir}/.oracle_jre_usage" />
+
+		<zip destfile="${targetPath}/${target.project.name}_${project.version}_pdk.zip" basedir="${targetPath}" />
+	</target>
+</project>

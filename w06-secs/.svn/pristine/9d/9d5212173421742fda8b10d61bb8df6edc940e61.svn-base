@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="config/model/prober/prober-deo/deos"/>
+	<classpathentry kind="src" path="config/model/cvd-pc4500/cvd-pc4500-deo/deos"/>
+	<classpathentry kind="src" path="config/model/semco-furnace/semco-furnace-deo/deos"/>
+	<classpathentry kind="src" path="config/model/dis-grinder/dis-grinder-deo/deos"/>
+	<classpathentry kind="src" path="config/model/default/default-deo/deos"/>
+	<classpathentry kind="src" path="config/model/sputter/sputter-deo/deos"/>
+	<classpathentry kind="src" path="config/model/axcelis-gsd200/axcelis-gsd200-deo/deos"/>
+	<classpathentry kind="src" path="config/model/fittech-fcm6104/fittech-fcm6104-deo/deos"/>
+	<classpathentry kind="src" path="config/model/ast-peva900el/ast-peva900el-deo/deos"/>
+	<classpathentry kind="src" path="config/model/ke-furnace/ke-furnace-deo/deos"/>
+	<classpathentry kind="src" path="config/deo/common"/>
+	<classpathentry kind="src" path="config/model/dnk-ma-4000/dnk-ma-4000-deo/deos"/>
+	<classpathentry kind="src" path="config/model/aoi/aoi-deo/deos"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/pac-w06_0-1-1_0"/>
+	<classpathentry kind="output" path="_classes"/>
+</classpath>

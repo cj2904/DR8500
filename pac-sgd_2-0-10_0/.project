@@ -1,0 +1,16 @@
+<projectDescription>
+  <name>pac-sgd_2-0-10_0</name>
+  <comment/>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+      <arguments/>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.springframework.ide.eclipse.core.springnature</nature>
+    <nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

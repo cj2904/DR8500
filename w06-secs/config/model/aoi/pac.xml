@@ -1,0 +1,2206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processAutomationController xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://www.znt-richter.com/pac_1_0"    xsi:schemaLocation="http://www.znt-richter.com/pac_1_0 http://www.znt-richter.com/pac/pac_1_0.xsd" >
+  <multiLangId id="${PacService}"/>
+  <controlAlgorithmManager>
+    <multiLangId id="ControlAlgorithmManager"/>
+  </controlAlgorithmManager>
+  <machineManager>
+    <multiLangId id="MachineManager"/>
+    <machineTree machineTreeName="${Equipment1.Name}">
+      <machineTreeNode machineTreeNodeName="${Equipment1.Name}">
+        <machineTreeNode machineTreeNodeName="${Equipment1.Name}">
+          <machine machineName="SecsMachine">
+            <multiLangId id="${Equipment1.Name}"/>
+            <parameterSetList>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="EC"/>
+                <definitionList>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EqpType">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"10001"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@EqpType">
+                        <multiLangId id="EqpType"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EqptID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"10002"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@EqptID">
+                        <multiLangId id="EqptID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="TimeFormat">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10003"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@TimeFormat">
+                        <multiLangId id="TimeFormat"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SECSTimeOut_T1">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10010"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@SECSTimeOut_T1">
+                        <multiLangId id="SECSTimeOut_T1"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SECSTimeOut_T2">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10011"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@SECSTimeOut_T2">
+                        <multiLangId id="SECSTimeOut_T2"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SECSTimeOut_T3">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10012"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@SECSTimeOut_T3">
+                        <multiLangId id="SECSTimeOut_T3"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SECSTimeOut_T4">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10013"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@SECSTimeOut_T4">
+                        <multiLangId id="SECSTimeOut_T4"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SECSTimeOut_T5">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10014"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@SECSTimeOut_T5">
+                        <multiLangId id="SECSTimeOut_T5"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SECSTimeOut_T6">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10015"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@SECSTimeOut_T6">
+                        <multiLangId id="SECSTimeOut_T6"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SECSTimeOut_T7">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10016"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@SECSTimeOut_T7">
+                        <multiLangId id="SECSTimeOut_T7"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SECSTimeOut_T8">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10017"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@SECSTimeOut_T8">
+                        <multiLangId id="SECSTimeOut_T8"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="MaxSpoolTransmit">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"10020"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@MaxSpoolTransmit">
+                        <multiLangId id="MaxSpoolTransmit"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Boolean" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="OverWriteSpool">
+                      <translation language="SECS_DATATYPE">"Boolean"</translation>
+                      <translation language="SECSVID">"10021"</translation>
+                      <translation language="SECSTYPE">"EquipmentConstant"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="EC@OverWriteSpool">
+                        <multiLangId id="OverWriteSpool"/>
+                        <valueBoolean>false</valueBoolean>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                </definitionList>
+              </parameterSet>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="SV"/>
+                <definitionList>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EquipmentControlStatus">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12000"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@EquipmentControlStatus">
+                        <multiLangId id="EquipmentControlStatus"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EquipmentStatus">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12001"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@EquipmentStatus">
+                        <multiLangId id="EquipmentStatus"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="EquipmentRemoteStatus">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12002"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@EquipmentRemoteStatus">
+                        <multiLangId id="EquipmentRemoteStatus"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SoftwareRevision">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12003"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SoftwareRevision">
+                        <multiLangId id="SoftwareRevision"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLocation">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12010"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLocation">
+                        <multiLangId id="WaferOnLocation"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCarrier_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12011"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCarrier_CarrierID">
+                        <multiLangId id="CurrentCarrier_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCarrier_PortNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12012"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCarrier_PortNo">
+                        <multiLangId id="CurrentCarrier_PortNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCarrier_AccessState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12013"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCarrier_AccessState">
+                        <multiLangId id="CurrentCarrier_AccessState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCarrier_WaferCount">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12014"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCarrier_WaferCount">
+                        <multiLangId id="CurrentCarrier_WaferCount"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCarrier_SlotMap">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12015"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCarrier_SlotMap">
+                        <multiLangId id="CurrentCarrier_SlotMap"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCarrier_CreatedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12016"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCarrier_CreatedTime">
+                        <multiLangId id="CurrentCarrier_CreatedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCarrier_StartedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12017"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCarrier_StartedTime">
+                        <multiLangId id="CurrentCarrier_StartedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCarrier_FinishedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12018"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCarrier_FinishedTime">
+                        <multiLangId id="CurrentCarrier_FinishedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12021"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_CarrierID">
+                        <multiLangId id="CurrentLot_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_PortNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12022"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_PortNo">
+                        <multiLangId id="CurrentLot_PortNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12023"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_LotID">
+                        <multiLangId id="CurrentLot_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12024"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_Recipe">
+                        <multiLangId id="CurrentLot_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_SlotCount">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12025"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_SlotCount">
+                        <multiLangId id="CurrentLot_SlotCount"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_ListSlots">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12026"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_ListSlots">
+                        <multiLangId id="CurrentLot_ListSlots"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_CreatedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12027"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_CreatedTime">
+                        <multiLangId id="CurrentLot_CreatedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_StartedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12028"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_StartedTime">
+                        <multiLangId id="CurrentLot_StartedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLot_FinishedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12029"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentLot_FinishedTime">
+                        <multiLangId id="CurrentLot_FinishedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12031"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_CarrierID">
+                        <multiLangId id="CurrentWafer_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_PortNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12032"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_PortNo">
+                        <multiLangId id="CurrentWafer_PortNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12033"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_LotID">
+                        <multiLangId id="CurrentWafer_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12034"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_Recipe">
+                        <multiLangId id="CurrentWafer_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_CJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12035"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_CJID">
+                        <multiLangId id="CurrentWafer_CJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_PJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12036"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_PJID">
+                        <multiLangId id="CurrentWafer_PJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_WaferID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12037"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_WaferID">
+                        <multiLangId id="CurrentWafer_WaferID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_SlotNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12038"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_SlotNo">
+                        <multiLangId id="CurrentWafer_SlotNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_OrderIndex">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12039"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_OrderIndex">
+                        <multiLangId id="CurrentWafer_OrderIndex"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_CreatedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12040"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_CreatedTime">
+                        <multiLangId id="CurrentWafer_CreatedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_StartedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12041"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_StartedTime">
+                        <multiLangId id="CurrentWafer_StartedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentWafer_FinishedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12042"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentWafer_FinishedTime">
+                        <multiLangId id="CurrentWafer_FinishedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCJ_CJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12051"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCJ_CJID">
+                        <multiLangId id="CurrentCJ_CJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCJ_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12052"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCJ_CarrierID">
+                        <multiLangId id="CurrentCJ_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCJ_CJState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12053"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCJ_CJState">
+                        <multiLangId id="CurrentCJ_CJState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCJ_CreatedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12054"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCJ_CreatedTime">
+                        <multiLangId id="CurrentCJ_CreatedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCJ_StartedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12055"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCJ_StartedTime">
+                        <multiLangId id="CurrentCJ_StartedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentCJ_FinishedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12056"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentCJ_FinishedTime">
+                        <multiLangId id="CurrentCJ_FinishedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_PJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12061"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_PJID">
+                        <multiLangId id="CurrentPJ_PJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12062"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_CarrierID">
+                        <multiLangId id="CurrentPJ_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12063"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_LotID">
+                        <multiLangId id="CurrentPJ_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12064"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_Recipe">
+                        <multiLangId id="CurrentPJ_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_SlotCount">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12065"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_SlotCount">
+                        <multiLangId id="CurrentPJ_SlotCount"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_PJState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12066"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_PJState">
+                        <multiLangId id="CurrentPJ_PJState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_CreatedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12067"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_CreatedTime">
+                        <multiLangId id="CurrentPJ_CreatedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_StartedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12068"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_StartedTime">
+                        <multiLangId id="CurrentPJ_StartedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPJ_FinishedTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12069"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPJ_FinishedTime">
+                        <multiLangId id="CurrentPJ_FinishedTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPort_PortNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12071"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPort_PortNo">
+                        <multiLangId id="CurrentPort_PortNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPort_ClampState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12072"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPort_ClampState">
+                        <multiLangId id="CurrentPort_ClampState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPort_DockState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12073"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPort_DockState">
+                        <multiLangId id="CurrentPort_DockState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPort_AccessMode">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12074"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPort_AccessMode">
+                        <multiLangId id="CurrentPort_AccessMode"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPort_DoorState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12075"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPort_DoorState">
+                        <multiLangId id="CurrentPort_DoorState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPort_TransferState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12076"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPort_TransferState">
+                        <multiLangId id="CurrentPort_TransferState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPort_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12077"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPort_CarrierID">
+                        <multiLangId id="CurrentPort_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentPort_SlotMap">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12078"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CurrentPort_SlotMap">
+                        <multiLangId id="CurrentPort_SlotMap"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolCountActaul">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12080"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolCountActaul">
+                        <multiLangId id="SpoolCountActaul"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolStartTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12081"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolStartTime">
+                        <multiLangId id="SpoolStartTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SpoolFullTime">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12082"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@SpoolFullTime">
+                        <multiLangId id="SpoolFullTime"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort01_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12101"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort01_CarrierID">
+                        <multiLangId id="CarrierOnPort01_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort01_PortNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12102"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort01_PortNo">
+                        <multiLangId id="CarrierOnPort01_PortNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort01_AccessState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12103"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort01_AccessState">
+                        <multiLangId id="CarrierOnPort01_AccessState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort01_WaferCount">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12104"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort01_WaferCount">
+                        <multiLangId id="CarrierOnPort01_WaferCount"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort01_SlotMap">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12105"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort01_SlotMap">
+                        <multiLangId id="CarrierOnPort01_SlotMap"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort02_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12111"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort02_CarrierID">
+                        <multiLangId id="CarrierOnPort02_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort02_PortNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12112"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort02_PortNo">
+                        <multiLangId id="CarrierOnPort02_PortNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort02_AccessState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12113"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort02_AccessState">
+                        <multiLangId id="CarrierOnPort02_AccessState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort02_WaferCount">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12114"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort02_WaferCount">
+                        <multiLangId id="CarrierOnPort02_WaferCount"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CarrierOnPort02_SlotMap">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12115"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@CarrierOnPort02_SlotMap">
+                        <multiLangId id="CarrierOnPort02_SlotMap"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort01_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12141"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort01_CarrierID">
+                        <multiLangId id="WaferToPort01_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort01_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12142"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort01_LotID">
+                        <multiLangId id="WaferToPort01_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort01_CJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12143"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort01_CJID">
+                        <multiLangId id="WaferToPort01_CJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort01_PJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12144"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort01_PJID">
+                        <multiLangId id="WaferToPort01_PJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort01_WaferID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12145"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort01_WaferID">
+                        <multiLangId id="WaferToPort01_WaferID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort01_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12146"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort01_Recipe">
+                        <multiLangId id="WaferToPort01_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort01_SlotNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12147"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort01_SlotNo">
+                        <multiLangId id="WaferToPort01_SlotNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort01_OrderIndex">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12148"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort01_OrderIndex">
+                        <multiLangId id="WaferToPort01_OrderIndex"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort02_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12151"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort02_CarrierID">
+                        <multiLangId id="WaferToPort02_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort02_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12152"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort02_LotID">
+                        <multiLangId id="WaferToPort02_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort02_CJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12153"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort02_CJID">
+                        <multiLangId id="WaferToPort02_CJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort02_PJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12154"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort02_PJID">
+                        <multiLangId id="WaferToPort02_PJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort02_WaferID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12155"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort02_WaferID">
+                        <multiLangId id="WaferToPort02_WaferID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort02_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12156"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort02_Recipe">
+                        <multiLangId id="WaferToPort02_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort02_SlotNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12157"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort02_SlotNo">
+                        <multiLangId id="WaferToPort02_SlotNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferToPort02_OrderIndex">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12158"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferToPort02_OrderIndex">
+                        <multiLangId id="WaferToPort02_OrderIndex"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLowerArm_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12181"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLowerArm_CarrierID">
+                        <multiLangId id="WaferOnLowerArm_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLowerArm_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12182"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLowerArm_LotID">
+                        <multiLangId id="WaferOnLowerArm_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLowerArm_CJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12183"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLowerArm_CJID">
+                        <multiLangId id="WaferOnLowerArm_CJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLowerArm_PJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12184"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLowerArm_PJID">
+                        <multiLangId id="WaferOnLowerArm_PJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLowerArm_WaferID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12185"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLowerArm_WaferID">
+                        <multiLangId id="WaferOnLowerArm_WaferID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLowerArm_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12186"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLowerArm_Recipe">
+                        <multiLangId id="WaferOnLowerArm_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLowerArm_SlotNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12187"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLowerArm_SlotNo">
+                        <multiLangId id="WaferOnLowerArm_SlotNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnLowerArm_OrderIndex">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12188"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnLowerArm_OrderIndex">
+                        <multiLangId id="WaferOnLowerArm_OrderIndex"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnUpperArm_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12191"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnUpperArm_CarrierID">
+                        <multiLangId id="WaferOnUpperArm_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnUpperArm_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12192"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnUpperArm_LotID">
+                        <multiLangId id="WaferOnUpperArm_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnUpperArm_CJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12193"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnUpperArm_CJID">
+                        <multiLangId id="WaferOnUpperArm_CJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnUpperArm_PJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12194"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnUpperArm_PJID">
+                        <multiLangId id="WaferOnUpperArm_PJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnUpperArm_WaferID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12195"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnUpperArm_WaferID">
+                        <multiLangId id="WaferOnUpperArm_WaferID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnUpperArm_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12196"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnUpperArm_Recipe">
+                        <multiLangId id="WaferOnUpperArm_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnUpperArm_SlotNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12197"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnUpperArm_SlotNo">
+                        <multiLangId id="WaferOnUpperArm_SlotNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnUpperArm_OrderIndex">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12198"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnUpperArm_OrderIndex">
+                        <multiLangId id="WaferOnUpperArm_OrderIndex"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnAligner01_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12201"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnAligner01_CarrierID">
+                        <multiLangId id="WaferOnAligner01_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnAligner01_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12202"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnAligner01_LotID">
+                        <multiLangId id="WaferOnAligner01_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnAligner01_CJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12203"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnAligner01_CJID">
+                        <multiLangId id="WaferOnAligner01_CJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnAligner01_PJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12204"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnAligner01_PJID">
+                        <multiLangId id="WaferOnAligner01_PJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnAligner01_WaferID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12205"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnAligner01_WaferID">
+                        <multiLangId id="WaferOnAligner01_WaferID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnAligner01_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12206"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnAligner01_Recipe">
+                        <multiLangId id="WaferOnAligner01_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnAligner01_SlotNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12207"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnAligner01_SlotNo">
+                        <multiLangId id="WaferOnAligner01_SlotNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnAligner01_OrderIndex">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12208"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnAligner01_OrderIndex">
+                        <multiLangId id="WaferOnAligner01_OrderIndex"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnStage01_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12221"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnStage01_CarrierID">
+                        <multiLangId id="WaferOnStage01_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnStage01_LotID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12222"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnStage01_LotID">
+                        <multiLangId id="WaferOnStage01_LotID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnStage01_CJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12223"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnStage01_CJID">
+                        <multiLangId id="WaferOnStage01_CJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnStage01_PJID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12224"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnStage01_PJID">
+                        <multiLangId id="WaferOnStage01_PJID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnStage01_WaferID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12225"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnStage01_WaferID">
+                        <multiLangId id="WaferOnStage01_WaferID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnStage01_Recipe">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12226"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnStage01_Recipe">
+                        <multiLangId id="WaferOnStage01_Recipe"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnStage01_SlotNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12227"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnStage01_SlotNo">
+                        <multiLangId id="WaferOnStage01_SlotNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="WaferOnStage01_OrderIndex">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12228"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@WaferOnStage01_OrderIndex">
+                        <multiLangId id="WaferOnStage01_OrderIndex"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port01_PortNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12241"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port01_PortNo">
+                        <multiLangId id="Port01_PortNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port01_ClampState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12242"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port01_ClampState">
+                        <multiLangId id="Port01_ClampState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port01_DockState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12243"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port01_DockState">
+                        <multiLangId id="Port01_DockState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port01_AccessMode">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12244"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port01_AccessMode">
+                        <multiLangId id="Port01_AccessMode"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port01_DoorState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12245"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port01_DoorState">
+                        <multiLangId id="Port01_DoorState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port01_TransferState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12246"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port01_TransferState">
+                        <multiLangId id="Port01_TransferState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port01_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12247"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port01_CarrierID">
+                        <multiLangId id="Port01_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port01_SlotMap">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12248"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port01_SlotMap">
+                        <multiLangId id="Port01_SlotMap"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port02_PortNo">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12251"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port02_PortNo">
+                        <multiLangId id="Port02_PortNo"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port02_ClampState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12252"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port02_ClampState">
+                        <multiLangId id="Port02_ClampState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port02_DockState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12253"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port02_DockState">
+                        <multiLangId id="Port02_DockState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port02_AccessMode">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12254"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port02_AccessMode">
+                        <multiLangId id="Port02_AccessMode"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port02_DoorState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12255"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port02_DoorState">
+                        <multiLangId id="Port02_DoorState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port02_TransferState">
+                      <translation language="SECS_DATATYPE">"I4"</translation>
+                      <translation language="SECSVID">"12256"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port02_TransferState">
+                        <multiLangId id="Port02_TransferState"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port02_CarrierID">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12257"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port02_CarrierID">
+                        <multiLangId id="Port02_CarrierID"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Port02_SlotMap">
+                      <translation language="SECS_DATATYPE">"A"</translation>
+                      <translation language="SECSVID">"12258"</translation>
+                      <translation language="SECSTYPE">"StatusVariable"</translation>
+                    </multiLangId>
+                    <defaultValue>
+                      <parameterValue qualifiedName="SV@Port02_SlotMap">
+                        <multiLangId id="Port02_SlotMap"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                </definitionList>
+              </parameterSet>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="DV"/>
+                <definitionList>
+                </definitionList>
+              </parameterSet>
+              <parameterSet controlAlgorithm="">
+                <multiLangId id="Properties"/>
+                <definitionList>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="SystemId"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@SystemId">
+                        <multiLangId id="SystemId"/>
+                        <valueString>"${PacService}"</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="VirtualSystemId"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@VirtualSystemId">
+                        <multiLangId id="VirtualSystemId"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="Sequence"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@Sequence">
+                        <multiLangId id="Sequence"/>
+                        <valueInteger>-1</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ParentSystemId"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@ParentSystemId">
+                        <multiLangId id="ParentSystemId"/>
+                        <valueString>"${PacService}"</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="GatewayIpAddress"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@GatewayIpAddress">
+                        <multiLangId id="GatewayIpAddress"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="LastTrackOutLotId"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@LastTrackOutLotId">
+                        <multiLangId id="LastTrackOutLotId"/>
+                        <valueString>"Z50043B-I60601-A0"</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="ArrayOfString" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="6AOI01_BatchTrackInLots"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@6AOI01_BatchTrackInLots">
+                        <multiLangId id="6AOI01_BatchTrackInLots"/>
+                        <arrayOfString>"Z50043B-I60601-A0"</arrayOfString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="6AOI01_BatchTotalQty"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@6AOI01_BatchTotalQty">
+                        <multiLangId id="6AOI01_BatchTotalQty"/>
+                        <valueInteger>24</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.LONG" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="6AOI01_BatchID"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@6AOI01_BatchID">
+                        <multiLangId id="6AOI01_BatchID"/>
+                        <valueLong>1571196216826</valueLong>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Numeric.INT" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="6AOI01_BatchEquipmentLotCount"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@6AOI01_BatchEquipmentLotCount">
+                        <multiLangId id="6AOI01_BatchEquipmentLotCount"/>
+                        <valueInteger>0</valueInteger>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="ThruputRequirement"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@ThruputRequirement">
+                        <multiLangId id="ThruputRequirement"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="ArrayOfString" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="6AOI01_ChildEquipments"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@6AOI01_ChildEquipments">
+                        <multiLangId id="6AOI01_ChildEquipments"/>
+                        <arrayOfString></arrayOfString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="ArrayOfString" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="6AOI01_ChildEquipmentsId"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@6AOI01_ChildEquipmentsId">
+                        <multiLangId id="6AOI01_ChildEquipmentsId"/>
+                        <arrayOfString></arrayOfString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="CurrentLotId"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@CurrentLotId">
+                        <multiLangId id="CurrentLotId"/>
+                        <valueString>"Z50043B-I60601-A0"</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="String" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="6AOI01-DummyLotId"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@6AOI01-DummyLotId">
+                        <multiLangId id="6AOI01-DummyLotId"/>
+                        <valueString>""</valueString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="ArrayOfString" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="6AOI01_BatchTrackInLots2"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@6AOI01_BatchTrackInLots2">
+                        <multiLangId id="6AOI01_BatchTrackInLots2"/>
+                        <arrayOfString>"Z50043B-I60601-A0"</arrayOfString>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                  <parameterDefinition type="Boolean" downloadable="true" allowValuesOutOfRange="false">
+                    <multiLangId id="IsVirtualRunCancelTrackIn"/>
+                    <defaultValue>
+                      <parameterValue qualifiedName="Properties@IsVirtualRunCancelTrackIn">
+                        <multiLangId id="IsVirtualRunCancelTrackIn"/>
+                        <valueBoolean>false</valueBoolean>
+                      </parameterValue>
+                    </defaultValue>
+                  </parameterDefinition>
+                </definitionList>
+              </parameterSet>
+            </parameterSetList>
+            <deviceCommunication recipeTranslator="" requestSpoolData="false" vidSpoolCountActual="108" vidSpoolState="1020">
+              <multiLangId id="SECS Connection"/>
+              <EQMachineEventList>
+                <EQMachineEvent eventId="18182" enabled="true">
+                  <multiLangId id="CarrierComplete"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18181" enabled="true">
+                  <multiLangId id="CarrierStart"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18002" enabled="true">
+                  <multiLangId id="ControlStatusLocal"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18001" enabled="true">
+                  <multiLangId id="ControlStatusOffline"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18003" enabled="true">
+                  <multiLangId id="ControlStatusRemote"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18162" enabled="true">
+                  <multiLangId id="Port01_LoadComplete"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18161" enabled="true">
+                  <multiLangId id="Port01_ReadyToLoad"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18165" enabled="true">
+                  <multiLangId id="Port01_UnloadComplete"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18103" enabled="true">
+                  <multiLangId id="ProcessComplete"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18102" enabled="true">
+                  <multiLangId id="ProcessStart"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18153" enabled="true">
+                  <multiLangId id="WaferOnAligner"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18154" enabled="true">
+                  <multiLangId id="WaferOnStage"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18132" enabled="true">
+                  <multiLangId id="WaferProcessEnd"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18131" enabled="true">
+                  <multiLangId id="WaferProcessStart"/>
+                </EQMachineEvent>
+                <EQMachineEvent eventId="18155" enabled="true">
+                  <multiLangId id="WaferToPort01"/>
+                </EQMachineEvent>
+              </EQMachineEventList>
+            </deviceCommunication>
+            <machineState>
+              <eventTriggeredCAList>
+              </eventTriggeredCAList>
+              <alarmTriggeredCAList>
+              </alarmTriggeredCAList>
+              <tdrTriggeredCAList>
+              </tdrTriggeredCAList>
+            </machineState>
+          </machine>
+        </machineTreeNode>
+      </machineTreeNode>
+    </machineTree>
+  </machineManager>
+  <recipeManager machineToRecipeContainerMap="true">
+    <multiLangId id="RecipeManager"/>
+    <recipeContainer machineName="${Equipment1.Name}">
+    </recipeContainer>
+  </recipeManager>
+  <processJobManager processRunInformationContainer="ProcessRunInformationContainer">
+    <multiLangId id="ProcessJobManager"/>
+    <specialProcessList>
+    </specialProcessList>
+  </processJobManager>
+  <materialManager>
+    <multiLangId id="MaterialManager"/>
+    <specificationList>
+      <specification specId="Carrier">
+        <parameterSet controlAlgorithm="">
+          <multiLangId id="CarrierSpec"/>
+          <definitionList>
+          </definitionList>
+        </parameterSet>
+      </specification>
+      <specification specId="Batch">
+        <parameterSet controlAlgorithm="">
+          <multiLangId id="BatchSpec"/>
+          <definitionList>
+          </definitionList>
+        </parameterSet>
+      </specification>
+      <specification specId="Wafer">
+        <parameterSet controlAlgorithm="">
+          <multiLangId id="WaferSpec"/>
+          <definitionList>
+          </definitionList>
+        </parameterSet>
+      </specification>
+      <specification specId="Lot">
+        <parameterSet controlAlgorithm="">
+          <multiLangId id="LotSpec"/>
+          <definitionList>
+          </definitionList>
+        </parameterSet>
+      </specification>
+    </specificationList>
+  </materialManager>
+</processAutomationController>

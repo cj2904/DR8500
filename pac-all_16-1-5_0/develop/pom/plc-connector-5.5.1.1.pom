@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.znt</groupId>
+    <artifactId>znt-parent</artifactId>
+    <version>1</version>
+  </parent>
+  <name>PLCConnector</name>
+  <groupId>de.znt.semi-common</groupId>
+  <artifactId>plc-connector</artifactId>
+  <version>5.5.1.1</version>
+  <properties>
+    <zRepoId>zSemiCommon</zRepoId>
+    <zPlugin.compiler.version>1.7</zPlugin.compiler.version>
+    <zPlugin.compiler.source.version>1.7</zPlugin.compiler.source.version>
+    <zPlugin.compiler.target.version>1.7</zPlugin.compiler.target.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+    </dependency>
+  </dependencies>
+</project>
+

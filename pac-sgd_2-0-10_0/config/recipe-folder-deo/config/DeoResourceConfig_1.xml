@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeoJaxbResourceHandler name="App">
+    <deoWiringSet>
+        <deoWirings>
+            <deoWiring id="GUI/Recipe/RequestRecipeListFromRMS" triggerProviderId="GUI" triggerCategoryId="Recipe" triggerId="RequestRecipeListFromRMS">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="RmsGetRecipeList" id="20170903210712189" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="RmsServiceImpl" bindingParameterId="RmsService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="Filter" bindingParameterId="Filter" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="RecipeList" bindingParameterId="ResultList" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/Recipe/UploadRecipeToRMS" triggerProviderId="GUI" triggerCategoryId="Recipe" triggerId="UploadRecipeToRMS">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpUploadRecipeToRms" id="20170903210744620" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="RecipeId" bindingParameterId="RecipeId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="NewFileName" bindingParameterId="NewFileName" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RmsService" bindingParameterId="RmsService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="IsSpecificFolder" bindingParameterId="IsSpecificFolder" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/Recipe/DownloadRecipeToEqp" triggerProviderId="GUI" triggerCategoryId="Recipe" triggerId="DownloadRecipeToEqp">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="RmsDownloadRecipeToEqp" id="20170903210805634" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="GuiLogger" bindingParameterId="GuiLogger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="RecipeId" bindingParameterId="RecipeId" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RmsService" bindingParameterId="RmsService" bindingParameterSource="TRIGGER"/>
+<inputBindingParameterDefinition id="RequirePermission" bindingParameterId="RequirePermission" bindingParameterSource="DEOREF"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters>
+<bindingParameter id="RequirePermission" type="java.lang.Boolean" input="true">
+    <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:boolean">false</value>
+</bindingParameter>
+                            </bindingParameters>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/Recipe/RequestRecipeListFromEqp" triggerProviderId="GUI" triggerCategoryId="Recipe" triggerId="RequestRecipeListFromEqp">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpRequestRecipeListFromEqp" id="20180418130000868" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+<inputBindingParameterDefinition id="SecsGemService" bindingParameterId="SecsGemService" bindingParameterSource="TRIGGER"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions>
+<resultBindingParameterDefinition id="ResultList" bindingParameterId="ResultList" bindingParameterSource="TRIGGER"/>
+                            </resultBindingParameterDefinitions>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+            <deoWiring id="GUI/Recipe/UploadRecipeToCamstar" triggerProviderId="GUI" triggerCategoryId="Recipe" triggerId="UploadRecipeToCamstar">
+                <deoReferenceSequence>
+                    <deoReferences>
+                        <deoReference deoId="EqpUploadRecipeToCamstar" id="20180423011034323" asynchron="false" stopOnError="true" execute="true" shared="false" owner="App">
+                            <inputBindingParameterDefinitions>
+<inputBindingParameterDefinition id="Logger" bindingParameterId="Logger" bindingParameterSource="DEO"/>
+                            </inputBindingParameterDefinitions>
+                            <resultBindingParameterDefinitions/>
+                            <bindingParameters/>
+                        </deoReference>
+                    </deoReferences>
+                </deoReferenceSequence>
+                <deoErrorReferenceSequence>
+                    <deoReferences/>
+                </deoErrorReferenceSequence>
+            </deoWiring>
+        </deoWirings>
+        <globalBindingParameters/>
+    </deoWiringSet>
+    <deoDefinitionSet>
+        <deoDefinitions>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpUploadRecipeToRms" version="1" id="EqpUploadRecipeToRms"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpValidateLotRecipeAvailability" version="1" id="EqpValidateLotRecipeAvailability"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpValidateRecipeAvailability" version="1" id="EqpValidateRecipeAvailability"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="RmsDownloadRecipeToEqp" version="1" id="RmsDownloadRecipeToEqp"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="RmsGetRecipeList" version="1" id="RmsGetRecipeList"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="RmsGetRecipeBody" version="1" id="RmsGetRecipeBody"/>
+            <deoDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DeoGroovyScript" groovyPath="EqpUploadRecipeToCamstar" version="1" id="EqpUploadRecipeToCamstar"/>
+        </deoDefinitions>
+    </deoDefinitionSet>
+</DeoJaxbResourceHandler>

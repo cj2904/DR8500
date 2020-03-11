@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/pac-all-16.1.5.0/lib/pac-all-16.1.5.0.jar"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.preferred_launchers">
+<mapEntry key="[debug]" value="org.eclipse.jdt.launching.localJavaApplication"/>
+<mapEntry key="[run]" value="org.eclipse.jdt.launching.localJavaApplication"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="de.znt.pac.ProcessAutomationController"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="w06-secs"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-verbose:gc -Dde.znt.util.PropertyHelper.fileName=./config/properties/application.properties -Duser.home=. -DAppDir=. -DEqModel=cvd-pc4500"/>
+</launchConfiguration>

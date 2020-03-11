@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeploymentDescriptor xmlns="http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0 http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0.xsd" 
+    component="Tsc-diebonder" description="Application for @APPLICATION@" type="application" releaseNotes="config/ReleaseNote.txt" version="@APPLICATION_VERSION@">
+    <PropertyList>
+    	<!-- General -->
+    	<Property name="PacService" description="Name of the pac service" required="true" />
+        <Property name="GUI.WebServer.Port" description="Server port for pac WEB GUI." required="true" reloadable="false" serverPort="true" />
+        <Property name="SysEnv" description="System Enviroment, specify either production, test or pilot environment." required="true" restriction="Prod|Test|Pilot" value="Prod"/>
+        <Property name="EqModel" description="Equipment Model Scenario: KE-Furnace, SEMCO-Furnace, Prober, AOI, Sputter, Implanter, Exposure, EGN, LSM,CVD" required="true" restriction="ke-furnace|semco-furnace|prober|aoi|sputter|dis-grinder|ast-peva900el|dnk-ma-4000|axcelis-gsd200|fittech-fcm6104|cvd-pc4500|Jonas1" value="" />
+        
+        <!-- Machine Connection -->
+        <Property name="${Equipment1.Name}.SystemId" description="Camstar equipment ID" required="true" value="${PacService}" />
+        <Property name="${Equipment1.Name}.VirtualSystemId" description="Virtual Camstar Equipment ID" required="false" value=""/>
+        <Property name="${Equipment1.Name}.SecsIP" description="Machine IP address" required="true" value="" />
+        <Property name="${Equipment1.Name}.SecsPort" description="Machine port" required="true" value="5000" />
+        <Property name="${Equipment1.Name}.SecsDevice" description="Machine device" required="true" value="0" />
+        
+        <!-- Camstar MES resource comment -->
+        <Property name="W06.ResourceComment.Event.EnableForLogging" description="Event ID for resource comment tracking" required="false" />
+        <Property name="W06.ResourceComment.EventAlarm.EnableForLogging" description="Alarm ID for resource comment tracking" required="false" />
+   </PropertyList>
+    <EditableFileList>
+    </EditableFileList>
+    <ModuleList>
+        <Module name="pac-w06" version="CurrentVersion" />
+    </ModuleList>
+    <OiClientList port="${SocketServer.Port}" service="${PacService}">
+        <OiClient name="Administrator" description="Administrator client" ui="processor" />
+    </OiClientList>
+    <WebClientList>
+        <WebClient name="TestUi" description="Test User Interface" secure="false" port="${GUI.WebServer.Port}" path="/${PacService}/TestUi" />
+    </WebClientList>
+</DeploymentDescriptor>

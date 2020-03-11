@@ -1,0 +1,10 @@
+<classpath>
+  <classpathentry exported="true" kind="lib" path="lib/pac-w06_0-1-1_0.jar"/>
+  <classpathentry kind="src" path="config/w06-deo/deos"/>
+  <classpathentry kind="src" path="src_ui"/>
+  <classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+  <classpathentry combineaccessrules="false" exported="true" kind="src" path="/pac-tsc_2-0-8_0"/>
+  <classpathentry kind="output" path="_classes"/>
+</classpath>

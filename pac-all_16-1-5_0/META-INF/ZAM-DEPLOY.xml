@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeploymentDescriptor
+	xmlns="http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0 http://www.znt-richter.com/schema/zam/zamDeploymentDescriptor_1_0_0.xsd"
+	component="pac-all" type="module" description="pac all" version="16.1.5.0" releaseNotes="doc/ReleaseNotes.html" backupDir="backup" restoreDir="restore" licenseKey="pac" minJavaVersion="8" maxJavaVersion="11">
+	<PropertyList>
+		<Property name="SocketServer.Port" description="Port on which the socket server listens for connections" restriction="[0-9]{4,6}" required="true" reloadable="false" serverPort="true" />
+		<Property name="PacLogLevel" description="Log4J root logger log level" value="INFO" restriction="(INFO|DEBUG)" reloadable="true" required="false">
+	        <Choice value="INFO"/>
+	        <Choice value="DEBUG"/>
+	    </Property>
+	</PropertyList>
+	<ReloadableFileFilterList>
+		<ReloadableFileFilter fileFilter="*project" />
+		<ReloadableFileFilter fileFilter="*classpath" />
+		<ReloadableFileFilter fileFilter="licenses/**/*" />
+		<ReloadableFileFilter fileFilter="bin/*" />
+		<ReloadableFileFilter fileFilter="config/deo/**/*" />
+		<ReloadableFileFilter fileFilter="config/xml/Mapping.xml" />
+		<ReloadableFileFilter fileFilter="config/xml/pac.xml" />
+		<ReloadableFileFilter fileFilter="doc/*" />
+		<ReloadableFileFilter fileFilter="config/properties/reloadable.properties" />
+		<ReloadableFileFilter fileFilter="INSTANCE.properties*" />
+	</ReloadableFileFilterList>
+	<MonitoringParameterList>
+        <MonitoringParameter name="zpers.FatalErrors" group="zpers.pac.ZPersDb" parameter="FatalErrorCount" description="Number of fatal zpers errors" unit="NUMBER" />
+        <MonitoringParameter name="zpers.NonFatalErrors" group="zpers.pac.ZPersDb" parameter="NonFatalErrorCount" description="Number of non fatal zpers errors" unit="NUMBER" />
+        <MonitoringParameter name="zpers.MeanConfirmTime" group="zpers.pac.ZPersDb.ZPersTransaction" parameter="MeanConfirm2Time" description="Mean confirm time of zpers transaction" unit="MILLIS" />
+        <MonitoringParameter name="zpers.Size" group="zpers.pac.ZPersPage.Block_Control" parameter="PageSize" description="Size of zpers db" unit="BYTES" />
+        <MonitoringParameter name="zpers.LastGCTime" group="zpers.pac.Main_Control_Thread.GC_Control_Thread" parameter="Last_Abs_Loop_Time" description="Absolute duration of last zpers garbage collector run" unit="MILLIS" />
+        <MonitoringParameter name="HeapGC.Total" group="pac.monitor.HeapGC" parameter="Total" description="Total heap space after garbage collection" unit="BYTES" />
+        <MonitoringParameter name="HeapGC.Used" group="pac.monitor.HeapGC" parameter="Used" description="Used heap space after garbage collection" unit="BYTES" />
+        <MonitoringParameter name="HeapGC.Free" group="pac.monitor.HeapGC" parameter="Free" description="Free heap space after garbage collection" unit="BYTES" />
+        <MonitoringParameter name="HeapGC.Load" group="pac.monitor.HeapGC" parameter="Load" description="Load factor of heap space after garbage collection" unit="FACTOR" />
+        <MonitoringParameter name="ProcessCPU.Load" group="pac.monitor.ProcessCpu" parameter="Load" description="Mean CPU load of JVM process in last measurement period" unit="FACTOR" />
+        <MonitoringParameter name="Thread.Count" group="pac.monitor.Threads" parameter="ThreadCount" description="Number of live threads" unit="NUMBER" />
+        <MonitoringParameter name="Thread.DeadlockedCount" group="pac.monitor.Threads" parameter="DeadlockedThreadCount" description="Number of deadlocked threads" unit="NUMBER" />
+        <MonitoringParameter name="DEO.ValidationErrors" group="pac.deo.validation.ErrorCount" parameter="current" description="Number of DEO validation errors" unit="NUMBER" />
+    </MonitoringParameterList>
+	<CommandList>
+		<ProcessList>
+			<Process name="start" description="Starts pac process" type="START" timeout="60">
+				<OperatingSystem name="Linux" />
+				<ArgumentList>
+					<Argument>bash</Argument>
+					<Argument>bin/pac.sh</Argument>
+					<Argument>start</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="stop" description="Stops pac process" type="STOP" timeout="60">
+				<OperatingSystem name="Linux" />
+				<ArgumentList>
+					<Argument>bash</Argument>
+					<Argument>bin/pac.sh</Argument>
+					<Argument>stop</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="status" description="Provides pac status information" type="STATUS" timeout="60">
+				<OperatingSystem name="Linux" />
+				<ArgumentList>
+					<Argument>bash</Argument>
+					<Argument>bin/pac.sh</Argument>
+					<Argument>status</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="backup" description="Backup pac runtime" type="BACKUP" timeout="60">
+				<OperatingSystem name="Linux" />
+				<ArgumentList>
+					<Argument>bash</Argument>
+					<Argument>bin/pac.sh</Argument>
+					<Argument>backup</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="kill" description="Kills pac process" type="KILL" timeout="60">
+				<OperatingSystem name="Linux" />
+				<ArgumentList>
+					<Argument>bash</Argument>
+					<Argument>bin/pac.sh</Argument>
+					<Argument>kill</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="Threaddump" description="Trigger threaddump"
+				type="CUSTOM" timeout="60">
+				<OperatingSystem name="Linux" />
+				<ArgumentList>
+					<Argument>bash</Argument>
+					<Argument>bin/pac.sh</Argument>
+					<Argument>dump</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="Create Error Report" description="Create zip file with all files necessary for Error Analysis" type="CUSTOM" timeout="30">
+				<OperatingSystem name="Linux" />
+				<ArgumentList>
+					<Argument>bash</Argument>
+					<Argument>bin/createErrorReport.sh</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="Delete zpers files" description="Deletes cached domain object in zpers files." type="CUSTOM" timeout="30" adminModeRequired="true">
+				<OperatingSystem name="Linux" />
+				<ArgumentList>
+					<Argument>bash</Argument>
+					<Argument>bin/pac.sh</Argument>
+					<Argument>deleteZPers</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="Fetch New Version" description="Transfer zam archive of new application version" type="CUSTOM" timeout="30">
+                <OperatingSystem name="Linux" />
+                  <ArgumentList>
+                    <Argument>bash</Argument>
+                    <Argument>bin/createNewVersion.sh</Argument>
+                  </ArgumentList>
+            </Process>
+			<Process name="start" description="Starts pac process" type="START" timeout="60">
+				<OperatingSystem name="Windows" />
+				<ArgumentList>
+					<Argument>PowerShell</Argument>
+					<Argument>-ExecutionPolicy</Argument>
+					<Argument>Unrestricted</Argument>
+					<Argument>-File</Argument>
+					<Argument>bin\pac.ps1</Argument>
+					<Argument>start</Argument>
+				</ArgumentList>
+			</Process>
+			<Process name="stop" description="Stops pac process" type="STOP" timeout="60">
+				<OperatingSystem name="Windows" />
+      			<ArgumentList>
+					<Argument>PowerShell</Argument>
+					<Argument>-ExecutionPolicy</Argument>
+					<Argument>Unrestricted</Argument>
+					<Argument>-File</Argument>
+					<Argument>bin\pac.ps1</Argument>
+					<Argument>stop</Argument>
+      			</ArgumentList>
+    		</Process>
+			<Process name="status" description="Provides pac status information" type="STATUS" timeout="60">
+				<OperatingSystem name="Windows" />
+      			<ArgumentList>
+					<Argument>PowerShell</Argument>
+					<Argument>-ExecutionPolicy</Argument>
+					<Argument>Unrestricted</Argument>
+					<Argument>-File</Argument>
+					<Argument>bin\pac.ps1</Argument>
+					<Argument>status</Argument>
+      			</ArgumentList>
+    		</Process>
+    		<Process name="kill" description="Kills pac process" type="KILL" timeout="60">
+				<OperatingSystem name="Windows" />
+      			<ArgumentList>
+					<Argument>PowerShell</Argument>
+					<Argument>-ExecutionPolicy</Argument>
+					<Argument>Unrestricted</Argument>
+					<Argument>-File</Argument>
+					<Argument>bin\pac.ps1</Argument>
+					<Argument>kill</Argument>
+      			</ArgumentList>
+    		</Process>
+            <Process name="Create Status Report" description="Create zip file with all files necessary for Status Analysis" type="CUSTOM" timeout="30">
+                <OperatingSystem name="Windows" />
+                  <ArgumentList>
+                    <Argument>PowerShell</Argument>
+                    <Argument>-ExecutionPolicy</Argument>
+                    <Argument>Unrestricted</Argument>
+                    <Argument>-File</Argument>
+                    <Argument>bin\createStatusReport.ps1</Argument>
+                  </ArgumentList>
+            </Process>
+            <Process name="Delete zpers files" description="Deletes cached domain object in zpers files." type="CUSTOM" timeout="30" adminModeRequired="true">
+				<OperatingSystem name="Windows" />
+				<ArgumentList>
+					<Argument>PowerShell</Argument>
+					<Argument>-ExecutionPolicy</Argument>
+					<Argument>Unrestricted</Argument>
+					<Argument>-File</Argument>
+					<Argument>bin\pac.ps1</Argument>
+					<Argument>deleteZPers</Argument>
+				</ArgumentList>
+			</Process>
+            <Process name="backup" description="Backup pac runtime" type="BACKUP" timeout="60">
+				<OperatingSystem name="Windows" />
+      			<ArgumentList>
+					<Argument>PowerShell</Argument>
+					<Argument>-ExecutionPolicy</Argument>
+					<Argument>Unrestricted</Argument>
+					<Argument>-File</Argument>
+					<Argument>bin\pac.ps1</Argument>
+					<Argument>backup</Argument>
+      			</ArgumentList>
+    		</Process>
+    		<Process name="Fetch New Version" description="Transfer zam archive of new application version" type="CUSTOM" timeout="30">
+                <OperatingSystem name="Windows" />
+                  <ArgumentList>
+                    <Argument>PowerShell</Argument>
+                    <Argument>-ExecutionPolicy</Argument>
+                    <Argument>Unrestricted</Argument>
+                    <Argument>-File</Argument>
+                    <Argument>bin\createNewVersion.ps1</Argument>
+                  </ArgumentList>
+            </Process>
+		</ProcessList>
+		<SocketCommandList port="${SocketServer.Port}">
+			<SocketCommand name="status" description="Verify application status" type="STATUS" timeout="60" />
+			<SocketCommand name="stop" description="Stop with socket command because graceful shutdown on Windows does currently not work" type="STOP" timeout="60" />
+			<SocketCommand name="reloadConfig" description="Trigger configuration reload with socket command" type="RELOAD_CONFIG" timeout="60" />
+			<SocketCommand name="monitor" description="Request monitoring values" type="MONITORING" timeout="60" />
+		</SocketCommandList>
+	</CommandList>
+    <LogFileFilterList>
+        <LogFileFilter fileFilter="log/pac.*" name="pac log" />
+        <LogFileFilter fileFilter="log/zsecs.*" name="secs log" />
+        <LogFileFilter fileFilter="log/properties.*" name="pac properties" />
+    </LogFileFilterList>
+</DeploymentDescriptor>

@@ -1,0 +1,65 @@
+######Model Property Key#################
+Pac.ApplicationContext=$(AppDir)/config/xml/AppContext.xml,\
+$(AppDir)/config/model/$(EqModel)/AppContext.xml
+Equipment1.Name=$(EqModel)
+
+#Model specific deo#
+deo.path=$(AppDir)/config/model/$(EqModel)/$(EqModel)-deo
+Pac.MappingSetContainer.Path=$(AppDir)/config/model/$(EqModel)/Mapping.xml
+de.znt.pac.PACService.xmlLocation=$(AppDir)/config/model/$(EqModel)/pac.xml
+
+#########################################################################
+### Configure SECS time format (valid values: 12Byte, 16Byte)
+#########################################################################
+SECS.TimeFormat=16Byte
+
+#########################################################################
+### Configure SECS transaction data types (U2, U4, ...) 
+#########################################################################
+Secs.DataType.CEID=U4
+Secs.DataType.VID=U4
+Secs.DataType.RPTID=U4
+Secs.DataType.ALID=U4
+Secs.DataType.DATAID=U4
+Secs.DataType.TRID=U4
+
+Secs.ProcessState.$(Equipment1.Name).0=UNINITIALISED
+Secs.ProcessState.$(Equipment1.Name).1=INIT
+Secs.ProcessState.$(Equipment1.Name).2=IDLE
+Secs.ProcessState.$(Equipment1.Name).3=MAINTAINENCE
+Secs.ProcessState.$(Equipment1.Name).4=ABORTED
+Secs.ProcessState.$(Equipment1.Name).5=ILDE WITH ALARMS
+Secs.ProcessState.$(Equipment1.Name).6=ACTIVE
+Secs.ProcessState.$(Equipment1.Name).7=STOPPING
+Secs.ProcessState.$(Equipment1.Name).8=ABORTING
+Secs.ProcessState.$(Equipment1.Name).9=PAUSING
+Secs.ProcessState.$(Equipment1.Name).States.Ready2Start=2
+Secs.ProcessState.$(Equipment1.Name).States.Processing=6
+Secs.ProcessState.$(Equipment1.Name).StatusVariable.Name=ToolSTATE
+
+Secs.ControlState.$(Equipment1.Name).1=Off-Line/Equipment Off-Line
+Secs.ControlState.$(Equipment1.Name).2=Off-Line/Attempt On-Line
+Secs.ControlState.$(Equipment1.Name).3=Off-Line/Host Off-Line
+Secs.ControlState.$(Equipment1.Name).4=On-Line/Local
+Secs.ControlState.$(Equipment1.Name).5=On-Line/Remote
+Secs.ControlState.$(Equipment1.Name).Local=4
+Secs.ControlState.$(Equipment1.Name).Offline=1
+Secs.ControlState.$(Equipment1.Name).Remote=5
+Secs.ControlState.$(Equipment1.Name).States.Offline=1,2,3
+Secs.ControlState.$(Equipment1.Name).States.Online=4,5
+Secs.ControlState.$(Equipment1.Name).StatusVariable.Name=CONTROLSTATE
+
+
+#########################################################################
+### SECS communication settings  
+#########################################################################
+$(Equipment1.Name).SecsConnectionMode=active
+$(Equipment1.Name).T3Timeout=45
+$(Equipment1.Name).T5Timeout=10
+$(Equipment1.Name).T6Timeout=5
+$(Equipment1.Name).T7Timeout=20
+$(Equipment1.Name).T8Timeout=5
+$(Equipment1.Name).LinktestInterval=60
+
+Secs.MachineLoadedRecipe.${Equipment1.Name}.StatusVariable.Name=
+Secs.RemoteCommand.PpidSelect.Name=PP-SELECT
